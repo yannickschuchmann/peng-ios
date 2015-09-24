@@ -241,17 +241,42 @@
                                         <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                         <state key="normal" title="NEUES DUELL"/>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JY8-W5-w1B" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="385" width="560" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="f05-n4-YeC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijW-KR-4Dc" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="429" width="560" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="h4l-RL-Qo3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Label" value="LETZTE SPIELE"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HFW-jS-k1A" secondAttribute="trailing" id="0WN-0J-tcq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ijW-KR-4Dc" secondAttribute="trailing" constant="20" id="4SO-7u-AZh"/>
+                                    <constraint firstAttribute="trailing" secondItem="JY8-W5-w1B" secondAttribute="trailing" constant="20" id="4u3-Qx-cUu"/>
+                                    <constraint firstItem="JY8-W5-w1B" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" constant="20" id="73H-JE-1em"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" id="96d-Np-o3V"/>
                                     <constraint firstAttribute="trailing" secondItem="Gg5-Ns-UNa" secondAttribute="trailing" id="9QQ-dX-1Qe"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="bottom" secondItem="HFW-jS-k1A" secondAttribute="top" id="9WA-1H-khm"/>
                                     <constraint firstAttribute="trailing" secondItem="ANF-vr-IuI" secondAttribute="trailing" id="AI6-xS-Epv"/>
+                                    <constraint firstItem="ijW-KR-4Dc" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" constant="20" id="AlU-dF-6xw"/>
+                                    <constraint firstItem="ijW-KR-4Dc" firstAttribute="top" secondItem="JY8-W5-w1B" secondAttribute="bottom" constant="20" id="LoW-Ja-Vwn"/>
                                     <constraint firstItem="Gg5-Ns-UNa" firstAttribute="top" secondItem="p4Z-cu-HOQ" secondAttribute="top" id="Qs2-dw-73i"/>
+                                    <constraint firstItem="JY8-W5-w1B" firstAttribute="top" secondItem="HFW-jS-k1A" secondAttribute="bottom" constant="10" id="Ruj-6P-wkc"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="top" secondItem="Gg5-Ns-UNa" secondAttribute="bottom" id="aFc-IR-4C4"/>
+                                    <constraint firstItem="JY8-W5-w1B" firstAttribute="centerX" secondItem="p4Z-cu-HOQ" secondAttribute="centerX" id="bce-Oo-bnC"/>
                                     <constraint firstItem="Gg5-Ns-UNa" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" id="ioT-Ks-uDE"/>
-                                    <constraint firstAttribute="trailing" secondItem="HFW-jS-k1A" secondAttribute="trailing" id="vBU-K6-7kl"/>
                                     <constraint firstItem="HFW-jS-k1A" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" id="zal-U5-a7V"/>
                                 </constraints>
                             </view>
