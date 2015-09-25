@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "character_prostitute.png"
+      "filename" : "character_sheriff.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
