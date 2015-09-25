@@ -247,31 +247,19 @@
                                             <constraint firstAttribute="height" constant="24" id="f05-n4-YeC"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijW-KR-4Dc" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="429" width="560" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="h4l-RL-Qo3"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="Label" value="LETZTE SPIELE"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="Label" value="OFFENE DUELLE"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97647058823529409" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="HFW-jS-k1A" secondAttribute="trailing" id="0WN-0J-tcq"/>
-                                    <constraint firstAttribute="trailing" secondItem="ijW-KR-4Dc" secondAttribute="trailing" constant="20" id="4SO-7u-AZh"/>
                                     <constraint firstAttribute="trailing" secondItem="JY8-W5-w1B" secondAttribute="trailing" constant="20" id="4u3-Qx-cUu"/>
                                     <constraint firstItem="JY8-W5-w1B" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" constant="20" id="73H-JE-1em"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" id="96d-Np-o3V"/>
                                     <constraint firstAttribute="trailing" secondItem="Gg5-Ns-UNa" secondAttribute="trailing" id="9QQ-dX-1Qe"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="bottom" secondItem="HFW-jS-k1A" secondAttribute="top" id="9WA-1H-khm"/>
                                     <constraint firstAttribute="trailing" secondItem="ANF-vr-IuI" secondAttribute="trailing" id="AI6-xS-Epv"/>
-                                    <constraint firstItem="ijW-KR-4Dc" firstAttribute="leading" secondItem="p4Z-cu-HOQ" secondAttribute="leading" constant="20" id="AlU-dF-6xw"/>
-                                    <constraint firstItem="ijW-KR-4Dc" firstAttribute="top" secondItem="JY8-W5-w1B" secondAttribute="bottom" constant="20" id="LoW-Ja-Vwn"/>
                                     <constraint firstItem="Gg5-Ns-UNa" firstAttribute="top" secondItem="p4Z-cu-HOQ" secondAttribute="top" id="Qs2-dw-73i"/>
                                     <constraint firstItem="JY8-W5-w1B" firstAttribute="top" secondItem="HFW-jS-k1A" secondAttribute="bottom" constant="10" id="Ruj-6P-wkc"/>
                                     <constraint firstItem="ANF-vr-IuI" firstAttribute="top" secondItem="Gg5-Ns-UNa" secondAttribute="bottom" id="aFc-IR-4C4"/>
@@ -368,14 +356,38 @@
                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                 <state key="normal" title="HERAUSFORDERN"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="462" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="506" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="LETZTE SPIELE"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NHX-W1-mNH" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" id="5fF-CN-KaF"/>
                             <constraint firstItem="NHX-W1-mNH" firstAttribute="width" secondItem="MMQ-IT-qOo" secondAttribute="width" id="AeZ-2M-8X2"/>
+                            <constraint firstAttribute="trailing" secondItem="DXR-Bq-r56" secondAttribute="trailing" constant="20" id="C4G-Lu-9NI"/>
+                            <constraint firstItem="gGl-cq-cnO" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" id="JrY-86-f28"/>
+                            <constraint firstItem="DXR-Bq-r56" firstAttribute="top" secondItem="bMl-rN-dVc" secondAttribute="bottom" constant="10" id="RAx-e4-bxK"/>
                             <constraint firstItem="bMl-rN-dVc" firstAttribute="top" secondItem="NHX-W1-mNH" secondAttribute="bottom" id="Rry-tQ-IzN"/>
                             <constraint firstItem="NHX-W1-mNH" firstAttribute="centerX" secondItem="MMQ-IT-qOo" secondAttribute="centerX" id="WP7-GQ-e2h"/>
+                            <constraint firstAttribute="trailing" secondItem="gGl-cq-cnO" secondAttribute="trailing" constant="20" id="cZo-gi-pkN"/>
+                            <constraint firstItem="gGl-cq-cnO" firstAttribute="top" secondItem="DXR-Bq-r56" secondAttribute="bottom" constant="20" id="fRq-cP-jEC"/>
                             <constraint firstItem="bMl-rN-dVc" firstAttribute="width" secondItem="MMQ-IT-qOo" secondAttribute="width" id="idA-Dj-9jP"/>
+                            <constraint firstItem="DXR-Bq-r56" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" constant="20" id="q9E-hj-j3k"/>
                             <constraint firstItem="bMl-rN-dVc" firstAttribute="centerX" secondItem="MMQ-IT-qOo" secondAttribute="centerX" id="y9j-6x-eWg"/>
                         </constraints>
                     </view>
