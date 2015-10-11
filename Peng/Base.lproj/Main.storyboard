@@ -28,6 +28,9 @@
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -405,10 +408,10 @@
             </objects>
             <point key="canvasLocation" x="1339" y="48"/>
         </scene>
-        <!--View Controller-->
+        <!--New Duel View Controller-->
         <scene sceneID="0vg-nN-xTX">
             <objects>
-                <viewController id="1tG-58-ANH" sceneMemberID="viewController">
+                <viewController id="1tG-58-ANH" customClass="NewDuelViewController" customModule="Peng" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ASH-sJ-8x2"/>
                         <viewControllerLayoutGuide type="bottom" id="uiO-oA-v91"/>
@@ -520,20 +523,20 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="fordere per" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-hR-flk">
-                                                <rect key="frame" x="99" y="42" width="73.5" height="15.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fordere per" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-hR-flk">
+                                                <rect key="frame" x="99" y="42" width="62" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="13"/>
                                                 <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ZUFALL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfG-KU-ndB" userLabel="Zufall">
-                                                <rect key="frame" x="99" y="57" width="121.5" height="33.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZUFALL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfG-KU-ndB" userLabel="Zufall">
+                                                <rect key="frame" x="99" y="57" width="90.5" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="29"/>
                                                 <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="einen anderen Spieler heraus." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUn-t8-tOo">
-                                                <rect key="frame" x="99" y="88" width="98.5" height="15.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="einen anderen Spieler heraus." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUn-t8-tOo">
+                                                <rect key="frame" x="99" y="88" width="164.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="13"/>
                                                 <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -583,6 +586,117 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOj-KV-heB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1972" y="48"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5GC-71-fKC">
+            <objects>
+                <viewController id="Ncm-1b-MRh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fXn-ce-Rn4"/>
+                        <viewControllerLayoutGuide type="bottom" id="fYm-Mq-r0R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gNA-DJ-tSl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="gXZ-2l-Bkv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vc-kU-OXk" userLabel="Edit Profile">
+                                <rect key="frame" x="0.0" y="84" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-G2-hDK">
+                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.50980392156862742" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3FO-G2-hDK" firstAttribute="leading" secondItem="1Vc-kU-OXk" secondAttribute="leading" constant="40" id="26K-me-0Bs"/>
+                                    <constraint firstAttribute="trailing" secondItem="3FO-G2-hDK" secondAttribute="trailing" constant="40" id="BoL-hb-vFZ"/>
+                                    <constraint firstItem="3FO-G2-hDK" firstAttribute="centerY" secondItem="1Vc-kU-OXk" secondAttribute="centerY" id="Nh4-yu-ht5"/>
+                                    <constraint firstAttribute="height" constant="70" id="WJR-dF-eHY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qa-QH-uCw" userLabel="Edit Character">
+                                <rect key="frame" x="0.0" y="157" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT CHARACTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-Se-opw">
+                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="4HK-2W-I2e"/>
+                                    <constraint firstItem="xAZ-Se-opw" firstAttribute="leading" secondItem="0qa-QH-uCw" secondAttribute="leading" constant="40" id="D5Z-Lk-w7a"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAZ-Se-opw" secondAttribute="trailing" constant="40" id="Gou-zQ-dVQ"/>
+                                    <constraint firstItem="xAZ-Se-opw" firstAttribute="centerY" secondItem="0qa-QH-uCw" secondAttribute="centerY" id="a3N-E6-OiH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="bgk-iN-KaL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="247" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="vbo-XO-rxf"/>
+                                    <constraint firstAttribute="height" constant="24" id="ydJ-Yz-AOR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8l-ub-q6h" userLabel="Edit Character">
+                                <rect key="frame" x="0.0" y="291" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2A-Xf-Z9o">
+                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="q2A-Xf-Z9o" secondAttribute="trailing" constant="40" id="4Qr-e5-ttB"/>
+                                    <constraint firstItem="q2A-Xf-Z9o" firstAttribute="leading" secondItem="p8l-ub-q6h" secondAttribute="leading" constant="40" id="7FB-B7-azD"/>
+                                    <constraint firstAttribute="height" constant="70" id="LCb-VG-BKs"/>
+                                    <constraint firstItem="q2A-Xf-Z9o" firstAttribute="centerY" secondItem="p8l-ub-q6h" secondAttribute="centerY" id="jCa-Yx-vaO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Vc-kU-OXk" firstAttribute="top" secondItem="O4T-IG-yR6" secondAttribute="bottom" constant="20" id="2Ls-xw-y8H"/>
+                            <constraint firstItem="p8l-ub-q6h" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="3dK-5V-H4a"/>
+                            <constraint firstItem="0qa-QH-uCw" firstAttribute="top" secondItem="1Vc-kU-OXk" secondAttribute="bottom" constant="3" id="5zZ-Kq-Tfn"/>
+                            <constraint firstItem="O4T-IG-yR6" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="Aub-Ig-iwv"/>
+                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="0qa-QH-uCw" secondAttribute="bottom" constant="20" id="Cct-9m-Fdn"/>
+                            <constraint firstItem="1Vc-kU-OXk" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="Ek1-oQ-cJd"/>
+                            <constraint firstAttribute="trailing" secondItem="p8l-ub-q6h" secondAttribute="trailing" id="EzI-nL-7pb"/>
+                            <constraint firstItem="O4T-IG-yR6" firstAttribute="top" secondItem="fXn-ce-Rn4" secondAttribute="bottom" constant="20" id="OXV-0X-lbc"/>
+                            <constraint firstItem="0qa-QH-uCw" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="VnV-5l-NhS"/>
+                            <constraint firstAttribute="trailing" secondItem="GQR-d2-QNa" secondAttribute="trailing" constant="20" id="XSg-cv-NmA"/>
+                            <constraint firstItem="GQR-d2-QNa" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="cTc-En-Uvy"/>
+                            <constraint firstAttribute="trailing" secondItem="1Vc-kU-OXk" secondAttribute="trailing" id="eix-ql-Cqh"/>
+                            <constraint firstItem="p8l-ub-q6h" firstAttribute="top" secondItem="GQR-d2-QNa" secondAttribute="bottom" constant="20" id="jNh-FN-WRR"/>
+                            <constraint firstAttribute="trailing" secondItem="0qa-QH-uCw" secondAttribute="trailing" id="r1n-Vd-ga2"/>
+                            <constraint firstAttribute="trailing" secondItem="O4T-IG-yR6" secondAttribute="trailing" constant="20" id="ra5-zT-qZ7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEq-N8-UiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598" y="48"/>
         </scene>
     </scenes>
     <resources>
