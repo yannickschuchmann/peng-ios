@@ -30,7 +30,6 @@
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
-            <string>FuturaExtended</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -409,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="48"/>
+            <point key="canvasLocation" x="1297" y="930"/>
         </scene>
         <!--New Duel View Controller-->
         <scene sceneID="0vg-nN-xTX">
@@ -588,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOj-KV-heB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="794"/>
+            <point key="canvasLocation" x="97" y="1018"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5GC-71-fKC">
@@ -611,43 +610,35 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vc-kU-OXk" userLabel="Edit Profile">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
                                 <rect key="frame" x="0.0" y="84" width="600" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-G2-hDK">
-                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
-                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.50980392156862742" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="3FO-G2-hDK" firstAttribute="leading" secondItem="1Vc-kU-OXk" secondAttribute="leading" constant="40" id="26K-me-0Bs"/>
-                                    <constraint firstAttribute="trailing" secondItem="3FO-G2-hDK" secondAttribute="trailing" constant="40" id="BoL-hb-vFZ"/>
-                                    <constraint firstItem="3FO-G2-hDK" firstAttribute="centerY" secondItem="1Vc-kU-OXk" secondAttribute="centerY" id="Nh4-yu-ht5"/>
-                                    <constraint firstAttribute="height" constant="70" id="WJR-dF-eHY"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qa-QH-uCw" userLabel="Edit Character">
-                                <rect key="frame" x="0.0" y="157" width="600" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDIT CHARACTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-Se-opw">
-                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
-                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="4HK-2W-I2e"/>
-                                    <constraint firstItem="xAZ-Se-opw" firstAttribute="leading" secondItem="0qa-QH-uCw" secondAttribute="leading" constant="40" id="D5Z-Lk-w7a"/>
-                                    <constraint firstAttribute="trailing" secondItem="xAZ-Se-opw" secondAttribute="trailing" constant="40" id="Gou-zQ-dVQ"/>
-                                    <constraint firstItem="xAZ-Se-opw" firstAttribute="centerY" secondItem="0qa-QH-uCw" secondAttribute="centerY" id="a3N-E6-OiH"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="bgk-iN-KaL"/>
+                                    <constraint firstAttribute="height" constant="70" id="n95-UY-umB"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="EDIT PROFILE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ah7-4n-0Wa" kind="show" id="3EA-uP-ZcA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
+                                <rect key="frame" x="0.0" y="157" width="600" height="70"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="JLo-Fp-nD4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="skP-pe-HVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="EDIT CHARACTER">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="247" width="560" height="24"/>
                                 <constraints>
@@ -658,48 +649,27 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8l-ub-q6h" userLabel="Edit Character">
-                                <rect key="frame" x="0.0" y="291" width="600" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2A-Xf-Z9o">
-                                        <rect key="frame" x="40" y="22" width="520" height="25.5"/>
-                                        <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="22"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="q2A-Xf-Z9o" secondAttribute="trailing" constant="40" id="4Qr-e5-ttB"/>
-                                    <constraint firstItem="q2A-Xf-Z9o" firstAttribute="leading" secondItem="p8l-ub-q6h" secondAttribute="leading" constant="40" id="7FB-B7-azD"/>
-                                    <constraint firstAttribute="height" constant="70" id="LCb-VG-BKs"/>
-                                    <constraint firstItem="q2A-Xf-Z9o" firstAttribute="centerY" secondItem="p8l-ub-q6h" secondAttribute="centerY" id="jCa-Yx-vaO"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="1Vc-kU-OXk" firstAttribute="top" secondItem="O4T-IG-yR6" secondAttribute="bottom" constant="20" id="2Ls-xw-y8H"/>
-                            <constraint firstItem="p8l-ub-q6h" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="3dK-5V-H4a"/>
-                            <constraint firstItem="0qa-QH-uCw" firstAttribute="top" secondItem="1Vc-kU-OXk" secondAttribute="bottom" constant="3" id="5zZ-Kq-Tfn"/>
+                            <constraint firstItem="l42-Ht-F3r" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="51t-vj-hGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="l42-Ht-F3r" secondAttribute="trailing" id="6sJ-g3-Vuk"/>
                             <constraint firstItem="O4T-IG-yR6" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="Aub-Ig-iwv"/>
-                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="0qa-QH-uCw" secondAttribute="bottom" constant="20" id="Cct-9m-Fdn"/>
-                            <constraint firstItem="1Vc-kU-OXk" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="Ek1-oQ-cJd"/>
-                            <constraint firstAttribute="trailing" secondItem="p8l-ub-q6h" secondAttribute="trailing" id="EzI-nL-7pb"/>
                             <constraint firstItem="O4T-IG-yR6" firstAttribute="top" secondItem="fXn-ce-Rn4" secondAttribute="bottom" constant="20" id="OXV-0X-lbc"/>
-                            <constraint firstItem="0qa-QH-uCw" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="VnV-5l-NhS"/>
+                            <constraint firstAttribute="trailing" secondItem="pxY-Zn-Dim" secondAttribute="trailing" id="VeX-wC-ixV"/>
                             <constraint firstAttribute="trailing" secondItem="GQR-d2-QNa" secondAttribute="trailing" constant="20" id="XSg-cv-NmA"/>
+                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="pxY-Zn-Dim" secondAttribute="bottom" constant="20" id="Y88-tg-DHv"/>
                             <constraint firstItem="GQR-d2-QNa" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="cTc-En-Uvy"/>
-                            <constraint firstAttribute="trailing" secondItem="1Vc-kU-OXk" secondAttribute="trailing" id="eix-ql-Cqh"/>
-                            <constraint firstItem="p8l-ub-q6h" firstAttribute="top" secondItem="GQR-d2-QNa" secondAttribute="bottom" constant="20" id="jNh-FN-WRR"/>
-                            <constraint firstAttribute="trailing" secondItem="0qa-QH-uCw" secondAttribute="trailing" id="r1n-Vd-ga2"/>
+                            <constraint firstItem="l42-Ht-F3r" firstAttribute="top" secondItem="O4T-IG-yR6" secondAttribute="bottom" constant="20" id="nVg-5q-cxp"/>
                             <constraint firstAttribute="trailing" secondItem="O4T-IG-yR6" secondAttribute="trailing" constant="20" id="ra5-zT-qZ7"/>
+                            <constraint firstItem="pxY-Zn-Dim" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="rav-ju-xvC"/>
+                            <constraint firstItem="pxY-Zn-Dim" firstAttribute="top" secondItem="l42-Ht-F3r" secondAttribute="bottom" constant="3" id="xt9-In-nDS"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEq-N8-UiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2598" y="48"/>
+            <point key="canvasLocation" x="1398" y="48"/>
         </scene>
     </scenes>
     <resources>
