@@ -18,6 +18,9 @@
 		AC84B1751B4C357E0030B0ED /* PengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1741B4C357E0030B0ED /* PengTests.swift */; };
 		AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */; };
 		AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1911B4C56F90030B0ED /* MainViewController.swift */; };
+		ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Extended.ttf"; sourceTree = "<group>"; };
 		AC84B1911B4C56F90030B0ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */,
+				ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,8 @@
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
+				ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */,
+				ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */,
 				AC84B1591B4C357E0030B0ED /* Peng */,
 				AC84B1711B4C357E0030B0ED /* PengTests */,
 				AC84B1581B4C357E0030B0ED /* Products */,
@@ -149,6 +159,7 @@
 		AC84B1831B4C43CF0030B0ED /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				ACC2F61E1BCE6833004BB101 /* Login */,
 				AC63686C1BB47B89002ED083 /* SharedViews */,
 				AC84B1871B4C4BB90030B0ED /* Ranking */,
 				AC84B1861B4C43F10030B0ED /* Profile */,
@@ -207,6 +218,14 @@
 			);
 			name = Fonts;
 			path = Assets/Fonts;
+			sourceTree = "<group>";
+		};
+		ACC2F61E1BCE6833004BB101 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
 				AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
@@ -446,8 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Peng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -460,8 +482,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Peng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
