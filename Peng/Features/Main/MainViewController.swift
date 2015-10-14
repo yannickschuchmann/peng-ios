@@ -12,12 +12,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        let settingsButton = UIBarButtonItem(title: "Settings", style: .Plain, target: self, action: "insertNewObject:")
-        
-        self.navigationItem.rightBarButtonItem = addButton
-        self.navigationItem.leftBarButtonItem = settingsButton
     }
 
     override func didReceiveMemoryWarning() {
