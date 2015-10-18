@@ -9,9 +9,12 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Alamofire
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var loginButton: FBSDKLoginButton!
+    
+    let permissions: [String] = ["public_profile", "email", "user_friends"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +24,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             print("not logged in")
         } else {
             print("logged in")
-            self.performSegueWithIdentifier("loggedIn", sender: self)
+            self.loginWithFacebookCredentials()
         }
         
-        self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        self.loginButton.readPermissions = self.permissions
         
         self.loginButton.delegate = self
         
@@ -34,7 +37,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         if error == nil {
             print("Login complete")
-            self.performSegueWithIdentifier("loggedIn", sender: self)
+            self.loginWithFacebookCredentials()
         } else {
             print(error.localizedDescription)
         }
@@ -43,6 +46,17 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User has logged out..")
+    }
+    
+    func loginWithFacebookCredentials() {
+        API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { responseObject, error in
+            // use responseObject and error here
+            
+            print("responseObject = \(responseObject); error = \(error)")
+            return
+        }
+        
+        self.performSegueWithIdentifier("loggedIn", sender: self)
     }
     
 }

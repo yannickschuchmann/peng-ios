@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC63686E1BB47B89002ED083 /* HeadlineView.xib */; settings = {ASSET_TAGS = (); }; };
+		AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; };
+		AC6540571BD422D5002C2747 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC6540581BD422D5002C2747 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */; };
+		AC6540591BD422D5002C2747 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC65405A1BD422D5002C2747 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E21BD41AA400E73627 /* Alamofire.framework */; };
+		AC65405B1BD422D5002C2747 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E21BD41AA400E73627 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC6FCC051B4DAA7700837119 /* Futura-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */; };
 		AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */; };
 		AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1601B4C357E0030B0ED /* ProfileViewController.swift */; };
@@ -19,6 +25,7 @@
 		AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */; };
 		AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1911B4C56F90030B0ED /* MainViewController.swift */; };
 		AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC9F52E91BD41B5000E73627 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F52E81BD41B5000E73627 /* API.swift */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -41,6 +48,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AC6540571BD422D5002C2747 /* ObjectMapper.framework in Embed Frameworks */,
+				AC65405B1BD422D5002C2747 /* Alamofire.framework in Embed Frameworks */,
+				AC6540591BD422D5002C2747 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +74,10 @@
 		AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Extended.ttf"; sourceTree = "<group>"; };
 		AC84B1911B4C56F90030B0ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Features/Settings/SettingsViewController.swift; sourceTree = "<group>"; };
+		AC9F52E21BD41AA400E73627 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		AC9F52E81BD41B5000E73627 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */,
 				ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */,
 				ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */,
+				AC65405A1BD422D5002C2747 /* Alamofire.framework in Frameworks */,
+				AC6540581BD422D5002C2747 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +119,9 @@
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
+				AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */,
+				AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */,
+				AC9F52E21BD41AA400E73627 /* Alamofire.framework */,
 				ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */,
 				ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */,
 				AC84B1591B4C357E0030B0ED /* Peng */,
@@ -129,6 +149,7 @@
 				AC84B1651B4C357E0030B0ED /* Images.xcassets */,
 				AC84B1671B4C357E0030B0ED /* LaunchScreen.xib */,
 				AC84B15A1B4C357E0030B0ED /* Supporting Files */,
+				AC9F52E81BD41B5000E73627 /* API.swift */,
 			);
 			path = Peng;
 			sourceTree = "<group>";
@@ -342,6 +363,7 @@
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
+				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
 			);
@@ -473,7 +495,10 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Peng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -489,7 +514,10 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Peng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
