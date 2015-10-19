@@ -14,7 +14,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Spinner.show()
     }
 
     override func didReceiveMemoryWarning() {
