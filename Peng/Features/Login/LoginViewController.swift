@@ -49,10 +49,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginWithFacebookCredentials() {
-        API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { responseObject, error in
+        API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { responseObject in
             // use responseObject and error here
             
-            print("responseObject = \(responseObject); error = \(error)")
+            print("responseObject = \(responseObject)")
             return
         }
         
