@@ -12,7 +12,7 @@ import FBSDKLoginKit
 
 class SettingsViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var loginButton: FBSDKLoginButton!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +20,7 @@ class SettingsViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        self.performSegueWithIdentifier("loggedOut", sender: self)
+        self.performSegueWithIdentifier("logOut", sender: self)
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {

@@ -14,6 +14,8 @@ import Alamofire
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var loginButton: FBSDKLoginButton!
     
+    @IBAction func logOut(segue:UIStoryboardSegue) {}
+    
     let permissions: [String] = ["public_profile", "email", "user_friends"]
     
     override func viewDidLoad() {
@@ -52,7 +54,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         Spinner.show()
         API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { (responseObject: User?) in
                 CurrentUser.setUser(responseObject!)
-                self.performSegueWithIdentifier("loggedIn", sender: self)
+                self.performSegueWithIdentifier("logIn", sender: self)
                 Spinner.hide()
                 return
             }

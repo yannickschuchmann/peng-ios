@@ -10,7 +10,7 @@ import UIKit
 
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var nick: UILabel!
     @IBOutlet weak var slogan: UILabel!
     @IBOutlet weak var character: UIImageView!
