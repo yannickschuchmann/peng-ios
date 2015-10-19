@@ -11,10 +11,23 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var nick: UILabel!
+    @IBOutlet weak var slogan: UILabel!
+    @IBOutlet weak var character: UIImageView!
+    @IBOutlet weak var duelsCount: UILabel!
+    @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var friendsCount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+
+        let user : User = CurrentUser.getUser()
+        
+        self.nick.text = user.nick
+        self.slogan.text = user.slogan
+        self.duelsCount.text = String(user.duelsCount!)
+        self.rank.text = String(user.rank!)
+        self.friendsCount.text = String(user.friendsCount!)
     }
 
     override func didReceiveMemoryWarning() {

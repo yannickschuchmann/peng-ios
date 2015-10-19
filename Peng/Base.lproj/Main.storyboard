@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="width" constant="200" id="dS8-ub-VBC"/>
                                 </constraints>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-A9-05y">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-A9-05y">
                                 <rect key="frame" x="60" y="74" width="480" height="386"/>
                             </imageView>
                         </subviews>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="-114" y="-732"/>
         </scene>
-        <!--Main-->
+        <!--Navi-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
-                <navigationController title="Main" id="rS3-R9-Ivy" sceneMemberID="viewController">
+                <navigationController title="Navi" id="rS3-R9-Ivy" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="-808" y="-732"/>
         </scene>
-        <!--PENG-->
+        <!--Main-->
         <scene sceneID="Anx-TT-is3">
             <objects>
-                <viewController id="8de-pf-VIu" customClass="MainViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="8de-pf-VIu" customClass="MainViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C9k-8x-TyO"/>
                         <viewControllerLayoutGuide type="bottom" id="HZR-jN-p7b"/>
@@ -103,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-cu-HOQ" userLabel="Content">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-cu-HOQ" userLabel="Content">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg5-Ns-UNa" userLabel="User">
@@ -344,6 +344,14 @@
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="character" destination="SsO-8F-MZG" id="c2X-yb-akA"/>
+                        <outlet property="duelsCount" destination="wZn-ai-dFJ" id="AEY-xU-ZM1"/>
+                        <outlet property="friendsCount" destination="dom-2b-HpE" id="3KY-dR-mdG"/>
+                        <outlet property="nick" destination="cKQ-FW-JL5" id="Cru-J9-cyn"/>
+                        <outlet property="rank" destination="uCo-S0-hMr" id="Llc-N7-mY9"/>
+                        <outlet property="slogan" destination="gWK-OZ-fRy" id="5rS-m7-2nZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qas-ze-hoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,7 +369,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
                                 <rect key="frame" x="0.0" y="20" width="600" height="282"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Woerner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-ld-lrc">
@@ -413,7 +421,7 @@
                                     <constraint firstItem="c54-8R-UCd" firstAttribute="centerX" secondItem="yIk-wl-oXD" secondAttribute="centerX" id="zUc-CT-tNj"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
                                 <rect key="frame" x="0.0" y="302" width="600" height="150"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -422,7 +430,7 @@
                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                 <state key="normal" title="HERAUSFORDERN"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="462" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
@@ -431,7 +439,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="506" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
@@ -463,10 +471,10 @@
             </objects>
             <point key="canvasLocation" x="-327" y="772"/>
         </scene>
-        <!--New Duel View Controller-->
+        <!--New Duel-->
         <scene sceneID="0vg-nN-xTX">
             <objects>
-                <viewController id="1tG-58-ANH" customClass="NewDuelViewController" customModule="Peng" sceneMemberID="viewController">
+                <viewController title="New Duel" id="1tG-58-ANH" customClass="NewDuelViewController" customModule="Peng" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ASH-sJ-8x2"/>
                         <viewControllerLayoutGuide type="bottom" id="uiO-oA-v91"/>
@@ -475,7 +483,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
                                 <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-XP-RUD" userLabel="Labels">
@@ -540,26 +548,10 @@
                                     <constraint firstItem="bVQ-XP-RUD" firstAttribute="centerY" secondItem="g5o-uh-5mc" secondAttribute="centerY" id="AyD-p6-48g"/>
                                 </constraints>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDD-6D-2PV">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="C9N-FS-yLL"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="0.0"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="NEUES DUELL" id="jed-Ug-XeM">
-                                        <barButtonItem key="backBarButtonItem" title="1" id="BjN-XS-cb9"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
                                 <rect key="frame" x="0.0" y="320" width="600" height="280"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
                                         <rect key="frame" x="150" y="65" width="300" height="151"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="cube_with_hole" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-xs-Gfq">
@@ -629,9 +621,6 @@
                             <constraint firstItem="uiO-oA-v91" firstAttribute="top" secondItem="i6x-Nt-sGg" secondAttribute="bottom" id="CaW-x8-v8m"/>
                             <constraint firstItem="g5o-uh-5mc" firstAttribute="leading" secondItem="8Tq-6j-0s8" secondAttribute="leading" id="Rtz-KX-j2L"/>
                             <constraint firstItem="g5o-uh-5mc" firstAttribute="height" secondItem="8Tq-6j-0s8" secondAttribute="height" multiplier="0.5" id="SkT-Iz-M7S"/>
-                            <constraint firstAttribute="trailing" secondItem="dDD-6D-2PV" secondAttribute="trailing" id="Tuk-OG-mxg"/>
-                            <constraint firstItem="dDD-6D-2PV" firstAttribute="leading" secondItem="8Tq-6j-0s8" secondAttribute="leading" id="ZhH-C4-7za"/>
-                            <constraint firstItem="dDD-6D-2PV" firstAttribute="top" secondItem="8Tq-6j-0s8" secondAttribute="top" id="bFr-vI-YLE"/>
                             <constraint firstItem="i6x-Nt-sGg" firstAttribute="top" secondItem="g5o-uh-5mc" secondAttribute="bottom" id="g8J-NZ-pVC"/>
                             <constraint firstItem="i6x-Nt-sGg" firstAttribute="leading" secondItem="8Tq-6j-0s8" secondAttribute="leading" id="mP6-8z-QHe"/>
                             <constraint firstAttribute="trailing" secondItem="i6x-Nt-sGg" secondAttribute="trailing" id="xom-wo-nOS"/>
@@ -642,10 +631,10 @@
             </objects>
             <point key="canvasLocation" x="1345" y="22"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="5GC-71-fKC">
             <objects>
-                <viewController id="Ncm-1b-MRh" customClass="SettingsViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="Ncm-1b-MRh" customClass="SettingsViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fXn-ce-Rn4"/>
                         <viewControllerLayoutGuide type="bottom" id="fYm-Mq-r0R"/>
@@ -654,7 +643,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="84" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="gXZ-2l-Bkv"/>
@@ -663,7 +652,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
                                 <rect key="frame" x="0.0" y="128" width="600" height="70"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -678,7 +667,7 @@
                                     <segue destination="Ah7-4n-0Wa" kind="show" id="3EA-uP-ZcA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
                                 <rect key="frame" x="0.0" y="201" width="600" height="70"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -692,7 +681,7 @@
                                     <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="291" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="vbo-XO-rxf"/>
@@ -702,7 +691,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="200" y="335" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1YB-2y-MHS"/>
@@ -746,6 +735,6 @@
         <image name="logo" width="796" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KNp-eQ-6rJ"/>
+        <segue reference="OZy-9c-m2q"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -20,7 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         FBSDKLoginButton.init()
-
+        
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        let navBarText : UIColor = UIColor(red: 255/255.0, green: 249/255.0, blue: 238/255.0, alpha: 1)
+        let navBarBackground : UIColor = UIColor(red: 52/255.0, green: 50/255.0, blue: 48/255.0, alpha: 1)
+        
+        UINavigationBar.appearance().translucent = false
+        UINavigationBar.appearance().barTintColor = navBarBackground
+        UINavigationBar.appearance().tintColor = navBarText
+        UIBarButtonItem.appearance().tintColor = navBarText
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: navBarText]
+        UINavigationBar.appearance().backItem?.backBarButtonItem?.tintColor = navBarText
         
         return FBSDKApplicationDelegate.sharedInstance().application(application,
             didFinishLaunchingWithOptions: launchOptions)
