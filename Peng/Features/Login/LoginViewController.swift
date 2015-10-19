@@ -50,7 +50,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginWithFacebookCredentials() {
         Spinner.show()
-        API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { responseObject in
+        API.loginFacebook(FBSDKAccessToken.currentAccessToken().userID, token: FBSDKAccessToken.currentAccessToken().tokenString) { (responseObject: User?) in
+                CurrentUser.setUser(responseObject!)
                 self.performSegueWithIdentifier("loggedIn", sender: self)
                 Spinner.hide()
                 return

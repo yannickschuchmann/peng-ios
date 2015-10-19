@@ -16,6 +16,7 @@
 		AC65405A1BD422D5002C2747 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E21BD41AA400E73627 /* Alamofire.framework */; };
 		AC65405B1BD422D5002C2747 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E21BD41AA400E73627 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65405C1BD4E7F7002C2747 /* Spinner.swift */; settings = {ASSET_TAGS = (); }; };
+		AC6540601BD5164E002C2747 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65405F1BD5164E002C2747 /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6FCC051B4DAA7700837119 /* Futura-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */; };
 		AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */; };
 		AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1601B4C357E0030B0ED /* ProfileViewController.swift */; };
@@ -27,6 +28,7 @@
 		AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1911B4C56F90030B0ED /* MainViewController.swift */; };
 		AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC9F52E91BD41B5000E73627 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F52E81BD41B5000E73627 /* API.swift */; settings = {ASSET_TAGS = (); }; };
+		ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -62,6 +64,7 @@
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC63686E1BB47B89002ED083 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 		AC65405C1BD4E7F7002C2747 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		AC65405F1BD5164E002C2747 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		AC84B1571B4C357E0030B0ED /* Peng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC84B15B1B4C357E0030B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		AC9F52E81BD41B5000E73627 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,14 @@
 			path = Features/SharedViews;
 			sourceTree = "<group>";
 		};
+		AC65405E1BD5163D002C2747 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC65405F1BD5164E002C2747 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +156,7 @@
 		AC84B1591B4C357E0030B0ED /* Peng */ = {
 			isa = PBXGroup;
 			children = (
+				AC65405E1BD5163D002C2747 /* Models */,
 				AC84B18A1B4C4ED20030B0ED /* Assets */,
 				AC84B1831B4C43CF0030B0ED /* Features */,
 				AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */,
@@ -153,6 +166,7 @@
 				AC84B15A1B4C357E0030B0ED /* Supporting Files */,
 				AC9F52E81BD41B5000E73627 /* API.swift */,
 				AC65405C1BD4E7F7002C2747 /* Spinner.swift */,
+				ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */,
 			);
 			path = Peng;
 			sourceTree = "<group>";
@@ -363,12 +377,14 @@
 			files = (
 				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
+				ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */,
 				AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */,
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
+				AC6540601BD5164E002C2747 /* User.swift in Sources */,
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

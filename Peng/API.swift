@@ -8,6 +8,8 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
+import ObjectMapper
 
 
 class API {
@@ -18,11 +20,11 @@ class API {
         return self.host + self.prefix
     }
     
-    class func loginFacebook(uid: String, token: String, completionHandler: (NSDictionary) -> Void) {
+    class func loginFacebook(uid: String, token: String, completionHandler: (User) -> Void) {
         let params = ["uid": uid, "token": token]
         Alamofire.request(.POST, self.getUrl() + "/users/login_facebook", parameters: params)
-            .responseJSON { response in
-                completionHandler(response.result.value as! NSDictionary)
+            .responseObject { (response: User?, error: ErrorType?) -> Void in
+                completionHandler(response!)
         }
     }
 }
