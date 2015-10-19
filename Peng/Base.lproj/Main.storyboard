@@ -103,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-cu-HOQ" userLabel="Content">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-cu-HOQ" userLabel="Content">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg5-Ns-UNa" userLabel="User">
@@ -351,6 +351,7 @@
                         <outlet property="nick" destination="cKQ-FW-JL5" id="Cru-J9-cyn"/>
                         <outlet property="rank" destination="uCo-S0-hMr" id="Llc-N7-mY9"/>
                         <outlet property="slogan" destination="gWK-OZ-fRy" id="5rS-m7-2nZ"/>
+                        <segue destination="Ah7-4n-0Wa" kind="show" identifier="onEmptyNick" id="sRR-XK-3gh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qas-ze-hoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -369,7 +370,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
                                 <rect key="frame" x="0.0" y="20" width="600" height="282"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Woerner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-ld-lrc">
@@ -390,6 +391,9 @@
                                         <state key="normal" title="ändern">
                                             <color key="titleColor" red="0.29019607843137252" green="0.38431372549019605" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onEditProfile:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="d09-1S-OCT"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_bg" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-wl-oXD" userLabel="Image">
                                         <rect key="frame" x="150" y="20" width="300" height="150"/>
@@ -421,7 +425,7 @@
                                     <constraint firstItem="c54-8R-UCd" firstAttribute="centerX" secondItem="yIk-wl-oXD" secondAttribute="centerX" id="zUc-CT-tNj"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
                                 <rect key="frame" x="0.0" y="302" width="600" height="150"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -430,7 +434,7 @@
                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                 <state key="normal" title="HERAUSFORDERN"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="462" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
@@ -439,7 +443,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="506" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
@@ -466,6 +470,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="cra-N8-TIN"/>
+                    <connections>
+                        <outlet property="character" destination="c54-8R-UCd" id="LAe-sZ-VIG"/>
+                        <outlet property="editProfile" destination="Tif-gl-KWg" id="pAV-gn-bP2"/>
+                        <outlet property="nick" destination="0VN-ld-lrc" id="Bef-b3-LyO"/>
+                        <outlet property="slogan" destination="N9m-yX-lfz" id="OjN-jv-CnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,7 +493,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
                                 <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-XP-RUD" userLabel="Labels">
@@ -548,10 +558,10 @@
                                     <constraint firstItem="bVQ-XP-RUD" firstAttribute="centerY" secondItem="g5o-uh-5mc" secondAttribute="centerY" id="AyD-p6-48g"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
                                 <rect key="frame" x="0.0" y="320" width="600" height="280"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
                                         <rect key="frame" x="150" y="65" width="300" height="151"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="cube_with_hole" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-xs-Gfq">
@@ -643,7 +653,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="84" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="gXZ-2l-Bkv"/>
@@ -652,7 +662,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
                                 <rect key="frame" x="0.0" y="128" width="600" height="70"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -667,7 +677,7 @@
                                     <segue destination="Ah7-4n-0Wa" kind="show" id="3EA-uP-ZcA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
                                 <rect key="frame" x="0.0" y="201" width="600" height="70"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -681,7 +691,7 @@
                                     <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                 <rect key="frame" x="20" y="291" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="vbo-XO-rxf"/>
@@ -691,7 +701,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="200" y="335" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1YB-2y-MHS"/>
@@ -735,4 +745,7 @@
         <image name="heart" width="141" height="135"/>
         <image name="logo" width="796" height="796"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sRR-XK-3gh"/>
+    </inferredMetricsTieBreakers>
 </document>

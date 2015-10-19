@@ -23,6 +23,10 @@ class MainViewController: UIViewController {
 
         let user : User = CurrentUser.getUser()
         
+        if (user.nick == "") {
+            self.performSegueWithIdentifier("onEmptyNick", sender: self)
+        }
+        
         self.nick.text = user.nick
         self.slogan.text = user.slogan
         self.duelsCount.text = String(user.duelsCount!)
