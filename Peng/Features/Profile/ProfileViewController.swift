@@ -40,13 +40,16 @@ class ProfileViewController: UIViewController {
         if (isProfileFilled()) {
             self.showEditProfileAlert()
         }
-            
-        self.nick.text = user.nick
-        self.slogan.text = user.slogan
+        
+        user.nick
+            .bindTo(self.nick.bnd_text)
+        user.slogan
+            .bindTo(self.slogan.bnd_text)
+
     }
     
     func isProfileFilled() -> Bool {
-        return self.user.nick == "" || self.user.slogan == ""
+        return self.user.nick.value == "" || self.user.slogan.value == ""
     }
     
     func removeTextFieldObserver() {
@@ -62,7 +65,14 @@ class ProfileViewController: UIViewController {
         let message = ""
         
         self.saveButton = UIAlertAction(title: "Save", style: .Default, handler: { (action) -> Void in
-            print("Ok Button Pressed")
+            self.user.nick.value = self.nickTextField.text!
+            self.user.slogan.value = self.sloganTextField.text!
+            
+            CurrentUser.setUser(self.user)
+
+            API.updateUser(self.user) { (user: User) in
+                print("saved User")
+            }
             self.removeTextFieldObserver()
         })
         
@@ -76,14 +86,14 @@ class ProfileViewController: UIViewController {
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             self.nickTextField = textField
             self.nickTextField?.placeholder = "Nick"
-            self.nickTextField?.text? = self.user.nick!
+            self.nickTextField?.text? = self.user.nick.value
             
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldTextChanged:", name: UITextFieldTextDidChangeNotification, object: textField)
         }
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             self.sloganTextField = textField
             self.sloganTextField?.placeholder = "Slogan"
-            self.sloganTextField?.text? = self.user.slogan!
+            self.sloganTextField?.text? = self.user.slogan.value
             
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldTextChanged:", name: UITextFieldTextDidChangeNotification, object: textField)
         }

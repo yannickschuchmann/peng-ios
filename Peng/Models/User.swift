@@ -8,17 +8,18 @@
 
 import Foundation
 import ObjectMapper
+import Bond
 
 class User: Mappable {
-    var id: Int?
-    var nick: String?
-    var slogan: String?
-    var duelsCount: Int?
-    var friendsCount: Int?
-    var rank: Int?
-    var characterId: Int?
-    var characterOrder: Int?
-    var characterName: String?
+    var id: Observable<Int> = Observable(0)
+    var nick: Observable<String> = Observable("")
+    var slogan: Observable<String> = Observable("")
+    var duelsCount: Observable<Int> = Observable(0)
+    var friendsCount: Observable<Int> = Observable(0)
+    var rank: Observable<Int> = Observable(0)
+    var characterId: Observable<Int> = Observable(0)
+    var characterOrder: Observable<Int> = Observable(0)
+    var characterName: Observable<String> = Observable("")
     
     required init?(_ map: Map){
         
@@ -29,14 +30,14 @@ class User: Mappable {
     }
         
     func mapping(map: Map) {
-        id <- map["id"]
-        nick <- map["nick"]
-        slogan <- map["slogan"]
-        duelsCount <- map["duels_count"]
-        friendsCount <- map["friends_count"]
-        rank <- map["rank"]
-        characterId <- map["character_id"]
-        characterOrder <- map["character_order"]
-        characterName <- map["character_name"]
+        id.value <- map["id"]
+        slogan.value <- map["slogan"]
+        duelsCount.value <- map["duels_count"]
+        friendsCount.value <- map["friends_count"]
+        rank.value <- map["rank"]
+        characterId.value <- map["character_id"]
+        characterOrder.value <- map["character_order"]
+        characterName.value <- map["character_name"]
+        nick.value <- map["nick"]
     }
 }

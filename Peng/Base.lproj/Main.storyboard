@@ -370,8 +370,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
-                                <rect key="frame" x="0.0" y="20" width="600" height="282"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
+                                <rect key="frame" x="0.0" y="64" width="600" height="282"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Woerner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-ld-lrc">
                                         <rect key="frame" x="0.5" y="190" width="600" height="28"/>
@@ -425,8 +425,8 @@
                                     <constraint firstItem="c54-8R-UCd" firstAttribute="centerX" secondItem="yIk-wl-oXD" secondAttribute="centerX" id="zUc-CT-tNj"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
-                                <rect key="frame" x="0.0" y="302" width="600" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
+                                <rect key="frame" x="0.0" y="346" width="600" height="150"/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="sfa-2L-LV2"/>
@@ -434,8 +434,8 @@
                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                 <state key="normal" title="HERAUSFORDERN"/>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="462" width="560" height="24"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="506" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
                                 </constraints>
@@ -443,8 +443,8 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTIK"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="506" width="560" height="24"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="550" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
                                 </constraints>
@@ -493,11 +493,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
-                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
+                                <rect key="frame" x="0.0" y="64" width="600" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-XP-RUD" userLabel="Labels">
-                                        <rect key="frame" x="150" y="74.5" width="300" height="151"/>
+                                        <rect key="frame" x="150" y="74" width="300" height="151"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-a1-2sR">
                                                 <rect key="frame" x="10" y="38" width="79" height="75.5"/>
@@ -506,7 +506,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmu-iV-VZG" userLabel="line">
-                                                <rect key="frame" x="48" y="112.5" width="242" height="2"/>
+                                                <rect key="frame" x="48" y="112" width="242" height="2"/>
                                                 <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="eft-gj-NqV"/>
@@ -522,7 +522,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FREUNDE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t7-wx-39z" userLabel="Freunde">
-                                                <rect key="frame" x="99" y="57.5" width="121.5" height="33.5"/>
+                                                <rect key="frame" x="99" y="57" width="121.5" height="33.5"/>
                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="29"/>
                                                 <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -558,11 +558,11 @@
                                     <constraint firstItem="bVQ-XP-RUD" firstAttribute="centerY" secondItem="g5o-uh-5mc" secondAttribute="centerY" id="AyD-p6-48g"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
-                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
+                                <rect key="frame" x="0.0" y="364" width="600" height="236"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
-                                        <rect key="frame" x="150" y="65" width="300" height="151"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-ec-zVh" userLabel="Labels">
+                                        <rect key="frame" x="150" y="42.5" width="300" height="151"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="cube_with_hole" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-xs-Gfq">
                                                 <rect key="frame" x="10" y="38" width="79" height="75.5"/>
@@ -571,7 +571,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-Wj-obh" userLabel="line">
-                                                <rect key="frame" x="50.5" y="112.5" width="239.5" height="2"/>
+                                                <rect key="frame" x="50" y="112" width="239.5" height="2"/>
                                                 <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="k5H-5Z-dxl"/>

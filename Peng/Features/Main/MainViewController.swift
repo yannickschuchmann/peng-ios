@@ -20,18 +20,25 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         let user : User = CurrentUser.getUser()
         
-        if (user.nick == "") {
+        if (user.nick.value == "") {
             self.performSegueWithIdentifier("onEmptyNick", sender: self)
         }
         
-        self.nick.text = user.nick
-        self.slogan.text = user.slogan
-        self.duelsCount.text = String(user.duelsCount!)
-        self.rank.text = String(user.rank!)
-        self.friendsCount.text = String(user.friendsCount!)
+        user.nick
+            .bindTo(self.nick.bnd_text)
+        user.slogan
+            .bindTo(self.slogan.bnd_text)
+        user.duelsCount
+            .map { "\($0)" }
+            .bindTo(self.duelsCount.bnd_text)
+        user.rank
+            .map { "\($0)" }
+            .bindTo(self.rank.bnd_text)
+        user.friendsCount
+            .map { "\($0)" }
+            .bindTo(self.friendsCount.bnd_text)
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4FF5C81BD6618600695EE0 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF5C71BD6618600695EE0 /* Bond.framework */; };
+		AC4FF5C91BD6618600695EE0 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF5C71BD6618600695EE0 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC63686E1BB47B89002ED083 /* HeadlineView.xib */; settings = {ASSET_TAGS = (); }; };
 		AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; };
@@ -52,6 +54,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC6540571BD422D5002C2747 /* ObjectMapper.framework in Embed Frameworks */,
+				AC4FF5C91BD6618600695EE0 /* Bond.framework in Embed Frameworks */,
 				AC65405B1BD422D5002C2747 /* Alamofire.framework in Embed Frameworks */,
 				AC6540591BD422D5002C2747 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 			);
@@ -61,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC4FF5C71BD6618600695EE0 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC63686E1BB47B89002ED083 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 		AC65405C1BD4E7F7002C2747 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */,
 				ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */,
 				ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */,
+				AC4FF5C81BD6618600695EE0 /* Bond.framework in Frameworks */,
 				AC65405A1BD422D5002C2747 /* Alamofire.framework in Frameworks */,
 				AC6540581BD422D5002C2747 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
@@ -133,6 +138,7 @@
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
+				AC4FF5C71BD6618600695EE0 /* Bond.framework */,
 				AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */,
 				AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */,
 				AC9F52E21BD41AA400E73627 /* Alamofire.framework */,

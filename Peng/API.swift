@@ -13,7 +13,7 @@ import ObjectMapper
 
 
 class API {
-    static let host: String = "http://furfm.de"
+    static let host: String = "http://192.168.1.136:3000"
     static let prefix: String = "/api/v1"
     
     class func getUrl() -> String {
@@ -27,4 +27,16 @@ class API {
                 completionHandler(response!)
         }
     }
+    
+    class func updateUser(user: User, completionHandler: (User) -> Void) {
+        let params = ["nick": user.nick.value, "slogan": user.slogan.value]
+        Alamofire.request(.PUT, self.getUrl() + "/users/" + String(user.id.value), parameters: params)
+            .responseObject { (response: User?, error: ErrorType?) -> Void in
+                print(error.debugDescription)
+                if (error == nil) {
+                    completionHandler(response!)
+                }
+        }
+    }
+    
 }
