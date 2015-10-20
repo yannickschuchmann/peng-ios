@@ -45,7 +45,9 @@ class ProfileViewController: UIViewController {
             .bindTo(self.nick.bnd_text)
         user.slogan
             .bindTo(self.slogan.bnd_text)
-
+        user.characterName.observe { name in
+            self.character.image = UIImage(named: "character_" + name)
+        }
     }
     
     func isProfileFilled() -> Bool {

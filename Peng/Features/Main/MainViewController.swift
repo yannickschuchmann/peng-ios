@@ -39,6 +39,11 @@ class MainViewController: UIViewController {
         user.friendsCount
             .map { "\($0)" }
             .bindTo(self.friendsCount.bnd_text)
+        
+        user.characterName.observe { name in
+            self.character.image = UIImage(named: "character_" + name)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,10 +15,14 @@ class CharacterChangeItemController: UIViewController {
     var character: Character = Character() // ***
     
     @IBOutlet weak var characterName: UILabel!
+    @IBOutlet weak var characterImage: UIImageView!
+    @IBOutlet weak var characterDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.characterName.text = character.name.value
+        self.characterDescription.text = character.description.value
+        self.characterImage.image = UIImage(named: "character_" + character.name.value) 
     }
 }

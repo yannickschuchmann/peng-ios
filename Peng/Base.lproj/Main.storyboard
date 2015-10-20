@@ -31,6 +31,8 @@
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -700,20 +702,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEH-Nm-qvH">
-                                <rect key="frame" x="279" y="290" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arzt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEH-Nm-qvH">
+                                <rect key="frame" x="270" y="253" width="59.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="33"/>
                                 <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB1-Q3-rOk" userLabel="Description">
+                                <rect key="frame" x="60" y="311.5" width="480" height="80"/>
+                                <string key="text">„Seit er aufgrund einer Masern-Epidemie für vogelfrei erklärt wurde, verschrieb er sich eher unfreiwillig dem Kampf auf Leben und Tod.“</string>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="circle_bright" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-W5-bcq">
+                                <rect key="frame" x="215" y="63" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="2aU-ka-2sV"/>
+                                    <constraint firstAttribute="width" constant="170" id="9jJ-kt-i7h"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="character_amerindian" translatesAutoresizingMaskIntoConstraints="NO" id="gfG-wV-iDK">
+                                <rect key="frame" x="215" y="73" width="170" height="160"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="MgS-b3-jHQ">
+                                <rect key="frame" x="390" y="131" width="37" height="34"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="ikR-In-lgU">
+                                <rect key="frame" x="173" y="131.5" width="37" height="34"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="XEH-Nm-qvH" firstAttribute="centerY" secondItem="Vo1-s9-xNN" secondAttribute="centerY" id="Ifu-tK-h4n"/>
+                            <constraint firstItem="8dU-W5-bcq" firstAttribute="top" secondItem="wz3-dw-k5Y" secondAttribute="bottom" constant="43" id="4Bt-3T-ZdB"/>
+                            <constraint firstItem="gfG-wV-iDK" firstAttribute="width" secondItem="8dU-W5-bcq" secondAttribute="width" id="6fM-ln-8Zs"/>
+                            <constraint firstItem="gfG-wV-iDK" firstAttribute="centerX" secondItem="8dU-W5-bcq" secondAttribute="centerX" id="8Ke-bA-b86"/>
+                            <constraint firstItem="MgS-b3-jHQ" firstAttribute="height" secondItem="8dU-W5-bcq" secondAttribute="height" multiplier="1/5" id="E6e-yy-6rE"/>
+                            <constraint firstItem="MgS-b3-jHQ" firstAttribute="centerY" secondItem="8dU-W5-bcq" secondAttribute="centerY" id="F8d-nI-PO2"/>
+                            <constraint firstItem="ikR-In-lgU" firstAttribute="centerY" secondItem="8dU-W5-bcq" secondAttribute="centerY" id="Jtp-kx-Jc2"/>
+                            <constraint firstItem="XEH-Nm-qvH" firstAttribute="top" secondItem="8dU-W5-bcq" secondAttribute="bottom" constant="20" id="OsO-bd-WOO"/>
+                            <constraint firstItem="8dU-W5-bcq" firstAttribute="centerX" secondItem="Vo1-s9-xNN" secondAttribute="centerX" id="Tgz-IT-dw4"/>
+                            <constraint firstItem="gfG-wV-iDK" firstAttribute="height" secondItem="8dU-W5-bcq" secondAttribute="height" constant="-10" id="ThF-gX-16E"/>
                             <constraint firstItem="XEH-Nm-qvH" firstAttribute="centerX" secondItem="Vo1-s9-xNN" secondAttribute="centerX" id="Vjf-Xy-TgZ"/>
+                            <constraint firstItem="ikR-In-lgU" firstAttribute="height" secondItem="8dU-W5-bcq" secondAttribute="height" multiplier="1/5" id="Wd0-Po-eI4"/>
+                            <constraint firstItem="pB1-Q3-rOk" firstAttribute="top" secondItem="XEH-Nm-qvH" secondAttribute="bottom" constant="20" id="aKz-eB-959"/>
+                            <constraint firstItem="ikR-In-lgU" firstAttribute="trailing" secondItem="8dU-W5-bcq" secondAttribute="leading" constant="-5" id="aea-Z1-KqK"/>
+                            <constraint firstItem="pB1-Q3-rOk" firstAttribute="centerX" secondItem="Vo1-s9-xNN" secondAttribute="centerX" id="g7u-6q-u4j"/>
+                            <constraint firstItem="MgS-b3-jHQ" firstAttribute="leading" secondItem="8dU-W5-bcq" secondAttribute="trailing" constant="5" id="gNS-Os-6LQ"/>
+                            <constraint firstItem="gfG-wV-iDK" firstAttribute="bottom" secondItem="8dU-W5-bcq" secondAttribute="bottom" id="j0O-lS-XMj"/>
+                            <constraint firstItem="pB1-Q3-rOk" firstAttribute="width" secondItem="Vo1-s9-xNN" secondAttribute="width" multiplier="0.8" id="kHn-Ip-IAb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="characterDescription" destination="pB1-Q3-rOk" id="YFk-P6-lsl"/>
+                        <outlet property="characterImage" destination="gfG-wV-iDK" id="T2T-He-5Wh"/>
                         <outlet property="characterName" destination="XEH-Nm-qvH" id="ezr-f6-cW3"/>
                     </connections>
                 </viewController>
@@ -822,8 +864,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow_left" width="37" height="43"/>
+        <image name="arrow_right" width="37" height="42"/>
+        <image name="character_amerindian" width="400" height="458"/>
         <image name="character_cowboy" width="400" height="458"/>
         <image name="circle_bg" width="300" height="300"/>
+        <image name="circle_bright" width="247" height="246"/>
         <image name="cube_with_hole" width="135" height="135"/>
         <image name="heart" width="141" height="135"/>
         <image name="logo" width="796" height="796"/>
