@@ -13,6 +13,7 @@
 		AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC63686E1BB47B89002ED083 /* HeadlineView.xib */; settings = {ASSET_TAGS = (); }; };
+		AC651E851BD6A717007B1422 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC651E841BD6A717007B1422 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; };
 		AC6540571BD422D5002C2747 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC6540581BD422D5002C2747 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E41BD41AA700E73627 /* AlamofireObjectMapper.framework */; };
@@ -71,6 +72,7 @@
 		AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeViewController.swift; path = CharacterChange/CharacterChangeViewController.swift; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC63686E1BB47B89002ED083 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
+		AC651E841BD6A717007B1422 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		AC65405C1BD4E7F7002C2747 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		AC65405F1BD5164E002C2747 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		AC84B1571B4C357E0030B0ED /* Peng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peng.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				AC65405F1BD5164E002C2747 /* User.swift */,
+				AC651E841BD6A717007B1422 /* Character.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
+				AC651E851BD6A717007B1422 /* Character.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
 				AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */,
 				AC6540601BD5164E002C2747 /* User.swift in Sources */,

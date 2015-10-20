@@ -15,13 +15,19 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
     @IBOutlet weak var saveButton: UIButton!
     
     // Initialize it right away here
-    private let characters = ["medic", "spasti", "fufeli", "hippie"];
+    private var characters = [];
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        createPageViewController()
-        setupPageControl()
+        
+        Spinner.show()
+        API.getCharacters() { response in
+            self.characters = response
+            self.createPageViewController()
+            self.setupPageControl()
+            Spinner.hide()
+        }
     }
     
     private func createPageViewController() {
@@ -83,7 +89,7 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
         if itemIndex < characters.count {
             let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("CharacterChangeItemController") as! CharacterChangeItemController
             pageItemController.itemIndex = itemIndex
-            pageItemController.character = characters[itemIndex]
+            pageItemController.character = characters[itemIndex] as! Character
             return pageItemController
         }
         

@@ -12,13 +12,13 @@ import UIKit
 
 class CharacterChangeItemController: UIViewController {
     var itemIndex: Int = 0 // ***
-    var character: String = ""  // ***
+    var character: Character = Character() // ***
     
     @IBOutlet weak var characterName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.characterName.text = character
+        self.characterName.text = character.name.value
     }
 }
