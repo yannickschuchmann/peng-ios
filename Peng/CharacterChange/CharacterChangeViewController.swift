@@ -9,13 +9,20 @@
 import Foundation
 import UIKit
 
-class CharacterChangeViewController: UIViewController, UIPageViewControllerDataSource {
+class CharacterChangeViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBAction func onSaveCharacter(sender: UIButton) {
+//        Spinner.show()
+        
+        print(self.currentIndex)
+        
+    }
     // Initialize it right away here
     private var characters = [];
+    private var currentIndex = 0;
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -33,7 +40,9 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
     private func createPageViewController() {
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("CharacterChangeViewController") as! UIPageViewController
+
         pageController.dataSource = self
+        pageController.delegate = self
         
         if characters.count > 0 {
             let firstController = getItemController(0)!
@@ -60,6 +69,12 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
         appearance.backgroundColor = bgRed
     }
     
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool){
+        let pageContentViewController = pageViewController.viewControllers![0] as! CharacterChangeItemController
+        self.currentIndex = pageContentViewController.itemIndex
+
+    }
+    
     // MARK: - UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -67,7 +82,7 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
         let itemController = viewController as! CharacterChangeItemController
         
         if itemController.itemIndex > 0 {
-            return getItemController(itemController.itemIndex-1)
+            return getItemController(itemController.itemIndex - 1)
         }
         
         return nil
@@ -77,8 +92,8 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
         
         let itemController = viewController as! CharacterChangeItemController
         
-        if itemController.itemIndex+1 < characters.count {
-            return getItemController(itemController.itemIndex+1)
+        if itemController.itemIndex + 1 < characters.count {
+            return getItemController(itemController.itemIndex + 1)
         }
         
         return nil

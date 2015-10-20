@@ -115,6 +115,9 @@
                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="19"/>
                                 <color key="tintColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="onSaveCharacter:" destination="gZp-84-xdF" eventType="touchUpInside" id="Rod-Ew-Mxp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,6 +129,7 @@
                     </view>
                     <connections>
                         <outlet property="saveButton" destination="HBD-bd-m6Y" id="Tth-Oy-oEF"/>
+                        <segue destination="tQU-48-oLt" kind="unwind" identifier="savedCharacter" unwindAction="savedCharacter:" id="1US-TF-UD9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdq-76-YAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
