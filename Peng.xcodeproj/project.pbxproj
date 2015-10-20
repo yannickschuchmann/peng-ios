@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC4FF5C81BD6618600695EE0 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF5C71BD6618600695EE0 /* Bond.framework */; };
 		AC4FF5C91BD6618600695EE0 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4FF5C71BD6618600695EE0 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC63686E1BB47B89002ED083 /* HeadlineView.xib */; settings = {ASSET_TAGS = (); }; };
 		AC6540561BD422D5002C2747 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9F52E61BD41AAC00E73627 /* ObjectMapper.framework */; };
@@ -65,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		AC4FF5C71BD6618600695EE0 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
+		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
+		AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeViewController.swift; path = CharacterChange/CharacterChangeViewController.swift; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC63686E1BB47B89002ED083 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 		AC65405C1BD4E7F7002C2747 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6363BA1BD67152007206E4 /* CharacterChange */ = {
+			isa = PBXGroup;
+			children = (
+				AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */,
+				AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */,
+			);
+			name = CharacterChange;
+			sourceTree = "<group>";
+		};
 		AC63686C1BB47B89002ED083 /* SharedViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +224,7 @@
 				AC84B1861B4C43F10030B0ED /* Profile */,
 				AC84B1851B4C43E50030B0ED /* Settings */,
 				AC84B1841B4C43DB0030B0ED /* Main */,
+				AC6363BA1BD67152007206E4 /* CharacterChange */,
 			);
 			name = Features;
 			sourceTree = "<group>";
@@ -385,11 +399,13 @@
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
 				ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */,
 				AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */,
+				AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */,
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
+				AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */,
 				AC6540601BD5164E002C2747 /* User.swift in Sources */,
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
 			);

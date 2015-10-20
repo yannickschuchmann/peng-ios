@@ -36,7 +36,7 @@ class ProfileViewController: UIViewController {
     }
 
     func configureView() {
-            
+        
         if (isProfileFilled()) {
             self.showEditProfileAlert()
         }
