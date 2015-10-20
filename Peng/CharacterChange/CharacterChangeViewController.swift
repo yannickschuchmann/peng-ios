@@ -15,9 +15,16 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
     @IBOutlet weak var saveButton: UIButton!
     
     @IBAction func onSaveCharacter(sender: UIButton) {
-//        Spinner.show()
+        Spinner.show()
+        let user : User = CurrentUser.getUser()
+        let character : Character = self.characters[self.currentIndex] as! Character
+        user.characterId.value = character.id.value
+        print(character.name.value)
+        API.updateUser(user) { user in
+            Spinner.hide()
+            self.performSegueWithIdentifier("savedCharacter", sender: self)
+        }
         
-        print(self.currentIndex)
         
     }
     // Initialize it right away here

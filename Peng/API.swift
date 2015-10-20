@@ -29,7 +29,7 @@ class API {
     }
     
     class func updateUser(user: User, completionHandler: (User) -> Void) {
-        let params = ["nick": user.nick.value, "slogan": user.slogan.value]
+        let params = ["nick": user.nick.value, "slogan": user.slogan.value, "character_id": String(user.characterId.value)]
         Alamofire.request(.PUT, self.getUrl() + "/users/" + String(user.id.value), parameters: params)
             .responseObject { (response: User?, error: ErrorType?) -> Void in
                 print(error.debugDescription)
