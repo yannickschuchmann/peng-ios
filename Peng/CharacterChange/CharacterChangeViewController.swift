@@ -19,7 +19,8 @@ class CharacterChangeViewController: UIViewController, UIPageViewControllerDataS
         let user : User = CurrentUser.getUser()
         let character : Character = self.characters[self.currentIndex] as! Character
         user.characterId.value = character.id.value
-        print(character.name.value)
+        user.characterName.value = character.name.value
+
         API.updateUser(user) { user in
             Spinner.hide()
             self.performSegueWithIdentifier("savedCharacter", sender: self)
