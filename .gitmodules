@@ -1,0 +1,12 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "AlamofireObjectMapper"]
+	path = AlamofireObjectMapper
+	url = git@github.com:tristanhimmelman/AlamofireObjectMapper.git
+[submodule "Bond"]
+	path = Bond
+	url = git@github.com:SwiftBond/Bond.git
+[submodule "ObjectMapper"]
+	path = ObjectMapper
+	url = https://github.com/Hearst-DD/ObjectMapper.git
