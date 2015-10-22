@@ -14,6 +14,7 @@ class SettingsViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var loginButton: FBSDKLoginButton!
     
     @IBAction func savedCharacter(segue: UIStoryboardSegue) {}
+    @IBAction func skipHowTo(segue: UIStoryboardSegue) {}
     
     override func viewDidLoad() {
         super.viewDidLoad()

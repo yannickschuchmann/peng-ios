@@ -33,6 +33,8 @@
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
+            <string>FuturaExtended</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -403,6 +405,88 @@
             </objects>
             <point key="canvasLocation" x="453" y="41"/>
         </scene>
+        <!--How To-->
+        <scene sceneID="47z-Ye-4L0">
+            <objects>
+                <viewController title="How To" id="Q2u-18-tjF" customClass="HowToViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dJ-OY-jMg"/>
+                        <viewControllerLayoutGuide type="bottom" id="d1C-Y2-uyD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGT-Pz-pWz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-hv-jnV">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f85-Pn-0qU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="19"/>
+                                <color key="tintColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SKIP"/>
+                                <connections>
+                                    <action selector="onSaveCharacter:" destination="gZp-84-xdF" eventType="touchUpInside" id="mDA-Mi-gb4"/>
+                                    <action selector="onSkip:" destination="Q2u-18-tjF" eventType="touchUpInside" id="MBc-m8-wqO"/>
+                                    <segue destination="tQU-48-oLt" kind="unwind" identifier="skipHowTo" unwindAction="skipHowTo:" id="aJd-8l-RU7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fCg-hv-jnV" secondAttribute="trailing" id="2aR-XO-8YF"/>
+                            <constraint firstItem="fCg-hv-jnV" firstAttribute="leading" secondItem="cGT-Pz-pWz" secondAttribute="leading" id="NqK-F7-aFd"/>
+                            <constraint firstItem="d1C-Y2-uyD" firstAttribute="top" secondItem="fCg-hv-jnV" secondAttribute="bottom" id="uNe-GZ-Ubd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="skipButton" destination="fCg-hv-jnV" id="V4K-yr-DoJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RoK-bW-biG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="835"/>
+        </scene>
+        <!--HowToViewController-->
+        <scene sceneID="NhD-bH-3lg">
+            <objects>
+                <pageViewController storyboardIdentifier="HowToViewController" autoresizesArchivedViewToFullSize="NO" title="HowToViewController" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="QXC-zm-5IP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jr-ih-fzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="1477"/>
+        </scene>
+        <!--How To Item-->
+        <scene sceneID="pba-kO-fl0">
+            <objects>
+                <viewController storyboardIdentifier="HowToItemController" title="How To Item" id="WSl-n4-pMQ" customClass="HowToItemController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gm8-7o-JYl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSO-N2-W9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gzf-Ih-HVX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="HowToItemController" image="how_to-dummy" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-xv-LvN">
+                                <rect key="frame" x="2" y="10" width="596" height="590"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZSO-N2-W9Z" firstAttribute="top" secondItem="ax1-xv-LvN" secondAttribute="bottom" id="75y-pb-t8h"/>
+                            <constraint firstItem="ax1-xv-LvN" firstAttribute="centerX" secondItem="Gzf-Ih-HVX" secondAttribute="centerX" id="dhk-wQ-W8a"/>
+                            <constraint firstItem="ax1-xv-LvN" firstAttribute="top" secondItem="Gzf-Ih-HVX" secondAttribute="top" constant="10" id="dna-al-dWo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="howToImage" destination="ax1-xv-LvN" id="hMa-N4-bin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHu-tk-8X7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="2171"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
@@ -524,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-293" y="944"/>
+            <point key="canvasLocation" x="453" y="772"/>
         </scene>
         <!--New Duel-->
         <scene sceneID="0vg-nN-xTX">
@@ -692,7 +776,7 @@
                 <pageViewController storyboardIdentifier="CharacterChangeViewController" autoresizesArchivedViewToFullSize="NO" title="Character Change" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Mlk-Mq-m2L" userLabel="CharacterChange" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyj-ml-pps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1736" y="-55"/>
+            <point key="canvasLocation" x="-1020" y="1477"/>
         </scene>
         <!--Character Change Item Controller-->
         <scene sceneID="YzB-9u-kzY">
@@ -765,7 +849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39V-lX-Yb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1736" y="625"/>
+            <point key="canvasLocation" x="-1020" y="2157"/>
         </scene>
         <!--Settings-->
         <scene sceneID="5GC-71-fKC">
@@ -786,6 +870,15 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-J9-orO" userLabel="HowTo View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                <rect key="frame" x="20" y="291" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="gqH-iM-ndY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="HOW TO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
@@ -820,8 +913,25 @@
                                     <segue destination="gZp-84-xdF" kind="show" id="uvx-hN-8QG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xw-bB-nH8" userLabel="HOW TO">
+                                <rect key="frame" x="0.0" y="335" width="600" height="70"/>
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="JSh-W3-J0J"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="kaA-tm-spr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="TUTORIAL">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q2u-18-tjF" kind="show" id="0GN-xv-TCW"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="291" width="560" height="24"/>
+                                <rect key="frame" x="20" y="425" width="560" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="vbo-XO-rxf"/>
                                     <constraint firstAttribute="height" constant="24" id="ydJ-Yz-AOR"/>
@@ -831,7 +941,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="200" y="335" width="200" height="50"/>
+                                <rect key="frame" x="200" y="469" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1YB-2y-MHS"/>
                                     <constraint firstAttribute="width" constant="200" id="YYt-Uh-LvQ"/>
@@ -840,15 +950,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="8xw-bB-nH8" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="0CT-p4-vw2"/>
                             <constraint firstItem="l42-Ht-F3r" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="51t-vj-hGQ"/>
                             <constraint firstAttribute="trailing" secondItem="l42-Ht-F3r" secondAttribute="trailing" id="6sJ-g3-Vuk"/>
                             <constraint firstItem="O4T-IG-yR6" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="Aub-Ig-iwv"/>
+                            <constraint firstItem="HhD-J9-orO" firstAttribute="top" secondItem="pxY-Zn-Dim" secondAttribute="bottom" constant="20" id="F9q-Po-9JO"/>
+                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="8xw-bB-nH8" secondAttribute="bottom" constant="20" id="FqK-MZ-PCP"/>
+                            <constraint firstAttribute="trailing" secondItem="8xw-bB-nH8" secondAttribute="trailing" id="GcN-Et-a9h"/>
+                            <constraint firstAttribute="leading" secondItem="HhD-J9-orO" secondAttribute="leading" constant="-20" id="Jlt-Dv-Lj2"/>
                             <constraint firstItem="O4T-IG-yR6" firstAttribute="top" secondItem="fXn-ce-Rn4" secondAttribute="bottom" constant="20" id="OXV-0X-lbc"/>
+                            <constraint firstItem="8xw-bB-nH8" firstAttribute="top" secondItem="HhD-J9-orO" secondAttribute="bottom" constant="20" id="POW-bW-bVe"/>
                             <constraint firstAttribute="trailing" secondItem="pxY-Zn-Dim" secondAttribute="trailing" id="VeX-wC-ixV"/>
                             <constraint firstAttribute="trailing" secondItem="GQR-d2-QNa" secondAttribute="trailing" constant="20" id="XSg-cv-NmA"/>
                             <constraint firstItem="Gne-SX-A9v" firstAttribute="centerX" secondItem="gNA-DJ-tSl" secondAttribute="centerX" id="Xlj-i5-KTa"/>
-                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="pxY-Zn-Dim" secondAttribute="bottom" constant="20" id="Y88-tg-DHv"/>
                             <constraint firstItem="GQR-d2-QNa" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="cTc-En-Uvy"/>
+                            <constraint firstAttribute="trailing" secondItem="HhD-J9-orO" secondAttribute="trailing" constant="20" id="kfo-5d-gtG"/>
                             <constraint firstItem="l42-Ht-F3r" firstAttribute="top" secondItem="O4T-IG-yR6" secondAttribute="bottom" constant="20" id="nVg-5q-cxp"/>
                             <constraint firstAttribute="trailing" secondItem="O4T-IG-yR6" secondAttribute="trailing" constant="20" id="ra5-zT-qZ7"/>
                             <constraint firstItem="pxY-Zn-Dim" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="rav-ju-xvC"/>
@@ -876,9 +992,10 @@
         <image name="circle_bright" width="247" height="246"/>
         <image name="cube_with_hole" width="135" height="135"/>
         <image name="heart" width="141" height="135"/>
+        <image name="how_to-dummy" width="596" height="1007"/>
         <image name="logo" width="796" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sRR-XK-3gh"/>
+        <segue reference="3EA-uP-ZcA"/>
     </inferredMetricsTieBreakers>
 </document>

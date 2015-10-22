@@ -11,8 +11,8 @@ import Foundation
 import UIKit
 
 class CharacterChangeItemController: UIViewController {
-    var itemIndex: Int = 0 // ***
-    var character: Character = Character() // ***
+    var itemIndex: Int = 0
+    var character: Character = Character()
     
     @IBOutlet weak var characterName: UILabel!
     @IBOutlet weak var characterImage: UIImageView!
