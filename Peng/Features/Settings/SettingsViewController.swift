@@ -24,7 +24,7 @@ class SettingsViewController: UIViewController, FBSDKLoginButtonDelegate {
             let versionCode = (items[0]["metadata"] as! NSDictionary)["bundle-version"] as? String
             let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String
             
-            if (version! == versionCode!) {
+            if (version! != versionCode!) {
                 let alertController = UIAlertController(title: "New version", message: "We recommend updating to new version.", preferredStyle: .ActionSheet)
 
                 let updateAction = UIAlertAction(title: "Update", style: .Default) {(alert: UIAlertAction!) in
