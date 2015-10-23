@@ -15,6 +15,7 @@ import ObjectMapper
 class API {
     static let host: String = "http://api.peng.furfm.de"
     static let prefix: String = "/api/v1"
+    static let updatePath: String = "https://peng.furfm.de/ios/update"
     
     class func getUrl() -> String {
         return self.host + self.prefix
@@ -56,6 +57,14 @@ class API {
                 if (error == nil) {
                     completionHandler(response!)
                 }
+        }
+    }
+    
+    class func getAppManifest(completionHandler: (AnyObject) -> Void) {
+        Alamofire.request(.GET, "https://peng.furfm.de/ios/manifest.plist")
+            .responsePropertyList { (response) in
+                completionHandler(response.result.value!)
+            
         }
     }
     
