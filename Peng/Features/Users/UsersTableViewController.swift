@@ -46,4 +46,17 @@ class UsersTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showProfile", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showProfile" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let profileViewController = segue.destinationViewController as! ProfileViewController
+                profileViewController.passedUser = users[indexPath.row]
+            }
+        }
+    }
 }

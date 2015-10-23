@@ -224,13 +224,13 @@
                                                                     <constraint firstAttribute="width" constant="2" id="5EE-TH-IGg"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
                                                                 <rect key="frame" x="78.5" y="10" width="43.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
                                                                 <rect key="frame" x="82.5" y="35" width="35" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -257,13 +257,13 @@
                                                                     <constraint firstAttribute="width" constant="2" id="2Gb-ot-hci"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
                                                                 <rect key="frame" x="70.5" y="10" width="58.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
                                                                 <rect key="frame" x="73.5" y="35" width="52.5" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -515,32 +515,35 @@
                         <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MMQ-IT-qOo" userLabel="Profile">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CE8-wf-Pgi">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8g-aw-5mA" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="516"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="516"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="288"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="288"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Woerner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-ld-lrc">
-                                                        <rect key="frame" x="0.5" y="190" width="600" height="28"/>
+                                                        <rect key="frame" x="0.0" y="190" width="414" height="28"/>
                                                         <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="24"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Ich hab noch k ein Spiel verloren.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9m-yX-lfz">
-                                                        <rect key="frame" x="0.0" y="218.5" width="600" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="218" width="414" height="32.5"/>
                                                         <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="14"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-gl-KWg">
-                                                        <rect key="frame" x="283" y="251" width="33" height="37"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-gl-KWg">
+                                                        <rect key="frame" x="190" y="251" width="33" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="R9f-VE-VNy"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="21"/>
                                                         <state key="normal" title="edit">
                                                             <color key="titleColor" red="0.29019607843137252" green="0.38431372549019605" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
@@ -550,14 +553,14 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_bg" translatesAutoresizingMaskIntoConstraints="NO" id="yIk-wl-oXD" userLabel="Image">
-                                                        <rect key="frame" x="150" y="20" width="300" height="150"/>
+                                                        <rect key="frame" x="57" y="20" width="300" height="150"/>
                                                         <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="hlx-IQ-U6y"/>
                                                         </constraints>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character_cowboy" translatesAutoresizingMaskIntoConstraints="NO" id="c54-8R-UCd" userLabel="Character">
-                                                        <rect key="frame" x="100" y="30" width="400" height="130"/>
+                                                        <rect key="frame" x="7" y="30" width="400" height="130"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="130" id="fnV-Fa-VSa"/>
                                                         </constraints>
@@ -580,7 +583,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-rN-dVc" userLabel="Neues Duell">
-                                                <rect key="frame" x="0.0" y="288" width="600" height="130"/>
+                                                <rect key="frame" x="0.0" y="288" width="414" height="130"/>
                                                 <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="130" id="sfa-2L-LV2"/>
@@ -589,7 +592,7 @@
                                                 <state key="normal" title="CHALLENGE"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="428" width="560" height="24"/>
+                                                <rect key="frame" x="20" y="428" width="374" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
                                                 </constraints>
@@ -598,7 +601,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="472" width="560" height="24"/>
+                                                <rect key="frame" x="20" y="472" width="374" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
                                                 </constraints>
@@ -644,8 +647,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="cra-N8-TIN"/>
                     <connections>
+                        <outlet property="challengeButton" destination="bMl-rN-dVc" id="G73-6W-RbF"/>
+                        <outlet property="challengeButtonHeight" destination="sfa-2L-LV2" id="N5t-yt-IsD"/>
                         <outlet property="character" destination="c54-8R-UCd" id="LAe-sZ-VIG"/>
                         <outlet property="editProfile" destination="Tif-gl-KWg" id="pAV-gn-bP2"/>
+                        <outlet property="editProfileHeight" destination="R9f-VE-VNy" id="XbS-QI-2oh"/>
                         <outlet property="nick" destination="0VN-ld-lrc" id="Bef-b3-LyO"/>
                         <outlet property="slogan" destination="N9m-yX-lfz" id="OjN-jv-CnJ"/>
                     </connections>
@@ -914,6 +920,9 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="Ah7-4n-0Wa" kind="show" identifier="showProfile" id="eya-Ju-tvL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-8Z-9Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1167,6 +1176,6 @@
         <image name="logo" width="796" height="796"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fjs-ct-l3s"/>
+        <segue reference="eya-Ju-tvL"/>
     </inferredMetricsTieBreakers>
 </document>

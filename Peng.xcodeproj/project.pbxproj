@@ -33,7 +33,6 @@
 		AC84B1661B4C357E0030B0ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC84B1651B4C357E0030B0ED /* Images.xcassets */; };
 		AC84B1691B4C357E0030B0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC84B1671B4C357E0030B0ED /* LaunchScreen.xib */; };
 		AC84B1751B4C357E0030B0ED /* PengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1741B4C357E0030B0ED /* PengTests.swift */; };
-		AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */; };
 		AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1911B4C56F90030B0ED /* MainViewController.swift */; };
 		AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC9F52E91BD41B5000E73627 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F52E81BD41B5000E73627 /* API.swift */; settings = {ASSET_TAGS = (); }; };
@@ -264,7 +263,6 @@
 		AC84B16E1B4C357E0030B0ED /* PengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC84B1731B4C357E0030B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC84B1741B4C357E0030B0ED /* PengTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PengTests.swift; sourceTree = "<group>"; };
-		AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Extended.ttf"; sourceTree = "<group>"; };
 		AC84B1911B4C56F90030B0ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Features/Settings/SettingsViewController.swift; sourceTree = "<group>"; };
@@ -467,7 +465,6 @@
 				AC20A0D51BD9224C0083E0B3 /* HowTo */,
 				ACC2F61E1BCE6833004BB101 /* Login */,
 				AC63686C1BB47B89002ED083 /* SharedViews */,
-				AC84B1871B4C4BB90030B0ED /* Ranking */,
 				AC84B1861B4C43F10030B0ED /* Profile */,
 				AC84B1851B4C43E50030B0ED /* Settings */,
 				AC84B1841B4C43DB0030B0ED /* Main */,
@@ -500,15 +497,6 @@
 			);
 			name = Profile;
 			path = Features/Profile;
-			sourceTree = "<group>";
-		};
-		AC84B1871B4C4BB90030B0ED /* Ranking */ = {
-			isa = PBXGroup;
-			children = (
-				AC84B1881B4C4C6D0030B0ED /* RankingViewController.swift */,
-			);
-			name = Ranking;
-			path = Features/Ranking;
 			sourceTree = "<group>";
 		};
 		AC84B18A1B4C4ED20030B0ED /* Assets */ = {
@@ -818,7 +806,6 @@
 				AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */,
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
-				AC84B1891B4C4C6D0030B0ED /* RankingViewController.swift in Sources */,
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC651E851BD6A717007B1422 /* Character.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,

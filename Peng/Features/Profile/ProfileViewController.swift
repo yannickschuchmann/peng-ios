@@ -16,6 +16,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var slogan: UILabel!
     @IBOutlet weak var character: UIImageView!
     @IBOutlet weak var editProfile: UIButton!
+    @IBOutlet weak var editProfileHeight: NSLayoutConstraint!
+    @IBOutlet weak var challengeButton: UIButton!
+
+    @IBOutlet weak var challengeButtonHeight: NSLayoutConstraint!
 
     @IBAction func onEditProfile(sender: UIButton) {
         
@@ -23,22 +27,38 @@ class ProfileViewController: UIViewController {
         
     }
     
+    var isCurrentUser : Bool?
+    var passedUser : User?
     var user : User!
     var nickTextField: UITextField!
     var sloganTextField: UITextField!
     var saveButton: UIAlertAction!
     
-    var detailItem: AnyObject? {
-        didSet {
-            // Update the view.
-            self.configureView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if (self.passedUser == nil) {
+            self.user = CurrentUser.getUser()
+            self.isCurrentUser = true
+        } else {
+            self.user = self.passedUser
+            self.isCurrentUser = false
         }
+        
+        self.configureView()
     }
 
     func configureView() {
         
-        if (isProfileFilled()) {
-            self.showEditProfileAlert()
+        if (self.isCurrentUser!) {
+            if (isProfileFilled()) {
+                self.showEditProfileAlert()
+            }
+            challengeButtonHeight.constant = 0
+            challengeButton.hidden = true
+        } else {
+            editProfileHeight.constant = 10
+            editProfile.hidden = true
         }
         
         user.nick
@@ -61,8 +81,6 @@ class ProfileViewController: UIViewController {
     
     func showEditProfileAlert() {
 
-        
-        //set up the alertcontroller
         let title = "Edit profile"
         let message = ""
         
@@ -103,26 +121,10 @@ class ProfileViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    
-    
     func textFieldTextChanged(sender: AnyObject) {
         self.saveButton.enabled = self.nickTextField!.text!.characters.count >= 1 &&
             self.sloganTextField!.text!.characters.count >= 1
     }
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.user = CurrentUser.getUser()
-        self.configureView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
