@@ -39,8 +39,18 @@ class API {
         }
     }
     
+    class func getUsers(completionHandler: ([User]) -> Void) {
+        Alamofire.request(.GET, self.getUrl() + "/users")
+            .responseArray { (response: [User]?, error: ErrorType?) -> Void in
+                print(error.debugDescription)
+                if (error == nil) {
+                    completionHandler(response!)
+                }
+        }
+    }
+    
     class func getCharacters(completionHandler: ([Character]) -> Void) {
-        Alamofire.request(.GET, self.getUrl() + "/characters/")
+        Alamofire.request(.GET, self.getUrl() + "/characters")
             .responseArray { (response: [Character]?, error: ErrorType?) -> Void in
                 print(error.debugDescription)
                 if (error == nil) {

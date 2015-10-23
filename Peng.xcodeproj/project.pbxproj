@@ -17,6 +17,8 @@
 		AC20A1A71BD96B4D0083E0B3 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1841BD96AA50083E0B3 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC20A1AA1BD96B540083E0B3 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; };
 		AC20A1AB1BD96B540083E0B3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -243,6 +245,8 @@
 		AC20A1631BD9680D0083E0B3 /* AlamofireObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireObjectMapper.xcodeproj; path = AlamofireObjectMapper/AlamofireObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		AC20A17B1BD96AA50083E0B3 /* Bond.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bond.xcodeproj; path = Bond/Bond.xcodeproj; sourceTree = "<group>"; };
 		AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Features/Users/UsersTableViewController.swift; sourceTree = "<group>"; };
+		AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = Features/Users/UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
 		AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeViewController.swift; path = CharacterChange/CharacterChangeViewController.swift; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
@@ -352,6 +356,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AC53E9701BDAA5D0004BA6AD /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */,
+				AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
 		AC6363BA1BD67152007206E4 /* CharacterChange */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +463,7 @@
 		AC84B1831B4C43CF0030B0ED /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AC53E9701BDAA5D0004BA6AD /* Users */,
 				AC20A0D51BD9224C0083E0B3 /* HowTo */,
 				ACC2F61E1BCE6833004BB101 /* Login */,
 				AC63686C1BB47B89002ED083 /* SharedViews */,
@@ -795,6 +809,8 @@
 			files = (
 				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
+				AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */,
+				AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */,
 				ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */,
 				AC20A0D71BD922670083E0B3 /* HowToItemController.swift in Sources */,
 				AC20A0D91BD922930083E0B3 /* HowToViewController.swift in Sources */,
