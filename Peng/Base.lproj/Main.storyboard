@@ -41,7 +41,7 @@
         <!--Login-->
         <scene sceneID="KMy-t5-Ee9">
             <objects>
-                <viewController id="4co-e4-S0c" customClass="LoginViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="4co-e4-S0c" customClass="LoginViewController" customModule="Peng" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AV7-Vs-y6I"/>
                         <viewControllerLayoutGuide type="bottom" id="nLl-P6-9Xj"/>
@@ -863,117 +863,132 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-IG-yR6" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="84" width="560" height="24"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-As-wxN">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptB-Oa-YHj" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="455"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WU2-pV-M5g" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="560" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Pfd-rx-XtE"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA2-Nc-9cr">
+                                                <rect key="frame" x="0.0" y="54" width="600" height="70"/>
+                                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="4nz-I6-RA6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="EDIT PROFILE">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ME-IL-7wv" userLabel="EDIT CHARACTER">
+                                                <rect key="frame" x="0.0" y="127" width="600" height="70"/>
+                                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="qLR-zt-e52"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="wJh-uD-Kpq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="EDIT CHARACTER">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GP4-he-Fga" userLabel="HowTo View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="217" width="560" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="fbS-EJ-uoy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="HOW TO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69q-xz-vfy" userLabel="HOW TO">
+                                                <rect key="frame" x="0.0" y="251" width="600" height="70"/>
+                                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="Fx1-Cg-fYZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="TUTORIAL">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Vw-j9y" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="341" width="560" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Jv3-VO-go9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPG-8F-UJN" customClass="FBSDKLoginButton">
+                                                <rect key="frame" x="200" y="385" width="200" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Hyi-7d-dxB"/>
+                                                    <constraint firstAttribute="height" constant="50" id="miV-rl-p5f"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="WU2-pV-M5g" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" constant="20" id="4mn-hm-ff0"/>
+                                            <constraint firstItem="g1D-Vw-j9y" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" constant="20" id="Bze-eV-iAC"/>
+                                            <constraint firstItem="IPG-8F-UJN" firstAttribute="centerX" secondItem="ptB-Oa-YHj" secondAttribute="centerX" id="FSl-Me-CfH"/>
+                                            <constraint firstAttribute="bottom" secondItem="IPG-8F-UJN" secondAttribute="bottom" constant="20" id="Hq2-rK-vAX"/>
+                                            <constraint firstAttribute="trailing" secondItem="WU2-pV-M5g" secondAttribute="trailing" constant="20" id="RhM-zA-zC5"/>
+                                            <constraint firstItem="GP4-he-Fga" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" constant="20" id="SGx-si-fBe"/>
+                                            <constraint firstItem="LA2-Nc-9cr" firstAttribute="top" secondItem="WU2-pV-M5g" secondAttribute="bottom" constant="10" id="Suz-JW-SEI"/>
+                                            <constraint firstItem="WU2-pV-M5g" firstAttribute="top" secondItem="ptB-Oa-YHj" secondAttribute="top" constant="20" id="WdC-lh-foN"/>
+                                            <constraint firstItem="3ME-IL-7wv" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" id="a0X-No-99U"/>
+                                            <constraint firstItem="g1D-Vw-j9y" firstAttribute="top" secondItem="69q-xz-vfy" secondAttribute="bottom" constant="20" id="b5v-1Y-qIw"/>
+                                            <constraint firstItem="GP4-he-Fga" firstAttribute="top" secondItem="3ME-IL-7wv" secondAttribute="bottom" constant="20" id="cUI-tk-Oa7"/>
+                                            <constraint firstItem="69q-xz-vfy" firstAttribute="top" secondItem="GP4-he-Fga" secondAttribute="bottom" constant="10" id="dF9-qC-el7"/>
+                                            <constraint firstAttribute="trailing" secondItem="LA2-Nc-9cr" secondAttribute="trailing" id="e8G-5Y-LiP"/>
+                                            <constraint firstItem="LA2-Nc-9cr" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" id="ez4-4j-9xa"/>
+                                            <constraint firstItem="3ME-IL-7wv" firstAttribute="top" secondItem="LA2-Nc-9cr" secondAttribute="bottom" constant="3" id="g1U-qC-AkU"/>
+                                            <constraint firstAttribute="trailing" secondItem="69q-xz-vfy" secondAttribute="trailing" id="hLe-NF-Of2"/>
+                                            <constraint firstItem="69q-xz-vfy" firstAttribute="leading" secondItem="ptB-Oa-YHj" secondAttribute="leading" id="hNo-rd-DzS"/>
+                                            <constraint firstAttribute="trailing" secondItem="GP4-he-Fga" secondAttribute="trailing" constant="20" id="nao-xe-wjH"/>
+                                            <constraint firstItem="IPG-8F-UJN" firstAttribute="top" secondItem="g1D-Vw-j9y" secondAttribute="bottom" constant="20" id="rdi-rB-gdt"/>
+                                            <constraint firstAttribute="trailing" secondItem="g1D-Vw-j9y" secondAttribute="trailing" constant="20" id="zNb-HK-daW"/>
+                                            <constraint firstAttribute="trailing" secondItem="3ME-IL-7wv" secondAttribute="trailing" id="zak-q0-i8G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="gXZ-2l-Bkv"/>
+                                    <constraint firstItem="ptB-Oa-YHj" firstAttribute="leading" secondItem="XQk-As-wxN" secondAttribute="leading" id="4kt-Va-VrV"/>
+                                    <constraint firstItem="ptB-Oa-YHj" firstAttribute="top" secondItem="XQk-As-wxN" secondAttribute="top" id="VwE-Sl-wdh"/>
+                                    <constraint firstAttribute="bottom" secondItem="ptB-Oa-YHj" secondAttribute="bottom" id="kKq-hT-Kes"/>
+                                    <constraint firstAttribute="trailing" secondItem="ptB-Oa-YHj" secondAttribute="trailing" id="rrh-Op-rAS"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="PROFILE"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-J9-orO" userLabel="HowTo View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="291" width="560" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="gqH-iM-ndY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="HOW TO"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Ht-F3r">
-                                <rect key="frame" x="0.0" y="128" width="600" height="70"/>
-                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="n95-UY-umB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="EDIT PROFILE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ah7-4n-0Wa" kind="show" id="3EA-uP-ZcA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxY-Zn-Dim" userLabel="EDIT CHARACTER">
-                                <rect key="frame" x="0.0" y="201" width="600" height="70"/>
-                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="JLo-Fp-nD4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="skP-pe-HVi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="EDIT CHARACTER">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gZp-84-xdF" kind="show" id="uvx-hN-8QG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xw-bB-nH8" userLabel="HOW TO">
-                                <rect key="frame" x="0.0" y="335" width="600" height="70"/>
-                                <color key="backgroundColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="JSh-W3-J0J"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="kaA-tm-spr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="TUTORIAL">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.39607843139999999" green="0.50980392159999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Q2u-18-tjF" kind="show" id="0GN-xv-TCW"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-d2-QNa" userLabel="Account Headline View" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                <rect key="frame" x="20" y="425" width="560" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="vbo-XO-rxf"/>
-                                    <constraint firstAttribute="height" constant="24" id="ydJ-Yz-AOR"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="ACCOUNT"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-SX-A9v" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="200" y="469" width="200" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="1YB-2y-MHS"/>
-                                    <constraint firstAttribute="width" constant="200" id="YYt-Uh-LvQ"/>
-                                </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="8xw-bB-nH8" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="0CT-p4-vw2"/>
-                            <constraint firstItem="l42-Ht-F3r" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="51t-vj-hGQ"/>
-                            <constraint firstAttribute="trailing" secondItem="l42-Ht-F3r" secondAttribute="trailing" id="6sJ-g3-Vuk"/>
-                            <constraint firstItem="O4T-IG-yR6" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="Aub-Ig-iwv"/>
-                            <constraint firstItem="HhD-J9-orO" firstAttribute="top" secondItem="pxY-Zn-Dim" secondAttribute="bottom" constant="20" id="F9q-Po-9JO"/>
-                            <constraint firstItem="GQR-d2-QNa" firstAttribute="top" secondItem="8xw-bB-nH8" secondAttribute="bottom" constant="20" id="FqK-MZ-PCP"/>
-                            <constraint firstAttribute="trailing" secondItem="8xw-bB-nH8" secondAttribute="trailing" id="GcN-Et-a9h"/>
-                            <constraint firstAttribute="leading" secondItem="HhD-J9-orO" secondAttribute="leading" constant="-20" id="Jlt-Dv-Lj2"/>
-                            <constraint firstItem="O4T-IG-yR6" firstAttribute="top" secondItem="fXn-ce-Rn4" secondAttribute="bottom" constant="20" id="OXV-0X-lbc"/>
-                            <constraint firstItem="8xw-bB-nH8" firstAttribute="top" secondItem="HhD-J9-orO" secondAttribute="bottom" constant="20" id="POW-bW-bVe"/>
-                            <constraint firstAttribute="trailing" secondItem="pxY-Zn-Dim" secondAttribute="trailing" id="VeX-wC-ixV"/>
-                            <constraint firstAttribute="trailing" secondItem="GQR-d2-QNa" secondAttribute="trailing" constant="20" id="XSg-cv-NmA"/>
-                            <constraint firstItem="Gne-SX-A9v" firstAttribute="centerX" secondItem="gNA-DJ-tSl" secondAttribute="centerX" id="Xlj-i5-KTa"/>
-                            <constraint firstItem="GQR-d2-QNa" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" constant="20" id="cTc-En-Uvy"/>
-                            <constraint firstAttribute="trailing" secondItem="HhD-J9-orO" secondAttribute="trailing" constant="20" id="kfo-5d-gtG"/>
-                            <constraint firstItem="l42-Ht-F3r" firstAttribute="top" secondItem="O4T-IG-yR6" secondAttribute="bottom" constant="20" id="nVg-5q-cxp"/>
-                            <constraint firstAttribute="trailing" secondItem="O4T-IG-yR6" secondAttribute="trailing" constant="20" id="ra5-zT-qZ7"/>
-                            <constraint firstItem="pxY-Zn-Dim" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="rav-ju-xvC"/>
-                            <constraint firstItem="Gne-SX-A9v" firstAttribute="top" secondItem="GQR-d2-QNa" secondAttribute="bottom" constant="20" id="xcb-ng-LUe"/>
-                            <constraint firstItem="pxY-Zn-Dim" firstAttribute="top" secondItem="l42-Ht-F3r" secondAttribute="bottom" constant="3" id="xt9-In-nDS"/>
+                            <constraint firstItem="ptB-Oa-YHj" firstAttribute="width" secondItem="gNA-DJ-tSl" secondAttribute="width" id="Pfo-nP-2iC"/>
+                            <constraint firstItem="XQk-As-wxN" firstAttribute="leading" secondItem="gNA-DJ-tSl" secondAttribute="leading" id="RF2-ej-Egc"/>
+                            <constraint firstItem="ptB-Oa-YHj" firstAttribute="height" secondItem="gNA-DJ-tSl" secondAttribute="height" priority="250" id="U1a-QK-3jv"/>
+                            <constraint firstItem="XQk-As-wxN" firstAttribute="top" secondItem="fXn-ce-Rn4" secondAttribute="bottom" id="gVH-ht-lpg"/>
+                            <constraint firstItem="fYm-Mq-r0R" firstAttribute="top" secondItem="XQk-As-wxN" secondAttribute="bottom" id="i0L-XW-mef"/>
+                            <constraint firstItem="XQk-As-wxN" firstAttribute="trailing" secondItem="gNA-DJ-tSl" secondAttribute="trailing" id="iX0-VN-ayU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginButton" destination="Gne-SX-A9v" id="kzg-ew-HXg"/>
+                        <outlet property="loginButton" destination="IPG-8F-UJN" id="WgE-Dq-fQg"/>
                         <segue destination="tQU-48-oLt" kind="unwind" identifier="logOut" unwindAction="logOut:" id="JzK-Vk-KmZ"/>
                     </connections>
                 </viewController>
@@ -995,7 +1010,4 @@
         <image name="how_to-dummy" width="596" height="1007"/>
         <image name="logo" width="796" height="796"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="3EA-uP-ZcA"/>
-    </inferredMetricsTieBreakers>
 </document>
