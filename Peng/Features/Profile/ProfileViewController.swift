@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
@@ -17,6 +17,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var character: UIImageView!
     @IBOutlet weak var editProfile: UIButton!
     @IBOutlet weak var editProfileHeight: NSLayoutConstraint!
+
+    @IBOutlet var lastDuelsTableView: UITableView!
+    
+    @IBOutlet var lastDuelsTableViewHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var challengeButton: UIButton!
 
     @IBOutlet weak var challengeButtonHeight: NSLayoutConstraint!
@@ -68,6 +73,42 @@ class ProfileViewController: UIViewController {
         user.characterName.observe { name in
             self.character.image = UIImage(named: "character_" + name)
         }
+        
+        self.lastDuelsTableView.rowHeight = 100
+        
+        self.lastDuelsTableView.dataSource = self
+        self.lastDuelsTableView.delegate = self
+        
+        self.lastDuelsTableViewHeight.constant = 0
+        
+        // force a table to redraw
+        self.lastDuelsTableView.setNeedsLayout()
+        self.lastDuelsTableView.layoutIfNeeded()
+        
+        // now table has real height
+        self.lastDuelsTableViewHeight.constant = self.lastDuelsTableView.contentSize.height;
+        
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.user.lastDuels.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("duelCell", forIndexPath: indexPath) as! DuelItemViewCell
+        
+        let duel : Duel = self.user.lastDuels[indexPath.row]
+        let opponent : Actor = duel.opponent.value
+        
+        cell.nick.text = opponent.nick.value
+        cell.status.text = duel.status.value
+        cell.bet.text = duel.bet.value
+        cell.characterImage.image = UIImage(named: "character_" + opponent.characterName.value)
+        return cell
     }
     
     func isProfileFilled() -> Bool {

@@ -276,7 +276,7 @@
 		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
 		ACF1555D1BDC1F7700802A55 /* Duel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duel.swift; path = Models/Duel.swift; sourceTree = "<group>"; };
-		ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelItemViewCell.swift; sourceTree = "<group>"; };
+		ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuelItemViewCell.swift; path = ../Main/DuelItemViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +381,7 @@
 		AC63686C1BB47B89002ED083 /* SharedViews */ = {
 			isa = PBXGroup;
 			children = (
+				ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */,
 				AC63686D1BB47B89002ED083 /* HeadlineView.swift */,
 				AC63686E1BB47B89002ED083 /* HeadlineView.xib */,
 			);
@@ -485,7 +486,6 @@
 			isa = PBXGroup;
 			children = (
 				AC84B1911B4C56F90030B0ED /* MainViewController.swift */,
-				ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */,
 			);
 			name = Main;
 			path = Features/Main;
