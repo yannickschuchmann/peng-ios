@@ -44,6 +44,8 @@ class MainViewController: UIViewController {
             self.character.image = UIImage(named: "character_" + name)
         }
         
+        print(user.openDuels[0].id.value)
+        
     }
 
     override func didReceiveMemoryWarning() {

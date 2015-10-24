@@ -20,6 +20,7 @@ class User: Mappable {
     var characterId: Observable<Int> = Observable(0)
     var characterOrder: Observable<Int> = Observable(0)
     var characterName: Observable<String> = Observable("")
+    var openDuels: ObservableArray<Duel> = ObservableArray([])
     
     required init?(_ map: Map){
         
@@ -39,5 +40,6 @@ class User: Mappable {
         characterOrder.value <- map["character_order"]
         characterName.value <- map["character_name"]
         nick.value <- map["nick"]
+        openDuels.array <- map["open_duels"]
     }
 }

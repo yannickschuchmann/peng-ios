@@ -40,6 +40,7 @@
 		ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ACF1555E1BDC1F7700802A55 /* Duel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1555D1BDC1F7700802A55 /* Duel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +272,7 @@
 		ACC2F6181BCE664F004BB101 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		ACF1555D1BDC1F7700802A55 /* Duel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duel.swift; path = Models/Duel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +389,7 @@
 			children = (
 				AC65405F1BD5164E002C2747 /* User.swift */,
 				AC651E841BD6A717007B1422 /* Character.swift */,
+				ACF1555D1BDC1F7700802A55 /* Duel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */,
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
+				ACF1555E1BDC1F7700802A55 /* Duel.swift in Sources */,
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC651E851BD6A717007B1422 /* Character.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
