@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var nick: UILabel!
     @IBOutlet weak var slogan: UILabel!
@@ -17,51 +17,78 @@ class MainViewController: UIViewController {
     @IBOutlet weak var duelsCount: UILabel!
     @IBOutlet weak var rank: UILabel!
     @IBOutlet weak var friendsCount: UILabel!
+    
+    
+    @IBOutlet var openDuelsTableView: UITableView!
+    
+    @IBOutlet weak var openDuelsTableViewHeight: NSLayoutConstraint!
+    var user : User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user : User = CurrentUser.getUser()
+        self.user = CurrentUser.getUser()
         
-        if (user.nick.value == "") {
+        if (self.user.nick.value == "") {
             self.performSegueWithIdentifier("onEmptyNick", sender: self)
         }
         
-        user.nick
+        self.user.nick
             .bindTo(self.nick.bnd_text)
-        user.slogan
+        self.user.slogan
             .bindTo(self.slogan.bnd_text)
-        user.duelsCount
+        self.user.duelsCount
             .map { "\($0)" }
             .bindTo(self.duelsCount.bnd_text)
-        user.rank
+        self.user.rank
             .map { "\($0)" }
             .bindTo(self.rank.bnd_text)
-        user.friendsCount
+        self.user.friendsCount
             .map { "\($0)" }
             .bindTo(self.friendsCount.bnd_text)
         
-        user.characterName.observe { name in
+        self.user.characterName.observe { name in
             self.character.image = UIImage(named: "character_" + name)
         }
         
-        print(user.openDuels[0].id.value)
+        
+        self.openDuelsTableView.rowHeight = 100
+        
+        self.openDuelsTableView.delegate = self
+        self.openDuelsTableView.dataSource = self
+        
+        self.openDuelsTableViewHeight.constant = 0;
+        
+        // force a table to redraw
+        self.openDuelsTableView.setNeedsLayout()
+        self.openDuelsTableView.layoutIfNeeded()
+        
+        // now table has real height
+        self.openDuelsTableViewHeight.constant = self.openDuelsTableView.contentSize.height;
+
+        
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.user.openDuels.count
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("duelCell", forIndexPath: indexPath) as! DuelItemViewCell
+        
+        let duel : Duel = self.user.openDuels[indexPath.row]
+        let opponent : Actor = duel.opponent.value
+        
+        cell.nick.text = opponent.nick.value
+        cell.status.text = duel.status.value
+        cell.bet.text = duel.bet.value
+        cell.characterImage.image = UIImage(named: "character_" + opponent.characterName.value)
+        return cell
+    }
 
 }

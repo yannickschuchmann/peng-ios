@@ -113,6 +113,6 @@ public class Spinner: UIView {
     private var blurEffect: UIBlurEffect!
     private var blurView: UIVisualEffectView!
     public let actInd : UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0, 50, 50)) as UIActivityIndicatorView
-    private let activityIndicatorViewStyle: UIActivityIndicatorViewStyle = .WhiteLarge
+    private let activityIndicatorViewStyle: UIActivityIndicatorViewStyle = .Gray
     
 }

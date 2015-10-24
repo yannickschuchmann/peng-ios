@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC09F7331BDC3C180078ED34 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09F7321BDC3C180078ED34 /* Actor.swift */; settings = {ASSET_TAGS = (); }; };
 		AC20A0D71BD922670083E0B3 /* HowToItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A0D61BD922670083E0B3 /* HowToItemController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC20A0D91BD922930083E0B3 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A0D81BD922930083E0B3 /* HowToViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC20A11D1BD965520083E0B3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1081BD964C40083E0B3 /* Alamofire.framework */; };
@@ -41,6 +42,7 @@
 		ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ACF1555E1BDC1F7700802A55 /* Duel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1555D1BDC1F7700802A55 /* Duel.swift */; settings = {ASSET_TAGS = (); }; };
+		ACF155701BDC304400802A55 /* DuelItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +241,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC09F7321BDC3C180078ED34 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actor.swift; path = Models/Actor.swift; sourceTree = "<group>"; };
 		AC20A0D61BD922670083E0B3 /* HowToItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToItemController.swift; path = HowTo/HowToItemController.swift; sourceTree = "<group>"; };
 		AC20A0D81BD922930083E0B3 /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToViewController.swift; path = HowTo/HowToViewController.swift; sourceTree = "<group>"; };
 		AC20A0FF1BD964C40083E0B3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
@@ -273,6 +276,7 @@
 		ACC2F6191BCE664F004BB101 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		ACC2F61C1BCE682D004BB101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Features/Login/LoginViewController.swift; sourceTree = "<group>"; };
 		ACF1555D1BDC1F7700802A55 /* Duel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Duel.swift; path = Models/Duel.swift; sourceTree = "<group>"; };
+		ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelItemViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +394,7 @@
 				AC65405F1BD5164E002C2747 /* User.swift */,
 				AC651E841BD6A717007B1422 /* Character.swift */,
 				ACF1555D1BDC1F7700802A55 /* Duel.swift */,
+				AC09F7321BDC3C180078ED34 /* Actor.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				AC84B1911B4C56F90030B0ED /* MainViewController.swift */,
+				ACF1556F1BDC304400802A55 /* DuelItemViewCell.swift */,
 			);
 			name = Main;
 			path = Features/Main;
@@ -816,6 +822,8 @@
 				AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */,
 				AC6540601BD5164E002C2747 /* User.swift in Sources */,
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
+				ACF155701BDC304400802A55 /* DuelItemViewCell.swift in Sources */,
+				AC09F7331BDC3C180078ED34 /* Actor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

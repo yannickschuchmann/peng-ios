@@ -12,6 +12,9 @@ import Bond
 
 class Duel: Mappable {
     var id: Observable<Int> = Observable(0)
+    var bet: Observable<String> = Observable("")
+    var status: Observable<String> = Observable("")
+    var opponent: Observable<Actor> = Observable(Actor()!)
     
     required init?(_ map: Map){
         
@@ -24,6 +27,9 @@ class Duel: Mappable {
     
     func mapping(map: Map) {
         id.value <- map["id"]
+        bet.value <- map["bet"]
+        status.value <- map["status"]
+        opponent.value <- map["opponent"]
     }
     
 }

@@ -29,9 +29,11 @@ class User: Mappable {
     init?() {
         
     }
+    
         
     func mapping(map: Map) {
         id.value <- map["id"]
+        nick.value <- map["nick"]
         slogan.value <- map["slogan"]
         duelsCount.value <- map["duels_count"]
         friendsCount.value <- map["friends_count"]
@@ -39,7 +41,6 @@ class User: Mappable {
         characterId.value <- map["character_id"]
         characterOrder.value <- map["character_order"]
         characterName.value <- map["character_name"]
-        nick.value <- map["nick"]
         openDuels.array <- map["open_duels"]
     }
 }
