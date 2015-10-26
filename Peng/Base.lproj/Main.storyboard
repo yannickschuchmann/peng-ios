@@ -231,14 +231,14 @@
                                                                     <constraint firstAttribute="width" constant="2" id="5EE-TH-IGg"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
-                                                                <rect key="frame" x="81" y="10" width="39" height="20"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
+                                                                <rect key="frame" x="79" y="10" width="43" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
-                                                                <rect key="frame" x="82" y="35" width="35" height="35"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
+                                                                <rect key="frame" x="83" y="35" width="33.5" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -264,14 +264,14 @@
                                                                     <constraint firstAttribute="width" constant="2" id="2Gb-ot-hci"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
-                                                                <rect key="frame" x="70" y="10" width="58.5" height="20"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
+                                                                <rect key="frame" x="68" y="10" width="62.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
-                                                                <rect key="frame" x="73" y="35" width="52.5" height="35"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
+                                                                <rect key="frame" x="74" y="35" width="50.5" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -298,14 +298,14 @@
                                                                     <constraint firstAttribute="width" constant="2" id="XWy-tr-TXA"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-dR-eTH">
-                                                                <rect key="frame" x="74" y="10" width="52" height="20"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-dR-eTH">
+                                                                <rect key="frame" x="72" y="10" width="56.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dom-2b-HpE">
-                                                                <rect key="frame" x="91" y="35" width="17.5" height="35"/>
+                                                                <rect key="frame" x="91" y="35" width="17" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -390,25 +390,25 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character_bandit" translatesAutoresizingMaskIntoConstraints="NO" id="e5A-oh-yWw">
-                                                                            <rect key="frame" x="-140.5" y="6" width="400.5" height="73.5"/>
+                                                                            <rect key="frame" x="-141" y="6" width="400.5" height="73.5"/>
                                                                         </imageView>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nak-cq-O1y" userLabel="info">
-                                                                            <rect key="frame" x="119.5" y="2" width="460.5" height="67.5"/>
+                                                                            <rect key="frame" x="119" y="2" width="460.5" height="67.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paul Woerner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="yoV-Mt-VGd" userLabel="nick">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="460.5" height="18.5"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="460.5" height="19"/>
                                                                                     <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="16"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR TURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="EFO-bA-f0k" userLabel="status">
-                                                                                    <rect key="frame" x="0.0" y="16" width="460.5" height="36"/>
+                                                                                    <rect key="frame" x="0.0" y="16" width="460.5" height="36.5"/>
                                                                                     <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="31"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I had fun once, it was aweful furfm rufmd asdasd&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="chw-H9-ksP" userLabel="bet">
-                                                                                    <rect key="frame" x="0.0" y="49.5" width="460.5" height="17.5"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&quot;I had fun once, it was aweful furfm rufmd asdasd&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="chw-H9-ksP" userLabel="bet">
+                                                                                    <rect key="frame" x="0.0" y="49" width="460.5" height="17.5"/>
                                                                                     <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="15"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -499,13 +499,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PENG" id="iNs-A4-mTo">
-                        <barButtonItem key="leftBarButtonItem" title="SETTINGS" id="aah-Ti-bQk">
+                        <barButtonItem key="leftBarButtonItem" image="settings" style="plain" id="aah-Ti-bQk">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Ncm-1b-MRh" kind="show" id="LV3-mA-bkC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="RANKING" id="sre-wr-f4G">
+                        <barButtonItem key="rightBarButtonItem" image="burger" style="plain" id="sre-wr-f4G">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="jLw-Lm-yhI" kind="show" id="Lkf-Rn-hDg"/>
@@ -1419,6 +1419,7 @@
     <resources>
         <image name="arrow_left" width="37" height="43"/>
         <image name="arrow_right" width="37" height="42"/>
+        <image name="burger" width="22" height="22"/>
         <image name="character_amerindian" width="400" height="458"/>
         <image name="character_bandit" width="400" height="458"/>
         <image name="character_cowboy" width="400" height="458"/>
@@ -1428,6 +1429,7 @@
         <image name="heart" width="141" height="135"/>
         <image name="how_to-dummy" width="596" height="1007"/>
         <image name="logo" width="796" height="796"/>
+        <image name="settings" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eya-Ju-tvL"/>
