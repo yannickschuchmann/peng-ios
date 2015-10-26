@@ -18,6 +18,7 @@
 		AC20A1A71BD96B4D0083E0B3 /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1841BD96AA50083E0B3 /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC20A1AA1BD96B540083E0B3 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; };
 		AC20A1AB1BD96B540083E0B3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -248,6 +249,7 @@
 		AC20A1631BD9680D0083E0B3 /* AlamofireObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireObjectMapper.xcodeproj; path = AlamofireObjectMapper/AlamofireObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		AC20A17B1BD96AA50083E0B3 /* Bond.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bond.xcodeproj; path = Bond/Bond.xcodeproj; sourceTree = "<group>"; };
 		AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
+		AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewDuelViewController.swift; path = Features/NewDuel/NewDuelViewController.swift; sourceTree = "<group>"; };
 		AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Features/Users/UsersTableViewController.swift; sourceTree = "<group>"; };
 		AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = Features/Users/UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
@@ -360,6 +362,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AC45696A1BDE61CF00A69E99 /* NewDuel */ = {
+			isa = PBXGroup;
+			children = (
+				AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */,
+			);
+			name = NewDuel;
+			sourceTree = "<group>";
+		};
 		AC53E9701BDAA5D0004BA6AD /* Users */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +480,7 @@
 		AC84B1831B4C43CF0030B0ED /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AC45696A1BDE61CF00A69E99 /* NewDuel */,
 				AC53E9701BDAA5D0004BA6AD /* Users */,
 				AC20A0D51BD9224C0083E0B3 /* HowTo */,
 				ACC2F61E1BCE6833004BB101 /* Login */,
@@ -807,6 +818,7 @@
 				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
 				AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */,
+				AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */,
 				AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */,
 				ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */,
 				AC20A0D71BD922670083E0B3 /* HowToItemController.swift in Sources */,
