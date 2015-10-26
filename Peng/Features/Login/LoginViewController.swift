@@ -38,7 +38,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         
         if error == nil {
-            print("Login complete")
             self.loginWithFacebookCredentials()
         } else {
             print(error.localizedDescription)

@@ -132,7 +132,6 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             CurrentUser.setUser(self.user)
 
             API.updateUser(self.user) { (user: User) in
-                print("saved User")
             }
             self.removeTextFieldObserver()
         })

@@ -33,7 +33,6 @@ class API {
         let params = ["nick": user.nick.value, "slogan": user.slogan.value, "character_id": String(user.characterId.value)]
         Alamofire.request(.PUT, self.getUrl() + "/users/" + String(user.id.value), parameters: params)
             .responseObject { (response: User?, error: ErrorType?) -> Void in
-                print(error.debugDescription)
                 if (error == nil) {
                     completionHandler(response!)
                 }
@@ -43,7 +42,6 @@ class API {
     class func getUsers(completionHandler: ([User]) -> Void) {
         Alamofire.request(.GET, self.getUrl() + "/users")
             .responseArray { (response: [User]?, error: ErrorType?) -> Void in
-                print(error.debugDescription)
                 if (error == nil) {
                     completionHandler(response!)
                 }
@@ -53,7 +51,6 @@ class API {
     class func getCharacters(completionHandler: ([Character]) -> Void) {
         Alamofire.request(.GET, self.getUrl() + "/characters")
             .responseArray { (response: [Character]?, error: ErrorType?) -> Void in
-                print(error.debugDescription)
                 if (error == nil) {
                     completionHandler(response!)
                 }
