@@ -10,3 +10,6 @@
 [submodule "ObjectMapper"]
 	path = ObjectMapper
 	url = https://github.com/Hearst-DD/ObjectMapper.git
+[submodule "gifu"]
+	path = gifu
+	url = https://github.com/kaishin/gifu.git

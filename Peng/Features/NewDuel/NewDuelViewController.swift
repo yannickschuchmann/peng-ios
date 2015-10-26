@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class NewDuelViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
 }

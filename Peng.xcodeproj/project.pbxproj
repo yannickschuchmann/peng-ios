@@ -19,6 +19,7 @@
 		AC20A1AA1BD96B540083E0B3 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; };
 		AC20A1AB1BD96B540083E0B3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC45698C1BDE7C6900A69E99 /* DuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -250,6 +251,7 @@
 		AC20A17B1BD96AA50083E0B3 /* Bond.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bond.xcodeproj; path = Bond/Bond.xcodeproj; sourceTree = "<group>"; };
 		AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewDuelViewController.swift; path = Features/NewDuel/NewDuelViewController.swift; sourceTree = "<group>"; };
+		AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuelViewController.swift; path = Features/Duel/DuelViewController.swift; sourceTree = "<group>"; };
 		AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Features/Users/UsersTableViewController.swift; sourceTree = "<group>"; };
 		AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = Features/Users/UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
@@ -370,6 +372,14 @@
 			name = NewDuel;
 			sourceTree = "<group>";
 		};
+		AC45698A1BDE7C4F00A69E99 /* Duel */ = {
+			isa = PBXGroup;
+			children = (
+				AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */,
+			);
+			name = Duel;
+			sourceTree = "<group>";
+		};
 		AC53E9701BDAA5D0004BA6AD /* Users */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +490,7 @@
 		AC84B1831B4C43CF0030B0ED /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AC45698A1BDE7C4F00A69E99 /* Duel */,
 				AC45696A1BDE61CF00A69E99 /* NewDuel */,
 				AC53E9701BDAA5D0004BA6AD /* Users */,
 				AC20A0D51BD9224C0083E0B3 /* HowTo */,
@@ -831,6 +842,7 @@
 				AC9F52E91BD41B5000E73627 /* API.swift in Sources */,
 				AC651E851BD6A717007B1422 /* Character.swift in Sources */,
 				AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */,
+				AC45698C1BDE7C6900A69E99 /* DuelViewController.swift in Sources */,
 				AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */,
 				AC6540601BD5164E002C2747 /* User.swift in Sources */,
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
