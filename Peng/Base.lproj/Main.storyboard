@@ -895,14 +895,14 @@
                                                     <constraint firstAttribute="width" secondItem="OTX-Bn-3p3" secondAttribute="height" multiplier="80:76" id="uzB-S3-ftd"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-dl-LVn">
-                                                <rect key="frame" x="0.0" y="0.0" width="54" height="51.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-dl-LVn">
+                                                <rect key="frame" x="10" y="0.0" width="34" height="48.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="1">
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="23" name="Futura-CondensedExtraBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -910,14 +910,14 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="gcA-dl-LVn" firstAttribute="top" secondItem="smB-1L-hxS" secondAttribute="top" id="30n-89-DSs"/>
-                                            <constraint firstAttribute="bottom" secondItem="gcA-dl-LVn" secondAttribute="bottom" id="4vv-j8-fsY"/>
-                                            <constraint firstAttribute="trailing" secondItem="gcA-dl-LVn" secondAttribute="trailing" constant="1" id="FQv-bq-ZNr"/>
+                                            <constraint firstItem="gcA-dl-LVn" firstAttribute="leading" secondItem="smB-1L-hxS" secondAttribute="leading" constant="10" id="758-o3-lQl"/>
                                             <constraint firstAttribute="bottom" secondItem="OTX-Bn-3p3" secondAttribute="bottom" id="MqD-lW-fXk"/>
                                             <constraint firstAttribute="trailing" secondItem="OTX-Bn-3p3" secondAttribute="trailing" id="NOl-mT-veC"/>
-                                            <constraint firstItem="gcA-dl-LVn" firstAttribute="leading" secondItem="smB-1L-hxS" secondAttribute="leading" id="Yq0-LC-aFz"/>
+                                            <constraint firstAttribute="bottom" secondItem="gcA-dl-LVn" secondAttribute="bottom" constant="3" id="Nad-XA-gZW"/>
                                             <constraint firstItem="OTX-Bn-3p3" firstAttribute="leading" secondItem="smB-1L-hxS" secondAttribute="leading" id="b4k-tp-4Cj"/>
                                             <constraint firstItem="OTX-Bn-3p3" firstAttribute="top" secondItem="smB-1L-hxS" secondAttribute="top" id="dW3-Ng-VeY"/>
+                                            <constraint firstAttribute="trailing" secondItem="gcA-dl-LVn" secondAttribute="trailing" constant="11" id="kPU-1D-tVT"/>
+                                            <constraint firstItem="gcA-dl-LVn" firstAttribute="top" secondItem="smB-1L-hxS" secondAttribute="top" id="s7U-1V-f0L"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmD-fX-78i" userLabel="opponent_lifes">
@@ -929,14 +929,14 @@
                                                     <constraint firstAttribute="width" secondItem="Eh2-Qa-GwV" secondAttribute="height" multiplier="80:76" id="nUw-TH-0ua"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKh-wa-gUD">
-                                                <rect key="frame" x="0.0" y="0.0" width="54" height="51.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oKh-wa-gUD">
+                                                <rect key="frame" x="10" y="0.0" width="34" height="48.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="1">
                                                         <attributes>
                                                             <color key="NSColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <font key="NSFont" size="23" name="Futura-CondensedExtraBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -944,12 +944,12 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="oKh-wa-gUD" secondAttribute="bottom" id="7Ap-ge-8xm"/>
-                                            <constraint firstItem="oKh-wa-gUD" firstAttribute="top" secondItem="dmD-fX-78i" secondAttribute="top" id="AHM-9A-aiD"/>
-                                            <constraint firstAttribute="trailing" secondItem="oKh-wa-gUD" secondAttribute="trailing" constant="1" id="Aro-g8-qUd"/>
-                                            <constraint firstItem="oKh-wa-gUD" firstAttribute="leading" secondItem="dmD-fX-78i" secondAttribute="leading" id="GAS-vn-epg"/>
+                                            <constraint firstAttribute="trailing" secondItem="oKh-wa-gUD" secondAttribute="trailing" constant="11" id="DSD-wu-7lf"/>
+                                            <constraint firstItem="oKh-wa-gUD" firstAttribute="top" secondItem="dmD-fX-78i" secondAttribute="top" id="FJU-Au-kpr"/>
+                                            <constraint firstItem="oKh-wa-gUD" firstAttribute="leading" secondItem="dmD-fX-78i" secondAttribute="leading" constant="10" id="J9E-eh-yEt"/>
                                             <constraint firstItem="Eh2-Qa-GwV" firstAttribute="leading" secondItem="dmD-fX-78i" secondAttribute="leading" id="OAk-cE-5Rl"/>
                                             <constraint firstItem="Eh2-Qa-GwV" firstAttribute="top" secondItem="dmD-fX-78i" secondAttribute="top" id="YHj-gK-r51"/>
+                                            <constraint firstAttribute="bottom" secondItem="oKh-wa-gUD" secondAttribute="bottom" constant="3" id="a9q-UZ-6Es"/>
                                             <constraint firstAttribute="trailing" secondItem="Eh2-Qa-GwV" secondAttribute="trailing" id="hzb-Jf-ubX"/>
                                             <constraint firstAttribute="bottom" secondItem="Eh2-Qa-GwV" secondAttribute="bottom" id="mVi-aC-4E1"/>
                                         </constraints>
