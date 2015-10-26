@@ -37,6 +37,8 @@
 		AC84B1691B4C357E0030B0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC84B1671B4C357E0030B0ED /* LaunchScreen.xib */; };
 		AC84B1751B4C357E0030B0ED /* PengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1741B4C357E0030B0ED /* PengTests.swift */; };
 		AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1911B4C56F90030B0ED /* MainViewController.swift */; };
+		AC8AF3761BDE99C600BEBB44 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8AF3741BDE99C600BEBB44 /* FLAnimatedImage.m */; settings = {ASSET_TAGS = (); }; };
+		AC8AF3771BDE99C600BEBB44 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8AF3751BDE99C600BEBB44 /* FLAnimatedImageView.m */; settings = {ASSET_TAGS = (); }; };
 		AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC9F52E91BD41B5000E73627 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F52E81BD41B5000E73627 /* API.swift */; settings = {ASSET_TAGS = (); }; };
 		ACAB65541BD51BA200DAD1E5 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */; settings = {ASSET_TAGS = (); }; };
@@ -273,6 +275,9 @@
 		AC84B1741B4C357E0030B0ED /* PengTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PengTests.swift; sourceTree = "<group>"; };
 		AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Extended.ttf"; sourceTree = "<group>"; };
 		AC84B1911B4C56F90030B0ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AC8AF3731BDE99C500BEBB44 /* Peng-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Peng-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC8AF3741BDE99C600BEBB44 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImage.m; path = FLAnimatedImage/FLAnimatedImageDemo/FLAnimatedImage/FLAnimatedImage.m; sourceTree = "<group>"; };
+		AC8AF3751BDE99C600BEBB44 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLAnimatedImageView.m; path = FLAnimatedImage/FLAnimatedImageDemo/FLAnimatedImage/FLAnimatedImageView.m; sourceTree = "<group>"; };
 		AC9B42651BCEEEBA007B73AA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Features/Settings/SettingsViewController.swift; sourceTree = "<group>"; };
 		AC9F52E81BD41B5000E73627 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
@@ -432,6 +437,9 @@
 				AC84B1591B4C357E0030B0ED /* Peng */,
 				AC84B1711B4C357E0030B0ED /* PengTests */,
 				AC84B1581B4C357E0030B0ED /* Products */,
+				AC8AF3741BDE99C600BEBB44 /* FLAnimatedImage.m */,
+				AC8AF3751BDE99C600BEBB44 /* FLAnimatedImageView.m */,
+				AC8AF3731BDE99C500BEBB44 /* Peng-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -828,6 +836,7 @@
 			files = (
 				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
+				AC8AF3761BDE99C600BEBB44 /* FLAnimatedImage.m in Sources */,
 				AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */,
 				AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */,
 				AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */,
@@ -836,6 +845,7 @@
 				AC20A0D91BD922930083E0B3 /* HowToViewController.swift in Sources */,
 				AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */,
 				AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */,
+				AC8AF3771BDE99C600BEBB44 /* FLAnimatedImageView.m in Sources */,
 				AC9B42661BCEEEBA007B73AA /* SettingsViewController.swift in Sources */,
 				AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */,
 				ACF1555E1BDC1F7700802A55 /* Duel.swift in Sources */,
@@ -997,6 +1007,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -1009,6 +1020,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				SWIFT_OBJC_BRIDGING_HEADER = "Peng-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1017,6 +1030,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: University of applied sciences Hamburg";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -1029,6 +1043,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				SWIFT_OBJC_BRIDGING_HEADER = "Peng-Bridging-Header.h";
 			};
 			name = Release;
 		};

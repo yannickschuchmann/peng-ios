@@ -13,3 +13,9 @@
 [submodule "gifu"]
 	path = gifu
 	url = https://github.com/kaishin/gifu.git
+[submodule "AnimatedGIFImageSerialization"]
+	path = AnimatedGIFImageSerialization
+	url = https://github.com/mattt/AnimatedGIFImageSerialization.git
+[submodule "FLAnimatedImage"]
+	path = FLAnimatedImage
+	url = https://github.com/Flipboard/FLAnimatedImage.git

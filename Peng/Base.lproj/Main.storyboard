@@ -1054,13 +1054,13 @@
                                             <constraint firstAttribute="width" secondItem="1VW-Eh-AF2" secondAttribute="height" multiplier="525:100" id="AOW-ku-LwA"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-UK-gcC" userLabel="opponent_character" customClass="AnimatableImageView" customModule="Gifu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-UK-gcC" userLabel="opponent_character">
                                         <rect key="frame" x="34.5" y="107.5" width="343.5" height="225.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fSP-UK-gcC" secondAttribute="height" multiplier="525:345" id="Ewg-s2-DH3"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtP-d5-RP6" userLabel="my_character" customClass="AnimatableImageView" customModule="Gifu">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtP-d5-RP6" userLabel="my_character">
                                         <rect key="frame" x="34.5" y="403" width="343.5" height="225.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FtP-d5-RP6" secondAttribute="height" multiplier="525:345" id="DLS-GF-rkc"/>
@@ -1115,12 +1115,12 @@
                         <outlet property="myBullet1" destination="zUn-wJ-hT5" id="Mrn-gz-ouj"/>
                         <outlet property="myBullet2" destination="XXE-xU-ZAv" id="R2X-Ne-YRO"/>
                         <outlet property="myBullet3" destination="tMQ-7P-W2q" id="DGz-8u-8vv"/>
-                        <outlet property="myCharacter" destination="7WK-xM-Hjo" id="a11-js-LDE"/>
+                        <outlet property="myCharacter" destination="FtP-d5-RP6" id="Zf7-Ex-JgC"/>
                         <outlet property="myLifes" destination="gcA-dl-LVn" id="sqn-6a-U5b"/>
                         <outlet property="opBullet1" destination="vtd-OX-gOa" id="BPm-dH-qkZ"/>
                         <outlet property="opBullet2" destination="Tbc-XB-gfI" id="t3C-Md-cFg"/>
                         <outlet property="opBullet3" destination="QfX-cP-XWk" id="uSm-bh-VoR"/>
-                        <outlet property="opCharacter" destination="7WK-xM-Hjo" id="qu7-EW-WTa"/>
+                        <outlet property="opCharacter" destination="fSP-UK-gcC" id="37S-lM-Py4"/>
                         <outlet property="opLifes" destination="oKh-wa-gUD" id="fmb-db-aKt"/>
                     </connections>
                 </viewController>

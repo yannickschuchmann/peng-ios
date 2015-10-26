@@ -23,11 +23,10 @@ class DuelViewController: UIViewController {
     @IBOutlet var opBullet2: UIImageView!
     @IBOutlet var opBullet3: UIImageView!
     
-    @IBOutlet weak var myCharacter: UIView!
-    @IBOutlet weak var opCharacter: UIView!
+    @IBOutlet weak var myCharacter: UIImageView!
+    @IBOutlet weak var opCharacter: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
