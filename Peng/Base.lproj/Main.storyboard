@@ -699,6 +699,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                 <state key="normal" title="CHALLENGE"/>
+                                                <connections>
+                                                    <action selector="onChallengeUser:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="jsO-Pd-n6B"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="428" width="560" height="24"/>
@@ -860,6 +863,7 @@
                         <outlet property="lastDuelsTableViewHeight" destination="ss8-UZ-MpJ" id="3TD-Nl-xex"/>
                         <outlet property="nick" destination="0VN-ld-lrc" id="Bef-b3-LyO"/>
                         <outlet property="slogan" destination="N9m-yX-lfz" id="OjN-jv-CnJ"/>
+                        <segue destination="VSy-kN-7gs" kind="show" identifier="newDuel" id="P3t-u3-SrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -1705,7 +1709,7 @@
         <image name="shoot_loaded" width="35" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kfU-us-zAa"/>
+        <segue reference="P3t-u3-SrT"/>
         <segue reference="sRR-XK-3gh"/>
         <segue reference="Lkf-Rn-hDg"/>
     </inferredMetricsTieBreakers>

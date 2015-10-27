@@ -32,6 +32,27 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
+    @IBAction func onChallengeUser(sender: AnyObject) {
+        
+        if (self.isCurrentUser!) { return }
+        
+        Spinner.show()
+        API.postDuel(CurrentUser.getUser().id.value, opponentId: self.user.id.value) { duel in
+            Spinner.hide()
+            self.createdDuel = duel
+            self.performSegueWithIdentifier("newDuel", sender: self)
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "newDuel" {
+            let duelViewController = segue.destinationViewController as! DuelViewController
+            duelViewController.passedDuel = self.createdDuel!
+        }
+    }
+    
+    var createdDuel : Duel?
     var isCurrentUser : Bool?
     var passedUser : User?
     var user : User!
@@ -47,7 +68,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             self.isCurrentUser = true
         } else {
             self.user = self.passedUser
-            self.isCurrentUser = false
+            self.isCurrentUser = CurrentUser.getUser().id.value == self.user.id.value
         }
         
         self.configureView()
