@@ -85,4 +85,13 @@ class API {
         }
     }
     
+    class func getUser(userId: Int, completionHandler: (User) -> Void) {
+        Alamofire.request(.GET, self.getUrl() + "/users/" + String(userId))
+            .responseObject { (response: User?, error: ErrorType?) -> Void in
+                if (error == nil) {
+                    completionHandler(response!)
+                }
+        }
+    }
+    
 }

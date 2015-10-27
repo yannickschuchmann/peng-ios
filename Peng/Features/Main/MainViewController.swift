@@ -24,14 +24,50 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var openDuelsTableViewHeight: NSLayoutConstraint!
     var user : User!
     
+    var initial: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         self.user = CurrentUser.getUser()
         
         if (self.user.nick.value == "") {
             self.performSegueWithIdentifier("onEmptyNick", sender: self)
         }
+        
+        self.openDuelsTableView.rowHeight = 100
+        
+        self.openDuelsTableView.delegate = self
+        self.openDuelsTableView.dataSource = self
+        
+        self.configureView()
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        if (self.initial) {
+            self.initial = false
+            return
+        }
+        
+        print("refresh")
+        API.getUser(self.user.id.value) { user in
+            print("update there")
+            CurrentUser.setUser(user)
+            self.user = user
+            self.openDuelsTableView.reloadData()
+            self.configureView()
+
+            print("updated")
+        }
+    }
+    
+    func configureView() {
         
         self.user.nick
             .bindTo(self.nick.bnd_text)
@@ -52,11 +88,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         
-        self.openDuelsTableView.rowHeight = 100
-        
-        self.openDuelsTableView.delegate = self
-        self.openDuelsTableView.dataSource = self
-        
         self.openDuelsTableViewHeight.constant = 0;
         
         // force a table to redraw
@@ -66,8 +97,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // now table has real height
         self.openDuelsTableViewHeight.constant = self.openDuelsTableView.contentSize.height;
 
-        
-        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
