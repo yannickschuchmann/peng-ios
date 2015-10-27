@@ -1273,7 +1273,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-3G-w5Z">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="336"/>
                                         <connections>
-                                            <segue destination="VSy-kN-7gs" kind="show" id="chT-lW-BEd"/>
+                                            <action selector="onRandomDuel:" destination="1tG-58-ANH" eventType="touchUpInside" id="hxg-34-dDT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1300,6 +1300,9 @@
                             <constraint firstAttribute="trailing" secondItem="i6x-Nt-sGg" secondAttribute="trailing" id="xom-wo-nOS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="VSy-kN-7gs" kind="show" identifier="newRandomDuel" id="yBU-SP-zCL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOj-KV-heB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

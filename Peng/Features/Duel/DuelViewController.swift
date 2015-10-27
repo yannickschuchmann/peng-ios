@@ -26,7 +26,38 @@ class DuelViewController: UIViewController {
     @IBOutlet weak var myCharacter: UIImageView!
     @IBOutlet weak var opCharacter: UIImageView!
     
+    var passedDuel: Duel!
+    var me: Actor?
+    var op: Actor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Spinner.show()
+        API.getDuel(passedDuel.id.value, userId: CurrentUser.getUser().id.value) { duel in
+            Spinner.hide()
+            self.passedDuel = duel
+            self.configureView()
+        }
+    }
+    
+    func configureView() {
+        self.me = self.passedDuel.me.value
+        self.op = self.passedDuel.opponent.value
+
+        self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
+        self.setupBullets(opBullet1, b2: opBullet2, b3: opBullet3, bullets: self.op!.shots.value)
+        
+        self.myLifes.text = String(self.me!.hitPoints.value)
+        self.opLifes.text = String(self.op!.hitPoints.value)
+        
+        self.myCharacter.image = UIImage(named: "character_" + self.me!.characterName.value)
+        self.opCharacter.image = UIImage(named: "character_" + self.op!.characterName.value)
+    }
+    
+    func setupBullets(b1: UIImageView, b2: UIImageView, b3: UIImageView, bullets: Int) {
+        b1.image = UIImage(named: bullets > 0 ? "shoot_loaded" : "shoot_unloaded")
+        b2.image = UIImage(named: bullets > 1 ? "shoot_loaded" : "shoot_unloaded")
+        b3.image = UIImage(named: bullets > 2 ? "shoot_loaded" : "shoot_unloaded")
     }
 }

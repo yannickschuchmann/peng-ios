@@ -25,7 +25,9 @@ class API {
         let params = ["uid": uid, "token": token]
         Alamofire.request(.POST, self.getUrl() + "/users/login_facebook", parameters: params)
             .responseObject { (response: User?, error: ErrorType?) -> Void in
-                completionHandler(response!)
+                if (error == nil) {
+                    completionHandler(response!)
+                }
         }
     }
     
@@ -62,6 +64,24 @@ class API {
             .responsePropertyList { (response) in
                 completionHandler(response.result.value!)
             
+        }
+    }
+    
+    class func postRandomDuel(userId: Int, completionHandler: (Duel) -> Void) {
+        Alamofire.request(.POST, self.getUrl() + "/duels/random", parameters: ["user_id" : userId])
+            .responseObject { (response: Duel?, error: ErrorType?) -> Void in
+                if (error == nil) {
+                    completionHandler(response!)
+                }
+        }
+    }
+    
+    class func getDuel(duelId: Int, userId: Int, completionHandler: (Duel) -> Void) {
+        Alamofire.request(.GET, self.getUrl() + "/duels/" + String(duelId), parameters: ["user_id": userId])
+            .responseObject { (response: Duel?, error: ErrorType?) -> Void in
+                if (error == nil) {
+                    completionHandler(response!)
+                }
         }
     }
     
