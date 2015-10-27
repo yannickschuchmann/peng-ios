@@ -526,6 +526,7 @@
                         <outlet property="rank" destination="uCo-S0-hMr" id="Llc-N7-mY9"/>
                         <outlet property="slogan" destination="gWK-OZ-fRy" id="5rS-m7-2nZ"/>
                         <segue destination="Ah7-4n-0Wa" kind="show" identifier="onEmptyNick" id="sRR-XK-3gh"/>
+                        <segue destination="VSy-kN-7gs" kind="show" identifier="goToDuel" id="kfU-us-zAa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qas-ze-hoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1143,9 +1144,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5o-uh-5mc" userLabel="Friends">
                                 <rect key="frame" x="0.0" y="64" width="600" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-DN-u0W">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-XP-RUD" userLabel="Labels">
                                         <rect key="frame" x="150" y="124" width="300" height="151"/>
                                         <subviews>
@@ -1201,15 +1199,17 @@
                                             <constraint firstItem="a0K-a1-2sR" firstAttribute="leading" secondItem="bVQ-XP-RUD" secondAttribute="leading" constant="10" id="yCu-YI-qxh"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-DN-u0W">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                        <connections>
+                                            <action selector="onNewDuel:" destination="1tG-58-ANH" eventType="touchUpInside" id="gbh-DU-7ue"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="bVQ-XP-RUD" firstAttribute="centerX" secondItem="g5o-uh-5mc" secondAttribute="centerX" id="0be-Yg-WjB"/>
                                     <constraint firstItem="bVQ-XP-RUD" firstAttribute="centerY" secondItem="g5o-uh-5mc" secondAttribute="centerY" id="AyD-p6-48g"/>
-                                    <constraint firstItem="hVH-DN-u0W" firstAttribute="leading" secondItem="g5o-uh-5mc" secondAttribute="leading" id="G36-S1-Mqg"/>
-                                    <constraint firstAttribute="trailing" secondItem="hVH-DN-u0W" secondAttribute="trailing" id="bxS-nI-QWc"/>
-                                    <constraint firstAttribute="bottom" secondItem="hVH-DN-u0W" secondAttribute="bottom" id="hZc-me-mct"/>
-                                    <constraint firstItem="hVH-DN-u0W" firstAttribute="top" secondItem="g5o-uh-5mc" secondAttribute="top" id="wEK-cZ-TxQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6x-Nt-sGg" userLabel="Random">
@@ -1302,6 +1302,7 @@
                     </view>
                     <connections>
                         <segue destination="VSy-kN-7gs" kind="show" identifier="newRandomDuel" id="yBU-SP-zCL"/>
+                        <segue destination="jLw-Lm-yhI" kind="show" identifier="newDuel" id="1Tv-KO-Xfi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOj-KV-heB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1409,6 +1410,7 @@
                     </tableView>
                     <connections>
                         <segue destination="Ah7-4n-0Wa" kind="show" identifier="showProfile" id="eya-Ju-tvL"/>
+                        <segue destination="VSy-kN-7gs" kind="show" identifier="newDuel" id="fV2-gz-flY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-8Z-9Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1703,6 +1705,8 @@
         <image name="shoot_loaded" width="35" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eya-Ju-tvL"/>
+        <segue reference="kfU-us-zAa"/>
+        <segue reference="sRR-XK-3gh"/>
+        <segue reference="Lkf-Rn-hDg"/>
     </inferredMetricsTieBreakers>
 </document>

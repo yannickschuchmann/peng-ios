@@ -13,6 +13,9 @@ class NewDuelViewController: UIViewController {
     
     var randomDuel: Duel?
     
+    @IBAction func onNewDuel(sender: AnyObject) {
+        self.performSegueWithIdentifier("newDuel", sender: self)
+    }
     @IBAction func onRandomDuel(sender: AnyObject) {
         Spinner.show()
         API.postRandomDuel(CurrentUser.getUser().id.value) { duel in
@@ -30,6 +33,9 @@ class NewDuelViewController: UIViewController {
         if segue.identifier == "newRandomDuel" && self.randomDuel != nil {
             let duelViewController = segue.destinationViewController as! DuelViewController
             duelViewController.passedDuel = self.randomDuel
+        } else if segue.identifier == "newDuel" {
+            let usersViewController = segue.destinationViewController as! UsersTableViewController
+            usersViewController.isNewDuelListing = true
         }
     }
 }

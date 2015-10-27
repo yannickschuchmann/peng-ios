@@ -55,15 +55,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             return
         }
         
-        print("refresh")
         API.getUser(self.user.id.value) { user in
-            print("update there")
             CurrentUser.setUser(user)
             self.user = user
             self.openDuelsTableView.reloadData()
             self.configureView()
-
-            print("updated")
         }
     }
     
@@ -120,4 +116,16 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("goToDuel", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let indexPath = self.openDuelsTableView.indexPathForSelectedRow {
+            if segue.identifier == "goToDuel" {
+                let duelViewController = segue.destinationViewController as! DuelViewController
+                duelViewController.passedDuel = self.user.openDuels[indexPath.row]
+            }
+        }
+    }
 }
