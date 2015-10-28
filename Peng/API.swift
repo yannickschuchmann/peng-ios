@@ -67,9 +67,9 @@ class API {
         }
     }
     
-    class func postDuel(userId: Int, opponentId: Int, completionHandler: (Duel) -> Void) {
+    class func postDuel(userId: Int, opponentId: Int, bet: String, completionHandler: (Duel) -> Void) {
         Alamofire.request(.POST, self.getUrl() + "/duels", parameters:
-            ["user_id" : userId, "opponent_id": opponentId])
+            ["user_id" : userId, "opponent_id": opponentId, "bet": bet])
             .responseObject { (response: Duel?, error: ErrorType?) -> Void in
                 if (error == nil) {
                     completionHandler(response!)

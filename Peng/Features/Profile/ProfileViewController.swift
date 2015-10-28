@@ -36,13 +36,38 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if (self.isCurrentUser!) { return }
         
-        Spinner.show()
-        API.postDuel(CurrentUser.getUser().id.value, opponentId: self.user.id.value) { duel in
-            Spinner.hide()
-            self.createdDuel = duel
-            self.performSegueWithIdentifier("newDuel", sender: self)
+        self.showBetAlert()
+        
+    }
+    
+    func showBetAlert() {
+        
+        let title = "What's the bet?"
+        
+        var betTextField: UITextField = UITextField()
+        
+        let saveButton = UIAlertAction(title: "Challenge", style: .Default, handler: { (action) -> Void in
+            Spinner.show()
+            API.postDuel(CurrentUser.getUser().id.value, opponentId: self.user.id.value, bet: betTextField.text!) { duel in
+                self.createdDuel = duel
+                Spinner.hide()
+                self.performSegueWithIdentifier("newDuel", sender: self)
+            }
+            
+        })
+        let cancelButton = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
+        alertController.addAction(saveButton)
+        alertController.addAction(cancelButton)
+        
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            betTextField = textField
+            betTextField.placeholder = "e.g. Who buys the next round?"
+            
         }
         
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -77,7 +102,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func configureView() {
         
         if (self.isCurrentUser!) {
-            if (isProfileFilled()) {
+            if (isProfileEmpty()) {
                 self.showEditProfileAlert()
             }
             challengeButtonHeight.constant = 0
@@ -132,7 +157,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
-    func isProfileFilled() -> Bool {
+    func isProfileEmpty() -> Bool {
         return self.user.nick.value == "" || self.user.slogan.value == ""
     }
     
@@ -157,12 +182,16 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             self.removeTextFieldObserver()
         })
         
-        if (isProfileFilled()) {
-            saveButton.enabled = false
-        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alertController.addAction(saveButton)
+        
+        if (isProfileEmpty()) {
+            saveButton.enabled = false
+        } else {
+            alertController.addAction(cancelButton)
+        }
         
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             self.nickTextField = textField

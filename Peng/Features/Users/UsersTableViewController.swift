@@ -30,6 +30,36 @@ class UsersTableViewController: UITableViewController {
         
     }
     
+    func showBetAlert(opponentId: Int) {
+        
+        let title = "What's the bet?"
+        
+        var betTextField: UITextField = UITextField()
+        
+        let saveButton = UIAlertAction(title: "Challenge", style: .Default, handler: { (action) -> Void in
+            Spinner.show()
+            API.postDuel(CurrentUser.getUser().id.value, opponentId: self.users[opponentId].id.value, bet: betTextField.text!) { duel in
+                self.createdDuel = duel
+                Spinner.hide()
+                self.performSegueWithIdentifier("newDuel", sender: self)
+            }
+            
+        })
+        let cancelButton = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
+        alertController.addAction(saveButton)
+        alertController.addAction(cancelButton)
+        
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            betTextField = textField
+            betTextField.placeholder = "e.g. Who buys the next round?"
+            
+        }
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -52,12 +82,7 @@ class UsersTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (isNewDuelListing) {
-            Spinner.show()
-            API.postDuel(CurrentUser.getUser().id.value, opponentId: users[indexPath.row].id.value) { duel in
-                self.createdDuel = duel
-                Spinner.hide()
-                self.performSegueWithIdentifier("newDuel", sender: self)
-            }
+            self.showBetAlert(indexPath.row)
         } else {
             self.performSegueWithIdentifier("showProfile", sender: self)
         }
