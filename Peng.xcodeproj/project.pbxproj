@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC04F1F51BDFD67B00A6592B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04F1F41BDFD67B00A6592B /* libz.tbd */; };
+		AC04F24A1BDFD91D00A6592B /* APNGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04F2411BDFD90C00A6592B /* APNGKit.framework */; };
+		AC04F24B1BDFD91D00A6592B /* APNGKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC04F2411BDFD90C00A6592B /* APNGKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC04F2521BDFDF8400A6592B /* animated2.apng in Resources */ = {isa = PBXBuildFile; fileRef = AC04F2511BDFDF8400A6592B /* animated2.apng */; settings = {ASSET_TAGS = (); }; };
 		AC09F7331BDC3C180078ED34 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09F7321BDC3C180078ED34 /* Actor.swift */; settings = {ASSET_TAGS = (); }; };
 		AC20A0D71BD922670083E0B3 /* HowToItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A0D61BD922670083E0B3 /* HowToItemController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC20A0D91BD922930083E0B3 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20A0D81BD922930083E0B3 /* HowToViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +52,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC04F2401BDFD90C00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B0D67391B8E9DBF00876BDF;
+			remoteInfo = APNGKit;
+		};
+		AC04F2421BDFD90C00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B0D67431B8E9DC000876BDF;
+			remoteInfo = APNGKitTests;
+		};
+		AC04F2441BDFD90C00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D199B1F81B91445100BF8358;
+			remoteInfo = APNGKitDemo;
+		};
+		AC04F2461BDFD90C00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D199B20B1B91445100BF8358;
+			remoteInfo = APNGKitDemoTests;
+		};
+		AC04F2481BDFD90C00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D199B2161B91445100BF8358;
+			remoteInfo = APNGKitDemoUITests;
+		};
+		AC04F24C1BDFD91D00A6592B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B0D67381B8E9DBF00876BDF;
+			remoteInfo = APNGKit;
+		};
 		AC20A1071BD964C40083E0B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC20A0FF1BD964C40083E0B3 /* Alamofire.xcodeproj */;
@@ -233,6 +279,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC20A1A71BD96B4D0083E0B3 /* Bond.framework in Embed Frameworks */,
+				AC04F24B1BDFD91D00A6592B /* APNGKit.framework in Embed Frameworks */,
 				AC20A11E1BD965520083E0B3 /* Alamofire.framework in Embed Frameworks */,
 				AC20A1AB1BD96B540083E0B3 /* ObjectMapper.framework in Embed Frameworks */,
 				AC20A1781BD969710083E0B3 /* AlamofireObjectMapper.framework in Embed Frameworks */,
@@ -243,6 +290,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC04F1F41BDFD67B00A6592B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APNGKit.xcodeproj; path = APNGKit/APNGKit.xcodeproj; sourceTree = "<group>"; };
+		AC04F2511BDFDF8400A6592B /* animated2.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = animated2.apng; sourceTree = "<group>"; };
 		AC09F7321BDC3C180078ED34 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actor.swift; path = Models/Actor.swift; sourceTree = "<group>"; };
 		AC20A0D61BD922670083E0B3 /* HowToItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToItemController.swift; path = HowTo/HowToItemController.swift; sourceTree = "<group>"; };
 		AC20A0D81BD922930083E0B3 /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HowToViewController.swift; path = HowTo/HowToViewController.swift; sourceTree = "<group>"; };
@@ -288,8 +338,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04F1F51BDFD67B00A6592B /* libz.tbd in Frameworks */,
 				AC20A1AA1BD96B540083E0B3 /* ObjectMapper.framework in Frameworks */,
 				AC20A1771BD969710083E0B3 /* AlamofireObjectMapper.framework in Frameworks */,
+				AC04F24A1BDFD91D00A6592B /* APNGKit.framework in Frameworks */,
 				AC20A11D1BD965520083E0B3 /* Alamofire.framework in Frameworks */,
 				ACC2F61B1BCE664F004BB101 /* FBSDKLoginKit.framework in Frameworks */,
 				ACC2F61A1BCE664F004BB101 /* FBSDKCoreKit.framework in Frameworks */,
@@ -307,6 +359,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC04F2391BDFD90B00A6592B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC04F2411BDFD90C00A6592B /* APNGKit.framework */,
+				AC04F2431BDFD90C00A6592B /* APNGKitTests.xctest */,
+				AC04F2451BDFD90C00A6592B /* APNGKitDemo.app */,
+				AC04F2471BDFD90C00A6592B /* APNGKitDemoTests.xctest */,
+				AC04F2491BDFD90C00A6592B /* APNGKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AC20A0D51BD9224C0083E0B3 /* HowTo */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +487,8 @@
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
+				AC04F1F41BDFD67B00A6592B /* libz.tbd */,
+				AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */,
 				AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */,
 				AC20A17B1BD96AA50083E0B3 /* Bond.xcodeproj */,
 				AC20A1631BD9680D0083E0B3 /* AlamofireObjectMapper.xcodeproj */,
@@ -533,6 +599,7 @@
 		AC84B18A1B4C4ED20030B0ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AC04F2511BDFDF8400A6592B /* animated2.apng */,
 				AC84B18B1B4C4ED60030B0ED /* Fonts */,
 			);
 			name = Assets;
@@ -574,6 +641,7 @@
 				AC20A17A1BD969710083E0B3 /* PBXTargetDependency */,
 				AC20A1A91BD96B4D0083E0B3 /* PBXTargetDependency */,
 				AC20A1AD1BD96B540083E0B3 /* PBXTargetDependency */,
+				AC04F24D1BDFD91D00A6592B /* PBXTargetDependency */,
 			);
 			name = Peng;
 			productName = Peng;
@@ -604,6 +672,9 @@
 		AC84B14F1B4C357E0030B0ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
@@ -640,6 +711,10 @@
 					ProjectRef = AC20A1631BD9680D0083E0B3 /* AlamofireObjectMapper.xcodeproj */;
 				},
 				{
+					ProductGroup = AC04F2391BDFD90B00A6592B /* Products */;
+					ProjectRef = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
+				},
+				{
 					ProductGroup = AC20A17C1BD96AA50083E0B3 /* Products */;
 					ProjectRef = AC20A17B1BD96AA50083E0B3 /* Bond.xcodeproj */;
 				},
@@ -657,6 +732,41 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		AC04F2411BDFD90C00A6592B /* APNGKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APNGKit.framework;
+			remoteRef = AC04F2401BDFD90C00A6592B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC04F2431BDFD90C00A6592B /* APNGKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APNGKitTests.xctest;
+			remoteRef = AC04F2421BDFD90C00A6592B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC04F2451BDFD90C00A6592B /* APNGKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = APNGKitDemo.app;
+			remoteRef = AC04F2441BDFD90C00A6592B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC04F2471BDFD90C00A6592B /* APNGKitDemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APNGKitDemoTests.xctest;
+			remoteRef = AC04F2461BDFD90C00A6592B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC04F2491BDFD90C00A6592B /* APNGKitDemoUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APNGKitDemoUITests.xctest;
+			remoteRef = AC04F2481BDFD90C00A6592B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		AC20A1081BD964C40083E0B3 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -809,6 +919,7 @@
 				AC84B1691B4C357E0030B0ED /* LaunchScreen.xib in Resources */,
 				AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */,
 				AC84B1661B4C357E0030B0ED /* Images.xcassets in Resources */,
+				AC04F2521BDFDF8400A6592B /* animated2.apng in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,6 +973,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC04F24D1BDFD91D00A6592B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APNGKit;
+			targetProxy = AC04F24C1BDFD91D00A6592B /* PBXContainerItemProxy */;
+		};
 		AC20A1201BD965520083E0B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
@@ -1010,6 +1126,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1032,6 +1149,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

@@ -233,13 +233,13 @@
                                                                     <constraint firstAttribute="width" constant="2" id="5EE-TH-IGg"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k79-sw-6ck">
                                                                 <rect key="frame" x="81" y="10" width="39" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-ai-dFJ">
                                                                 <rect key="frame" x="82.5" y="35" width="35" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -266,13 +266,13 @@
                                                                     <constraint firstAttribute="width" constant="2" id="2Gb-ot-hci"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-Gc-gz3">
                                                                 <rect key="frame" x="70" y="10" width="58.5" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="287" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-S0-hMr">
                                                                 <rect key="frame" x="73" y="35" width="52.5" height="35"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="30"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -300,7 +300,7 @@
                                                                     <constraint firstAttribute="width" constant="2" id="XWy-tr-TXA"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-dR-eTH">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-dR-eTH">
                                                                 <rect key="frame" x="74.5" y="10" width="52" height="20"/>
                                                                 <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -648,7 +648,7 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-gl-KWg">
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-gl-KWg">
                                                         <rect key="frame" x="283" y="251" width="33" height="37"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="R9f-VE-VNy"/>
@@ -1059,31 +1059,30 @@
                                             <constraint firstAttribute="width" secondItem="1VW-Eh-AF2" secondAttribute="height" multiplier="525:100" id="AOW-ku-LwA"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-UK-gcC" userLabel="opponent_character">
-                                        <rect key="frame" x="34.5" y="107.5" width="343.5" height="225.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-WP-UKS" userLabel="opponent_character" customClass="APNGImageView" customModule="APNGKit">
+                                        <rect key="frame" x="34.5" y="88" width="343" height="245"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="fSP-UK-gcC" secondAttribute="height" multiplier="525:345" id="Ewg-s2-DH3"/>
+                                            <constraint firstAttribute="width" secondItem="Rfc-WP-UKS" secondAttribute="height" multiplier="490:350" id="eRv-OJ-67F"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtP-d5-RP6" userLabel="my_character">
-                                        <rect key="frame" x="34.5" y="403" width="343.5" height="225.5"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBJ-8S-gFd" userLabel="my_character" customClass="APNGImageView" customModule="APNGKit">
+                                        <rect key="frame" x="34.5" y="403" width="343" height="245"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="FtP-d5-RP6" secondAttribute="height" multiplier="525:345" id="DLS-GF-rkc"/>
+                                            <constraint firstAttribute="width" secondItem="MBJ-8S-gFd" secondAttribute="height" multiplier="490:350" id="cGI-3q-VVa"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="MBJ-8S-gFd" secondAttribute="width" multiplier="1.2" id="1Zr-Mx-TN8"/>
                                     <constraint firstItem="dmD-fX-78i" firstAttribute="height" secondItem="7WK-xM-Hjo" secondAttribute="height" multiplier="0.07" id="24l-a7-uNt"/>
                                     <constraint firstItem="mL6-NB-an8" firstAttribute="height" secondItem="KC5-IJ-7g5" secondAttribute="height" id="4Ez-Zt-CC1"/>
                                     <constraint firstItem="dmD-fX-78i" firstAttribute="leading" secondItem="7WK-xM-Hjo" secondAttribute="trailing" multiplier="0.065" id="5yb-eJ-0kI"/>
-                                    <constraint firstItem="FtP-d5-RP6" firstAttribute="width" secondItem="FtP-d5-RP6" secondAttribute="height" multiplier="525:345" id="87S-aR-mPT"/>
-                                    <constraint firstAttribute="width" secondItem="fSP-UK-gcC" secondAttribute="width" multiplier="1.2" id="9i6-4H-s1z"/>
+                                    <constraint firstItem="MBJ-8S-gFd" firstAttribute="top" secondItem="1VW-Eh-AF2" secondAttribute="bottom" id="8wJ-b7-hir"/>
                                     <constraint firstItem="KC5-IJ-7g5" firstAttribute="baseline" secondItem="gT8-CF-Avn" secondAttribute="baseline" id="ELA-se-SYd"/>
                                     <constraint firstItem="KC5-IJ-7g5" firstAttribute="height" secondItem="7WK-xM-Hjo" secondAttribute="height" multiplier="0.04" id="Gjg-YP-U2U"/>
                                     <constraint firstItem="KC5-IJ-7g5" firstAttribute="leading" secondItem="7WK-xM-Hjo" secondAttribute="trailing" multiplier="0.12" id="H9Z-IC-DqB"/>
-                                    <constraint firstItem="FtP-d5-RP6" firstAttribute="top" secondItem="1VW-Eh-AF2" secondAttribute="bottom" id="JUy-s7-m3p"/>
                                     <constraint firstItem="mL6-NB-an8" firstAttribute="top" secondItem="7WK-xM-Hjo" secondAttribute="bottom" multiplier="0.06" id="Lzm-jl-gjZ"/>
-                                    <constraint firstAttribute="width" secondItem="FtP-d5-RP6" secondAttribute="width" multiplier="1.2" id="M2Y-dw-8eF"/>
+                                    <constraint firstItem="MBJ-8S-gFd" firstAttribute="centerX" secondItem="7WK-xM-Hjo" secondAttribute="centerX" id="MgW-nn-1Pm"/>
                                     <constraint firstItem="smB-1L-hxS" firstAttribute="height" secondItem="7WK-xM-Hjo" secondAttribute="height" multiplier="0.07" id="PST-3s-KhI"/>
                                     <constraint firstItem="smB-1L-hxS" firstAttribute="leading" secondItem="gT8-CF-Avn" secondAttribute="trailing" constant="10" id="QxP-9l-p2z"/>
                                     <constraint firstItem="dmD-fX-78i" firstAttribute="top" secondItem="7WK-xM-Hjo" secondAttribute="bottom" multiplier="0.043" id="TX5-pe-ztI"/>
@@ -1091,16 +1090,16 @@
                                     <constraint firstItem="LRt-RD-uux" firstAttribute="leading" secondItem="dmD-fX-78i" secondAttribute="trailing" constant="10" id="VG0-tZ-Kyb"/>
                                     <constraint firstAttribute="trailing" secondItem="smB-1L-hxS" secondAttribute="trailing" multiplier="1.065" id="WmU-ws-NKq"/>
                                     <constraint firstItem="mL6-NB-an8" firstAttribute="trailing" secondItem="7WK-xM-Hjo" secondAttribute="trailing" multiplier="0.895" id="Xmn-Mg-KXz"/>
-                                    <constraint firstItem="FtP-d5-RP6" firstAttribute="centerX" secondItem="7WK-xM-Hjo" secondAttribute="centerX" id="Xop-9c-d2n"/>
                                     <constraint firstItem="1VW-Eh-AF2" firstAttribute="centerY" secondItem="7WK-xM-Hjo" secondAttribute="centerY" id="ZoW-WT-YeA"/>
-                                    <constraint firstItem="1VW-Eh-AF2" firstAttribute="top" secondItem="fSP-UK-gcC" secondAttribute="bottom" id="a3B-nC-GXb"/>
                                     <constraint firstAttribute="width" secondItem="1VW-Eh-AF2" secondAttribute="width" multiplier="1.13" id="aul-HR-KUb"/>
                                     <constraint firstAttribute="bottom" secondItem="smB-1L-hxS" secondAttribute="bottom" multiplier="1.043" id="fm4-d0-fAN"/>
                                     <constraint firstItem="gT8-CF-Avn" firstAttribute="leading" secondItem="KC5-IJ-7g5" secondAttribute="trailing" constant="10" id="g7D-LK-qdE"/>
-                                    <constraint firstItem="fSP-UK-gcC" firstAttribute="centerX" secondItem="7WK-xM-Hjo" secondAttribute="centerX" id="gYr-T5-Kpz"/>
+                                    <constraint firstAttribute="width" secondItem="Rfc-WP-UKS" secondAttribute="width" multiplier="1.2" id="kWh-oF-P5u"/>
                                     <constraint firstItem="mL6-NB-an8" firstAttribute="leading" secondItem="LRt-RD-uux" secondAttribute="trailing" constant="10" id="lQI-WL-srG"/>
                                     <constraint firstItem="1VW-Eh-AF2" firstAttribute="centerX" secondItem="7WK-xM-Hjo" secondAttribute="centerX" id="rE9-RC-08k"/>
                                     <constraint firstItem="LRt-RD-uux" firstAttribute="baseline" secondItem="mL6-NB-an8" secondAttribute="baseline" id="rkZ-AW-97X"/>
+                                    <constraint firstItem="1VW-Eh-AF2" firstAttribute="top" secondItem="Rfc-WP-UKS" secondAttribute="bottom" id="tb0-nc-pbK"/>
+                                    <constraint firstItem="Rfc-WP-UKS" firstAttribute="centerX" secondItem="7WK-xM-Hjo" secondAttribute="centerX" id="xvJ-5J-enl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1120,12 +1119,12 @@
                         <outlet property="myBullet1" destination="zUn-wJ-hT5" id="Mrn-gz-ouj"/>
                         <outlet property="myBullet2" destination="XXE-xU-ZAv" id="R2X-Ne-YRO"/>
                         <outlet property="myBullet3" destination="tMQ-7P-W2q" id="DGz-8u-8vv"/>
-                        <outlet property="myCharacter" destination="FtP-d5-RP6" id="Zf7-Ex-JgC"/>
+                        <outlet property="myCharacter" destination="MBJ-8S-gFd" id="bhY-nu-aYf"/>
                         <outlet property="myLifes" destination="gcA-dl-LVn" id="sqn-6a-U5b"/>
                         <outlet property="opBullet1" destination="vtd-OX-gOa" id="BPm-dH-qkZ"/>
                         <outlet property="opBullet2" destination="Tbc-XB-gfI" id="t3C-Md-cFg"/>
                         <outlet property="opBullet3" destination="QfX-cP-XWk" id="uSm-bh-VoR"/>
-                        <outlet property="opCharacter" destination="fSP-UK-gcC" id="37S-lM-Py4"/>
+                        <outlet property="opCharacter" destination="Rfc-WP-UKS" id="4C2-7g-R5f"/>
                         <outlet property="opLifes" destination="oKh-wa-gUD" id="fmb-db-aKt"/>
                     </connections>
                 </viewController>

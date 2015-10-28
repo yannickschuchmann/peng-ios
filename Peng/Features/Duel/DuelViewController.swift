@@ -8,9 +8,11 @@
 
 import Foundation
 import UIKit
+import APNGKit
 
 class DuelViewController: UIViewController {
     
+    @IBOutlet weak var apngView: APNGImageView!
     
     @IBOutlet var myLifes: UILabel!
     @IBOutlet var opLifes: UILabel!
@@ -22,9 +24,11 @@ class DuelViewController: UIViewController {
     @IBOutlet var opBullet1: UIImageView!
     @IBOutlet var opBullet2: UIImageView!
     @IBOutlet var opBullet3: UIImageView!
+
     
-    @IBOutlet weak var myCharacter: UIImageView!
-    @IBOutlet weak var opCharacter: UIImageView!
+    @IBOutlet weak var myCharacter: APNGImageView!
+    @IBOutlet weak var opCharacter: APNGImageView!
+    
     
     var passedDuel: Duel!
     var me: Actor?
@@ -39,6 +43,7 @@ class DuelViewController: UIViewController {
             self.passedDuel = duel
             self.configureView()
         }
+
     }
     
     func configureView() {
@@ -51,8 +56,16 @@ class DuelViewController: UIViewController {
         self.myLifes.text = String(self.me!.hitPoints.value)
         self.opLifes.text = String(self.op!.hitPoints.value)
         
-        self.myCharacter.image = UIImage(named: "character_" + self.me!.characterName.value)
-        self.opCharacter.image = UIImage(named: "character_" + self.op!.characterName.value)
+        if let image = APNGImage(named: "animated2") {
+            image.repeatCount = 0
+            
+            myCharacter.image = image
+            myCharacter.startAnimating()
+                        
+            opCharacter.image = image
+            opCharacter.startAnimating()
+            
+        }
     }
     
     func setupBullets(b1: UIImageView, b2: UIImageView, b3: UIImageView, bullets: Int) {

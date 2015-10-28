@@ -19,3 +19,6 @@
 [submodule "FLAnimatedImage"]
 	path = FLAnimatedImage
 	url = https://github.com/Flipboard/FLAnimatedImage.git
+[submodule "APNGKit"]
+	path = APNGKit
+	url = https://github.com/onevcat/APNGKit.git
