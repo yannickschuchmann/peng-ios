@@ -33,6 +33,7 @@
 		AC651E851BD6A717007B1422 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC651E841BD6A717007B1422 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
 		AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65405C1BD4E7F7002C2747 /* Spinner.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6540601BD5164E002C2747 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65405F1BD5164E002C2747 /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		AC6857B31BE2C6980084EA47 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6857B21BE2C6980084EA47 /* SensorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6FCC051B4DAA7700837119 /* Futura-Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC84B18C1B4C4F200030B0ED /* Futura-Extended.ttf */; };
 		AC84B15D1B4C357E0030B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */; };
 		AC84B1611B4C357E0030B0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84B1601B4C357E0030B0ED /* ProfileViewController.swift */; };
@@ -58,34 +59,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 4B0D67391B8E9DBF00876BDF;
 			remoteInfo = APNGKit;
-		};
-		AC04F2421BDFD90C00A6592B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B0D67431B8E9DC000876BDF;
-			remoteInfo = APNGKitTests;
-		};
-		AC04F2441BDFD90C00A6592B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D199B1F81B91445100BF8358;
-			remoteInfo = APNGKitDemo;
-		};
-		AC04F2461BDFD90C00A6592B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D199B20B1B91445100BF8358;
-			remoteInfo = APNGKitDemoTests;
-		};
-		AC04F2481BDFD90C00A6592B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D199B2161B91445100BF8358;
-			remoteInfo = APNGKitDemoUITests;
 		};
 		AC04F24C1BDFD91D00A6592B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -311,6 +284,7 @@
 		AC651E841BD6A717007B1422 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		AC65405C1BD4E7F7002C2747 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		AC65405F1BD5164E002C2747 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		AC6857B21BE2C6980084EA47 /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SensorViewController.swift; path = Features/Duel/SensorViewController.swift; sourceTree = "<group>"; };
 		AC84B1571B4C357E0030B0ED /* Peng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC84B15B1B4C357E0030B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC84B15C1B4C357E0030B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -363,10 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				AC04F2411BDFD90C00A6592B /* APNGKit.framework */,
-				AC04F2431BDFD90C00A6592B /* APNGKitTests.xctest */,
-				AC04F2451BDFD90C00A6592B /* APNGKitDemo.app */,
-				AC04F2471BDFD90C00A6592B /* APNGKitDemoTests.xctest */,
-				AC04F2491BDFD90C00A6592B /* APNGKitDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -440,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */,
+				AC6857B21BE2C6980084EA47 /* SensorViewController.swift */,
 			);
 			name = Duel;
 			sourceTree = "<group>";
@@ -739,34 +710,6 @@
 			remoteRef = AC04F2401BDFD90C00A6592B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AC04F2431BDFD90C00A6592B /* APNGKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNGKitTests.xctest;
-			remoteRef = AC04F2421BDFD90C00A6592B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AC04F2451BDFD90C00A6592B /* APNGKitDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = APNGKitDemo.app;
-			remoteRef = AC04F2441BDFD90C00A6592B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AC04F2471BDFD90C00A6592B /* APNGKitDemoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNGKitDemoTests.xctest;
-			remoteRef = AC04F2461BDFD90C00A6592B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AC04F2491BDFD90C00A6592B /* APNGKitDemoUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNGKitDemoUITests.xctest;
-			remoteRef = AC04F2481BDFD90C00A6592B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		AC20A1081BD964C40083E0B3 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -959,6 +902,7 @@
 				AC84B1921B4C56F90030B0ED /* MainViewController.swift in Sources */,
 				ACF155701BDC304400802A55 /* DuelItemViewCell.swift in Sources */,
 				AC09F7331BDC3C180078ED34 /* Actor.swift in Sources */,
+				AC6857B31BE2C6980084EA47 /* SensorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

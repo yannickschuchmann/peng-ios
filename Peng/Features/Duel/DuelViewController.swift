@@ -12,8 +12,7 @@ import APNGKit
 
 class DuelViewController: UIViewController {
     
-    @IBOutlet weak var apngView: APNGImageView!
-    
+    @IBOutlet weak var countdownView: UIView!
     @IBOutlet var myLifes: UILabel!
     @IBOutlet var opLifes: UILabel!
     
@@ -25,6 +24,7 @@ class DuelViewController: UIViewController {
     @IBOutlet var opBullet2: UIImageView!
     @IBOutlet var opBullet3: UIImageView!
 
+    @IBOutlet weak var countdownLabel: UIImageView!
     
     @IBOutlet weak var myCharacter: APNGImageView!
     @IBOutlet weak var opCharacter: APNGImageView!
