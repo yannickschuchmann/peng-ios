@@ -27,7 +27,7 @@ class SensorViewController: UIViewController {
         motionManager = CMMotionManager()
         
         self.updateCountdown()
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateCountdown"), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("updateCountdown"), userInfo: nil, repeats: true)
 
     }
     
