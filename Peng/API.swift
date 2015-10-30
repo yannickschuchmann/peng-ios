@@ -86,6 +86,16 @@ class API {
         }
     }
     
+    class func postAction(userId: Int, duelId: Int, actionType: String, completionHandler: (Duel) -> Void) {
+        Alamofire.request(.POST, self.getUrl() + "/duels/\(duelId)", parameters:
+            ["user_id" : userId, "action_type": actionType])
+            .responseObject { (response: Duel?, error: ErrorType?) -> Void in
+                if (error == nil) {
+                    completionHandler(response!)
+                }
+        }
+    }
+    
     class func getDuel(duelId: Int, userId: Int, completionHandler: (Duel) -> Void) {
         Alamofire.request(.GET, self.getUrl() + "/duels/" + String(duelId), parameters: ["user_id": userId])
             .responseObject { (response: Duel?, error: ErrorType?) -> Void in

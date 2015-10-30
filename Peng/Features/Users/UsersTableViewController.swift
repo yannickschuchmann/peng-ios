@@ -72,8 +72,8 @@ class UsersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("UserCell", forIndexPath: indexPath) as! UsersTableViewCell
         let entry = users[indexPath.row]
         
-        cell.nick.text = entry.nick.value
-        cell.rank.text = String(entry.rank.value)
+        cell.nick.text = (entry.nick.value == "") ? "New Player" : entry.nick.value
+        cell.rank.text = String(entry.rank.value) + ". PLACE"
         cell.slogan.text = entry.slogan.value
         cell.characterImage.image = UIImage(named: "character_" + entry.characterName.value)
         

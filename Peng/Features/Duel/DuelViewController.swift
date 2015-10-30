@@ -12,10 +12,9 @@ import UIKit
 import APNGKit
 
 class DuelViewController: UIViewController {
-    
-    @IBOutlet weak var countdownView: UIView!
     @IBOutlet var myLifes: UILabel!
     @IBOutlet var opLifes: UILabel!
+    @IBOutlet weak var status: UIImageView!
     
     @IBOutlet var myBullet1: UIImageView!
     @IBOutlet var myBullet2: UIImageView!
@@ -24,16 +23,17 @@ class DuelViewController: UIViewController {
     @IBOutlet var opBullet1: UIImageView!
     @IBOutlet var opBullet2: UIImageView!
     @IBOutlet var opBullet3: UIImageView!
-
-    @IBOutlet weak var countdownLabel: UIImageView!
     
     @IBOutlet weak var myCharacter: APNGImageView!
     @IBOutlet weak var opCharacter: APNGImageView!
     
-    @IBAction func didSensorAction(segue:UIStoryboardSegue) {
-        print(self.op!.nick.value)
-    }
+    @IBAction func didSensorAction(segue:UIStoryboardSegue) {}
     
+    @IBAction func doSensorAction(sender: AnyObject) {
+        if (self.passedDuel.myTurn.value) {
+            self.performSegueWithIdentifier("doSensorAction", sender: self)
+        }
+    }
     var passedDuel: Duel!
     var passedResultCode: Int?
     var me: Actor?
@@ -70,7 +70,10 @@ class DuelViewController: UIViewController {
                 
             }
 
-            
+            API.postAction(CurrentUser.getUser().id.value, duelId: self.passedDuel.id.value, actionType: GestureManager.resultCodeToActionType(self.passedResultCode!)) { duel in
+                self.passedDuel = duel
+                self.configureView()
+            }
             
         }
         
@@ -80,8 +83,8 @@ class DuelViewController: UIViewController {
         self.me = self.passedDuel.me.value
         self.op = self.passedDuel.opponent.value
 
+        self.status.image = UIImage(named: "b_" + self.passedDuel.result.value)
         
-        print(self.op!.nick.value)
         self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
         self.setupBullets(opBullet1, b2: opBullet2, b3: opBullet3, bullets: self.op!.shots.value)
         
