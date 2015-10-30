@@ -29,11 +29,15 @@ class DuelViewController: UIViewController {
     @IBOutlet weak var myCharacter: APNGImageView!
     @IBOutlet weak var opCharacter: APNGImageView!
     
+    @IBAction func didSensorAction(segue:UIStoryboardSegue) {
+        print(self.op!.nick.value)
+    }
     
     var passedDuel: Duel!
+    var passedResultCode: Int?
     var me: Actor?
     var op: Actor?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,10 +50,21 @@ class DuelViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if (self.passedResultCode != nil) {
+            print(GestureManager.resultCodeToActionType(self.passedResultCode!))
+        }
+        
+    }
+    
     func configureView() {
         self.me = self.passedDuel.me.value
         self.op = self.passedDuel.opponent.value
 
+        
+        print(self.op!.nick.value)
         self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
         self.setupBullets(opBullet1, b2: opBullet2, b3: opBullet3, bullets: self.op!.shots.value)
         

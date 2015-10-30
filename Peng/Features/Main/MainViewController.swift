@@ -124,6 +124,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if let indexPath = self.openDuelsTableView.indexPathForSelectedRow {
             if segue.identifier == "goToDuel" {
                 let duelViewController = segue.destinationViewController as! DuelViewController
+                print(self.user.openDuels.count)
                 duelViewController.passedDuel = self.user.openDuels[indexPath.row]
             }
         }

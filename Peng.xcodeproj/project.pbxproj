@@ -24,6 +24,7 @@
 		AC20A1AB1BD96B540083E0B3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC20A1991BD96AF50083E0B3 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC45698C1BDE7C6900A69E99 /* DuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC4F78CE1BE3704000496AAB /* GestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F78CD1BE3704000496AAB /* GestureManager.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -275,6 +276,7 @@
 		AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectMapper.xcodeproj; path = ObjectMapper/ObjectMapper.xcodeproj; sourceTree = "<group>"; };
 		AC45697B1BDE61E800A69E99 /* NewDuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewDuelViewController.swift; path = Features/NewDuel/NewDuelViewController.swift; sourceTree = "<group>"; };
 		AC45698B1BDE7C6900A69E99 /* DuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuelViewController.swift; path = Features/Duel/DuelViewController.swift; sourceTree = "<group>"; };
+		AC4F78CD1BE3704000496AAB /* GestureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureManager.swift; sourceTree = "<group>"; };
 		AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Features/Users/UsersTableViewController.swift; sourceTree = "<group>"; };
 		AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = Features/Users/UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				AC9F52E81BD41B5000E73627 /* API.swift */,
 				AC65405C1BD4E7F7002C2747 /* Spinner.swift */,
 				ACAB65531BD51BA200DAD1E5 /* CurrentUser.swift */,
+				AC4F78CD1BE3704000496AAB /* GestureManager.swift */,
 			);
 			path = Peng;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC2F61D1BCE682D004BB101 /* LoginViewController.swift in Sources */,
+				AC4F78CE1BE3704000496AAB /* GestureManager.swift in Sources */,
 				AC65405D1BD4E7F7002C2747 /* Spinner.swift in Sources */,
 				AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */,
 				AC45697C1BDE61E800A69E99 /* NewDuelViewController.swift in Sources */,
@@ -987,7 +991,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: University of applied sciences Hamburg";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1069,7 +1073,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				PROVISIONING_PROFILE = "20699058-9c47-43f3-80ce-93e4474170ca";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1092,7 +1096,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
+				PROVISIONING_PROFILE = "20699058-9c47-43f3-80ce-93e4474170ca";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
