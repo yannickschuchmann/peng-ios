@@ -30,6 +30,7 @@
 		AC543F741BE3C348009C1E2C /* block.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F711BE3C348009C1E2C /* block.mp3 */; settings = {ASSET_TAGS = (); }; };
 		AC543F751BE3C348009C1E2C /* reload.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F721BE3C348009C1E2C /* reload.mp3 */; settings = {ASSET_TAGS = (); }; };
 		AC543F761BE3C348009C1E2C /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F731BE3C348009C1E2C /* shoot.mp3 */; settings = {ASSET_TAGS = (); }; };
+		AC543F891BE3DF1D009C1E2C /* amerindian_blu_block.png in Resources */ = {isa = PBXBuildFile; fileRef = AC543F881BE3DF1D009C1E2C /* amerindian_blu_block.png */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -285,6 +286,7 @@
 		AC543F711BE3C348009C1E2C /* block.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = block.mp3; sourceTree = "<group>"; };
 		AC543F721BE3C348009C1E2C /* reload.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reload.mp3; sourceTree = "<group>"; };
 		AC543F731BE3C348009C1E2C /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
+		AC543F881BE3DF1D009C1E2C /* amerindian_blu_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amerindian_blu_block.png; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
 		AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeViewController.swift; path = CharacterChange/CharacterChangeViewController.swift; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
@@ -430,6 +432,14 @@
 				AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */,
 			);
 			name = Users;
+			sourceTree = "<group>";
+		};
+		AC543F871BE3DED8009C1E2C /* character_animations */ = {
+			isa = PBXGroup;
+			children = (
+				AC543F881BE3DF1D009C1E2C /* amerindian_blu_block.png */,
+			);
+			name = character_animations;
 			sourceTree = "<group>";
 		};
 		AC6363BA1BD67152007206E4 /* CharacterChange */ = {
@@ -582,6 +592,7 @@
 		AC84B18A1B4C4ED20030B0ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AC543F871BE3DED8009C1E2C /* character_animations */,
 				AC04F2511BDFDF8400A6592B /* animated2.apng */,
 				AC84B18B1B4C4ED60030B0ED /* Fonts */,
 			);
@@ -874,6 +885,7 @@
 				AC84B1691B4C357E0030B0ED /* LaunchScreen.xib in Resources */,
 				AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */,
 				AC543F751BE3C348009C1E2C /* reload.mp3 in Resources */,
+				AC543F891BE3DF1D009C1E2C /* amerindian_blu_block.png in Resources */,
 				AC543F741BE3C348009C1E2C /* block.mp3 in Resources */,
 				AC543F761BE3C348009C1E2C /* shoot.mp3 in Resources */,
 				AC84B1661B4C357E0030B0ED /* Images.xcassets in Resources */,
@@ -1085,7 +1097,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "20699058-9c47-43f3-80ce-93e4474170ca";
+				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1108,7 +1120,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "20699058-9c47-43f3-80ce-93e4474170ca";
+				PROVISIONING_PROFILE = "9e34e097-2160-4ceb-8a2a-50ad22de6051";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
