@@ -38,4 +38,8 @@ class GestureManager {
         }
         return imageName
     }
+    
+    class func resultCodeToImageName(code: Int) -> String {
+        return self.actionTypeToImageName(self.resultCodeToActionType(code))
+    }
 }

@@ -6,6 +6,7 @@
 //  Copyright © 2015 Yannick Schuchmann. All rights reserved.
 //
 
+import AVFoundation
 import Foundation
 import UIKit
 import APNGKit
@@ -37,6 +38,8 @@ class DuelViewController: UIViewController {
     var passedResultCode: Int?
     var me: Actor?
     var op: Actor?
+    
+    var audioPlayer : AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +57,21 @@ class DuelViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if (self.passedResultCode != nil) {
-            print(GestureManager.resultCodeToActionType(self.passedResultCode!))
+            let name = GestureManager.resultCodeToImageName(self.passedResultCode!)
+            
+            let path = NSBundle.mainBundle().pathForResource(name, ofType: "mp3")!
+            let url = NSURL(fileURLWithPath: path)
+            
+            do {
+                let sound = try AVAudioPlayer(contentsOfURL: url)
+                audioPlayer = sound
+                sound.play()
+            } catch {
+                
+            }
+
+            
+            
         }
         
     }

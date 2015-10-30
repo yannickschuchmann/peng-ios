@@ -27,6 +27,9 @@
 		AC4F78CE1BE3704000496AAB /* GestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F78CD1BE3704000496AAB /* GestureManager.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9721BDAA5FC004BA6AD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC53E9741BDAA6E2004BA6AD /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AC543F741BE3C348009C1E2C /* block.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F711BE3C348009C1E2C /* block.mp3 */; settings = {ASSET_TAGS = (); }; };
+		AC543F751BE3C348009C1E2C /* reload.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F721BE3C348009C1E2C /* reload.mp3 */; settings = {ASSET_TAGS = (); }; };
+		AC543F761BE3C348009C1E2C /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC543F731BE3C348009C1E2C /* shoot.mp3 */; settings = {ASSET_TAGS = (); }; };
 		AC6363B91BD67147007206E4 /* CharacterChangeItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC6363BC1BD6740F007206E4 /* CharacterChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AC63686F1BB47B89002ED083 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63686D1BB47B89002ED083 /* HeadlineView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -279,6 +282,9 @@
 		AC4F78CD1BE3704000496AAB /* GestureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureManager.swift; sourceTree = "<group>"; };
 		AC53E9711BDAA5FC004BA6AD /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Features/Users/UsersTableViewController.swift; sourceTree = "<group>"; };
 		AC53E9731BDAA6E2004BA6AD /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersTableViewCell.swift; path = Features/Users/UsersTableViewCell.swift; sourceTree = "<group>"; };
+		AC543F711BE3C348009C1E2C /* block.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = block.mp3; sourceTree = "<group>"; };
+		AC543F721BE3C348009C1E2C /* reload.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reload.mp3; sourceTree = "<group>"; };
+		AC543F731BE3C348009C1E2C /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
 		AC6363B81BD67147007206E4 /* CharacterChangeItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeItemController.swift; path = CharacterChange/CharacterChangeItemController.swift; sourceTree = "<group>"; };
 		AC6363BB1BD6740F007206E4 /* CharacterChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterChangeViewController.swift; path = CharacterChange/CharacterChangeViewController.swift; sourceTree = "<group>"; };
 		AC63686D1BB47B89002ED083 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
@@ -460,6 +466,9 @@
 		AC84B14E1B4C357E0030B0ED = {
 			isa = PBXGroup;
 			children = (
+				AC543F711BE3C348009C1E2C /* block.mp3 */,
+				AC543F721BE3C348009C1E2C /* reload.mp3 */,
+				AC543F731BE3C348009C1E2C /* shoot.mp3 */,
 				AC04F1F41BDFD67B00A6592B /* libz.tbd */,
 				AC04F2381BDFD90B00A6592B /* APNGKit.xcodeproj */,
 				AC20A1901BD96AF40083E0B3 /* ObjectMapper.xcodeproj */,
@@ -864,6 +873,9 @@
 				AC84B1641B4C357E0030B0ED /* Main.storyboard in Resources */,
 				AC84B1691B4C357E0030B0ED /* LaunchScreen.xib in Resources */,
 				AC6368701BB47B89002ED083 /* HeadlineView.xib in Resources */,
+				AC543F751BE3C348009C1E2C /* reload.mp3 in Resources */,
+				AC543F741BE3C348009C1E2C /* block.mp3 in Resources */,
+				AC543F761BE3C348009C1E2C /* shoot.mp3 in Resources */,
 				AC84B1661B4C357E0030B0ED /* Images.xcassets in Resources */,
 				AC04F2521BDFDF8400A6592B /* animated2.apng in Resources */,
 			);

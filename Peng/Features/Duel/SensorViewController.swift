@@ -103,7 +103,6 @@ class SensorViewController: UIViewController {
         } else if (fixValue < self.minRange && fixValue > -3) {
             self.resultCode = 2
         }
-        print(fixValue)
         self.performSegueWithIdentifier("backToDuel", sender: self)
     }
     
