@@ -91,16 +91,24 @@ class DuelViewController: UIViewController {
         self.myLifes.text = String(self.me!.hitPoints.value)
         self.opLifes.text = String(self.op!.hitPoints.value)
         
-        if let image = APNGImage(named: "animated2") {
+        let myImageName = (self.me?.characterName.value)! + "_red_" + GestureManager.actionTypeToImageName(self.passedDuel.myAction.value.type.value)
+        if let image = APNGImage(named: myImageName) {
             image.repeatCount = 0
             
             myCharacter.image = image
+            myCharacter.transform = CGAffineTransformMakeRotation((180.0 * CGFloat(M_PI)) / 180.0)
             myCharacter.startAnimating()
-                        
+        }
+        
+        let opImageName = (self.op?.characterName.value)! + "_blu_" + GestureManager.actionTypeToImageName(self.passedDuel.opponentAction.value.type.value)
+        if let image = APNGImage(named: opImageName) {
+            image.repeatCount = 0
+            
             opCharacter.image = image
             opCharacter.startAnimating()
-            
         }
+        
+        
     }
     
     func setupBullets(b1: UIImageView, b2: UIImageView, b3: UIImageView, bullets: Int) {

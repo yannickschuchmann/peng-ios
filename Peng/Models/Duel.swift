@@ -18,6 +18,9 @@ class Duel: Mappable {
     var me: Observable<Actor> = Observable(Actor()!)
     var opponent: Observable<Actor> = Observable(Actor()!)
     var myTurn: Observable<Bool> = Observable(false)
+    var myAction: Observable<Action> = Observable(Action()!)
+    var opponentAction: Observable<Action> = Observable(Action()!)
+    
     required init?(_ map: Map){
         
     }
@@ -35,6 +38,8 @@ class Duel: Mappable {
         me.value <- map["me"]
         opponent.value <- map["opponent"]
         myTurn.value <- map["my_turn"]
+        myAction.value <- map["my_action"]
+        opponentAction.value <- map["opponent_action"]
     }
     
 }
