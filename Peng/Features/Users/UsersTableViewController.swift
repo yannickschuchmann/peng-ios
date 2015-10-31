@@ -60,6 +60,18 @@ class UsersTableViewController: UITableViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
+    func showUnallowedAlert() {
+        
+        let title = "You can't challenge yourself!"
+        
+        let okButton = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
+        
+        alertController.addAction(okButton)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -82,7 +94,11 @@ class UsersTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (isNewDuelListing) {
-            self.showBetAlert(indexPath.row)
+            if (users[indexPath.row].id.value == CurrentUser.getUser().id.value) {
+                self.showUnallowedAlert()
+            } else {
+                self.showBetAlert(indexPath.row)
+            }
         } else {
             self.performSegueWithIdentifier("showProfile", sender: self)
         }
