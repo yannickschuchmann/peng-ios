@@ -35,6 +35,7 @@ class DuelViewController: UIViewController {
         }
     }
     var passedDuel: Duel!
+    @IBOutlet weak var myActionLabel: UILabel!
     var passedResultCode: Int?
     var me: Actor?
     var op: Actor?
@@ -42,6 +43,7 @@ class DuelViewController: UIViewController {
     @IBOutlet weak var opNick: UIBarButtonItem!
     var audioPlayer : AVAudioPlayer!
 
+    @IBOutlet weak var opActionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -86,7 +88,12 @@ class DuelViewController: UIViewController {
 
         self.opNick.title = self.op!.nick.value
         
-        self.status.image = UIImage(named: "b_" + self.passedDuel.result.value)
+        self.myActionLabel.text = !self.passedDuel.myTurn.value || !self.passedDuel.active.value ? GestureManager.actionTypeToImageName(self.passedDuel.myAction.value.type.value).uppercaseString : "YOUR TURN"
+            
+        self.opActionLabel.text = self.passedDuel.myTurn.value || !self.passedDuel.active.value ? GestureManager.actionTypeToImageName(self.passedDuel.opponentAction.value.type.value).uppercaseString : "WAITING"
+
+        
+        self.status.image = UIImage(named: self.passedDuel.result.value)
         
         self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
         self.setupBullets(opBullet1, b2: opBullet2, b3: opBullet3, bullets: self.op!.shots.value)

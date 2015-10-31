@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "b_lose.png",
+      "filename" : "blocked.png",
       "scale" : "1x"
     },
     {

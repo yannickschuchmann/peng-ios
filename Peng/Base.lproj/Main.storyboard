@@ -1053,7 +1053,7 @@
                                         <color key="textColor" red="0.1529411765" green="0.15686274510000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b_versus" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-Eh-AF2" userLabel="status">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="versus" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-Eh-AF2" userLabel="status">
                                         <rect key="frame" x="23.5" y="333" width="365" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1VW-Eh-AF2" secondAttribute="height" multiplier="525:100" id="AOW-ku-LwA"/>
@@ -1130,11 +1130,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Simon" style="plain" id="bhC-H7-pFv"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="myActionLabel" destination="gT8-CF-Avn" id="O0f-1R-1n5"/>
                         <outlet property="myBullet1" destination="zUn-wJ-hT5" id="Mrn-gz-ouj"/>
                         <outlet property="myBullet2" destination="XXE-xU-ZAv" id="R2X-Ne-YRO"/>
                         <outlet property="myBullet3" destination="tMQ-7P-W2q" id="DGz-8u-8vv"/>
                         <outlet property="myCharacter" destination="MBJ-8S-gFd" id="bhY-nu-aYf"/>
                         <outlet property="myLifes" destination="gcA-dl-LVn" id="sqn-6a-U5b"/>
+                        <outlet property="opActionLabel" destination="LRt-RD-uux" id="LRp-5J-Och"/>
                         <outlet property="opBullet1" destination="vtd-OX-gOa" id="BPm-dH-qkZ"/>
                         <outlet property="opBullet2" destination="Tbc-XB-gfI" id="t3C-Md-cFg"/>
                         <outlet property="opBullet3" destination="QfX-cP-XWk" id="uSm-bh-VoR"/>
@@ -1755,7 +1757,6 @@
     <resources>
         <image name="arrow_left" width="37" height="43"/>
         <image name="arrow_right" width="37" height="42"/>
-        <image name="b_versus" width="525" height="100"/>
         <image name="burger" width="22" height="22"/>
         <image name="character_amerindian" width="400" height="458"/>
         <image name="character_bandit" width="400" height="458"/>
@@ -1771,6 +1772,7 @@
         <image name="o_3" width="525" height="100"/>
         <image name="settings" width="22" height="22"/>
         <image name="shoot_loaded" width="35" height="82"/>
+        <image name="versus" width="525" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="P3t-u3-SrT"/>
