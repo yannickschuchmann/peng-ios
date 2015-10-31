@@ -39,6 +39,7 @@ class DuelViewController: UIViewController {
     var me: Actor?
     var op: Actor?
     
+    @IBOutlet weak var opNick: UIBarButtonItem!
     var audioPlayer : AVAudioPlayer!
 
     override func viewDidLoad() {
@@ -83,6 +84,8 @@ class DuelViewController: UIViewController {
         self.me = self.passedDuel.me.value
         self.op = self.passedDuel.opponent.value
 
+        self.opNick.title = self.op!.nick.value
+        
         self.status.image = UIImage(named: "b_" + self.passedDuel.result.value)
         
         self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
