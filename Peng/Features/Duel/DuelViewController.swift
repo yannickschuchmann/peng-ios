@@ -91,7 +91,7 @@ class DuelViewController: UIViewController {
         self.myLifes.text = String(self.me!.hitPoints.value)
         self.opLifes.text = String(self.op!.hitPoints.value)
         
-        let myImageName = (self.me?.characterName.value)! + "_red_" + GestureManager.actionTypeToImageName(self.passedDuel.myAction.value.type.value)
+        let myImageName = (self.me?.characterName.value)! + "_blu_" + GestureManager.actionTypeToImageName(self.passedDuel.myAction.value.type.value)
         if let image = APNGImage(named: myImageName) {
             image.repeatCount = 0
             
@@ -100,7 +100,7 @@ class DuelViewController: UIViewController {
             myCharacter.startAnimating()
         }
         
-        let opImageName = (self.op?.characterName.value)! + "_blu_" + GestureManager.actionTypeToImageName(self.passedDuel.opponentAction.value.type.value)
+        let opImageName = (self.op?.characterName.value)! + "_red_" + GestureManager.actionTypeToImageName(self.passedDuel.opponentAction.value.type.value)
         if let image = APNGImage(named: opImageName) {
             image.repeatCount = 0
             
