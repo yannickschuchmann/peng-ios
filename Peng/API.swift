@@ -13,7 +13,7 @@ import ObjectMapper
 
 
 class API {
-    static let host: String = "http://0.0.0.0:3000"
+    static let host: String = "http://api.peng.furfm.de"
     static let prefix: String = "/api/v1"
     static let updatePath: String = "https://peng.furfm.de/ios/update"
     
