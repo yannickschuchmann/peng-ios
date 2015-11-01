@@ -92,7 +92,6 @@ class DuelViewController: UIViewController {
             
         self.opActionLabel.text = self.passedDuel.myTurn.value || !self.passedDuel.active.value ? GestureManager.actionTypeToImageName(self.passedDuel.opponentAction.value.type.value).uppercaseString : "WAITING"
 
-        
         self.status.image = UIImage(named: self.passedDuel.result.value)
         
         self.setupBullets(myBullet1, b2: myBullet2, b3: myBullet3, bullets: self.me!.shots.value)
@@ -126,4 +125,12 @@ class DuelViewController: UIViewController {
         b2.image = UIImage(named: bullets > 1 ? "shoot_loaded" : "shoot_unloaded")
         b3.image = UIImage(named: bullets > 2 ? "shoot_loaded" : "shoot_unloaded")
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "doSensorAction" {
+            let sensorViewController = segue.destinationViewController as! SensorViewController
+            sensorViewController.passedRoundNumber = self.passedDuel.roundCount.value
+        }
+    }
+    
 }

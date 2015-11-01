@@ -15,6 +15,9 @@ class SensorViewController: UIViewController {
     
     @IBOutlet weak var countdownLabel: UIImageView!
     
+    @IBOutlet weak var roundLabel: UILabel!
+    var passedRoundNumber: Int!
+    
     private var motionManager: CMMotionManager!
     private var device: UIDevice!
     private var resultCode: Int!
@@ -26,6 +29,7 @@ class SensorViewController: UIViewController {
     override func viewDidLoad() {
         motionManager = CMMotionManager()
         
+        self.roundLabel.text = "ROUND \(self.passedRoundNumber)"
         self.updateCountdown()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.75, target: self, selector: Selector("updateCountdown"), userInfo: nil, repeats: true)
 
