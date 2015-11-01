@@ -60,24 +60,31 @@ class DuelViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if (self.passedResultCode != nil) {
-            let name = GestureManager.resultCodeToImageName(self.passedResultCode!)
+            let actionType = GestureManager.resultCodeToActionType(self.passedResultCode!)
             
-            let path = NSBundle.mainBundle().pathForResource(name, ofType: "mp3")!
-            let url = NSURL(fileURLWithPath: path)
-            
-            do {
-                let sound = try AVAudioPlayer(contentsOfURL: url)
-                audioPlayer = sound
-                sound.play()
-            } catch {
+            if (self.me?.shots.value == 0 && actionType == "offensive") {
+                self.showErrorAlert("No more bullets, dude!")
+            } else if (self.me?.shots.value == 3 && actionType == "neutral") {
+                self.showErrorAlert("Dude, your weapon is already fully loaded!")
+            } else {
+                let name = GestureManager.resultCodeToImageName(self.passedResultCode!)
                 
-            }
-
-            API.postAction(CurrentUser.getUser().id.value, duelId: self.passedDuel.id.value, actionType: GestureManager.resultCodeToActionType(self.passedResultCode!)) { duel in
-                self.passedDuel = duel
-                self.configureView()
-            }
-            
+                let path = NSBundle.mainBundle().pathForResource(name, ofType: "mp3")!
+                let url = NSURL(fileURLWithPath: path)
+                
+                do {
+                    let sound = try AVAudioPlayer(contentsOfURL: url)
+                    audioPlayer = sound
+                    sound.play()
+                } catch {
+                    
+                }
+                
+                API.postAction(CurrentUser.getUser().id.value, duelId: self.passedDuel.id.value, actionType: actionType) { duel in
+                    self.passedDuel = duel
+                    self.configureView()
+                }
+            }            
         }
         
     }
@@ -124,6 +131,17 @@ class DuelViewController: UIViewController {
         b1.image = UIImage(named: bullets > 0 ? "shoot_loaded" : "shoot_unloaded")
         b2.image = UIImage(named: bullets > 1 ? "shoot_loaded" : "shoot_unloaded")
         b3.image = UIImage(named: bullets > 2 ? "shoot_loaded" : "shoot_unloaded")
+    }
+    
+    func showErrorAlert(message: String) {
+        let title = message
+        
+        let okButton = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
+        alertController.addAction(okButton)
+        
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
