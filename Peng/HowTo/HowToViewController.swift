@@ -13,7 +13,7 @@ import UIKit
 class HowToViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     @IBOutlet weak var skipButton: UIButton!
-    let slides : [String] = ["how_to-dummy", "how_to-dummy"]
+    var slides : [String]! = []
     var pageViewController : UIPageViewController?
     
     @IBAction func onSkip(sender: UIButton) {
@@ -22,6 +22,10 @@ class HowToViewController: UIViewController, UIPageViewControllerDataSource, UIP
     
     
     override func viewDidLoad() {
+        for i in 1...12 {
+            slides.append("how_to_\(i)")
+        }
+        
         createPageViewController()
         setupPageControl()
     }
