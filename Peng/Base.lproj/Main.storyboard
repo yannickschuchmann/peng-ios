@@ -530,6 +530,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qas-ze-hoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9gx-GR-QeR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="453" y="41"/>
         </scene>
@@ -557,7 +558,7 @@
                                 <connections>
                                     <action selector="onSaveCharacter:" destination="gZp-84-xdF" eventType="touchUpInside" id="mDA-Mi-gb4"/>
                                     <action selector="onSkip:" destination="Q2u-18-tjF" eventType="touchUpInside" id="MBc-m8-wqO"/>
-                                    <segue destination="tQU-48-oLt" kind="unwind" identifier="skipHowTo" unwindAction="skipHowTo:" id="aJd-8l-RU7"/>
+                                    <segue destination="9gx-GR-QeR" kind="unwind" unwindAction="skipHowTo:" id="DD1-sc-hct"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -864,6 +865,7 @@
                         <outlet property="nick" destination="0VN-ld-lrc" id="Bef-b3-LyO"/>
                         <outlet property="slogan" destination="N9m-yX-lfz" id="OjN-jv-CnJ"/>
                         <segue destination="VSy-kN-7gs" kind="show" identifier="newDuel" id="P3t-u3-SrT"/>
+                        <segue destination="Q2u-18-tjF" kind="show" identifier="showHowTo" id="FSc-Ll-FLV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -1785,8 +1787,9 @@
         <image name="versus" width="525" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P3t-u3-SrT"/>
         <segue reference="sRR-XK-3gh"/>
         <segue reference="Lkf-Rn-hDg"/>
+        <segue reference="P3t-u3-SrT"/>
+        <segue reference="FSc-Ll-FLV"/>
     </inferredMetricsTieBreakers>
 </document>

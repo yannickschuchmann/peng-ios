@@ -171,6 +171,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let title = "Edit profile"
         let message = ""
         
+        let showHowTo = isProfileEmpty() && isCurrentUser!
+        
         self.saveButton = UIAlertAction(title: "Save", style: .Default, handler: { (action) -> Void in
             self.user.nick.value = self.nickTextField.text!
             self.user.slogan.value = self.sloganTextField.text!
@@ -178,6 +180,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             CurrentUser.setUser(self.user)
 
             API.updateUser(self.user) { (user: User) in
+                if showHowTo {
+                    self.performSegueWithIdentifier("showHowTo", sender: self)
+                }
             }
             self.removeTextFieldObserver()
         })

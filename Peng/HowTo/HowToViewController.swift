@@ -17,7 +17,7 @@ class HowToViewController: UIViewController, UIPageViewControllerDataSource, UIP
     var pageViewController : UIPageViewController?
     
     @IBAction func onSkip(sender: UIButton) {
-        self.performSegueWithIdentifier("skipHowTo", sender: self)
+        //self.performSegueWithIdentifier("skipHowTo", sender: self)
     }
     
     
