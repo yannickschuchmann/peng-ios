@@ -12,14 +12,10 @@ import UIKit
 
 class HowToViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    @IBOutlet weak var skipButton: UIButton!
+
     var slides : [String]! = []
     var pageViewController : UIPageViewController?
-    
-    @IBAction func onSkip(sender: UIButton) {
-        //self.performSegueWithIdentifier("skipHowTo", sender: self)
-    }
-    
+       
     
     override func viewDidLoad() {
         for i in 1...12 {
@@ -45,12 +41,11 @@ class HowToViewController: UIViewController, UIPageViewControllerDataSource, UIP
         
         pageViewController = pageController
         addChildViewController(pageViewController!)
-        pageViewController!.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height - 50)
+        pageViewController!.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height)
         
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
         
-        self.view.bringSubviewToFront(self.skipButton)
     }
     
     private func setupPageControl() {

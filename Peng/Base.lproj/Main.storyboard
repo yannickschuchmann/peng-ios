@@ -46,7 +46,6 @@
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
             <string>FuturaExtended</string>
-            <string>FuturaExtended</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -530,7 +529,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qas-ze-hoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="9gx-GR-QeR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="453" y="41"/>
         </scene>
@@ -545,33 +543,8 @@
                     <view key="view" contentMode="scaleToFill" id="cGT-Pz-pWz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-hv-jnV">
-                                <rect key="frame" x="0.0" y="750" width="600" height="50"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.1960784314" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="f85-Pn-0qU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaExtended" family="FuturaExtended" pointSize="19"/>
-                                <color key="tintColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="SKIP"/>
-                                <connections>
-                                    <action selector="onSaveCharacter:" destination="gZp-84-xdF" eventType="touchUpInside" id="mDA-Mi-gb4"/>
-                                    <action selector="onSkip:" destination="Q2u-18-tjF" eventType="touchUpInside" id="MBc-m8-wqO"/>
-                                    <segue destination="9gx-GR-QeR" kind="unwind" unwindAction="skipHowTo:" id="DD1-sc-hct"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.42745098040000001" green="0.14117647059999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fCg-hv-jnV" secondAttribute="trailing" id="2aR-XO-8YF"/>
-                            <constraint firstItem="fCg-hv-jnV" firstAttribute="leading" secondItem="cGT-Pz-pWz" secondAttribute="leading" id="NqK-F7-aFd"/>
-                            <constraint firstItem="d1C-Y2-uyD" firstAttribute="top" secondItem="fCg-hv-jnV" secondAttribute="bottom" id="uNe-GZ-Ubd"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="skipButton" destination="fCg-hv-jnV" id="V4K-yr-DoJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoK-bW-biG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
