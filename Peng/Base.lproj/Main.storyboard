@@ -605,7 +605,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8g-aw-5mA" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="716"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="672"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-W1-mNH" userLabel="Info">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="288"/>
@@ -677,17 +677,8 @@
                                                     <action selector="onChallengeUser:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="jsO-Pd-n6B"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-Bq-r56" userLabel="Statistik" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="428" width="560" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="blz-OR-Xs5"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="Label" value="STATISTICS"/>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGl-cq-cnO" userLabel="Letzte Spiele" customClass="HeadlineView" customModule="Peng" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="472" width="560" height="24"/>
+                                                <rect key="frame" x="20" y="428" width="560" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="tR4-B2-Uny"/>
                                                 </constraints>
@@ -696,7 +687,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0kC-MF-vOB" userLabel="Open Duels">
-                                                <rect key="frame" x="0.0" y="496" width="600" height="200"/>
+                                                <rect key="frame" x="0.0" y="452" width="600" height="200"/>
                                                 <color key="backgroundColor" red="1" green="0.97647058819999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="ss8-UZ-MpJ"/>
@@ -796,14 +787,11 @@
                                             <constraint firstAttribute="trailing" secondItem="0kC-MF-vOB" secondAttribute="trailing" id="EzX-ZE-e3t"/>
                                             <constraint firstItem="NHX-W1-mNH" firstAttribute="top" secondItem="a8g-aw-5mA" secondAttribute="top" id="J3H-XU-Z69"/>
                                             <constraint firstItem="NHX-W1-mNH" firstAttribute="leading" secondItem="a8g-aw-5mA" secondAttribute="leading" id="YmJ-s2-Bs5"/>
-                                            <constraint firstAttribute="trailing" secondItem="DXR-Bq-r56" secondAttribute="trailing" constant="20" id="b2H-Fh-DhX"/>
-                                            <constraint firstItem="gGl-cq-cnO" firstAttribute="top" secondItem="DXR-Bq-r56" secondAttribute="bottom" constant="20" id="bTj-0o-scn"/>
+                                            <constraint firstItem="gGl-cq-cnO" firstAttribute="top" secondItem="bMl-rN-dVc" secondAttribute="bottom" constant="10" id="bep-oj-bf1"/>
                                             <constraint firstItem="gGl-cq-cnO" firstAttribute="leading" secondItem="a8g-aw-5mA" secondAttribute="leading" constant="20" id="erH-iP-bfc"/>
                                             <constraint firstItem="0kC-MF-vOB" firstAttribute="leading" secondItem="a8g-aw-5mA" secondAttribute="leading" id="fyT-Na-O4F"/>
                                             <constraint firstItem="bMl-rN-dVc" firstAttribute="leading" secondItem="a8g-aw-5mA" secondAttribute="leading" id="jzM-uN-C13"/>
-                                            <constraint firstItem="DXR-Bq-r56" firstAttribute="leading" secondItem="a8g-aw-5mA" secondAttribute="leading" constant="20" id="nEV-SY-Eq0"/>
                                             <constraint firstItem="0kC-MF-vOB" firstAttribute="top" secondItem="gGl-cq-cnO" secondAttribute="bottom" id="tjO-X1-5J8"/>
-                                            <constraint firstItem="DXR-Bq-r56" firstAttribute="top" secondItem="bMl-rN-dVc" secondAttribute="bottom" constant="10" id="vG1-Gc-07K"/>
                                             <constraint firstAttribute="trailing" secondItem="NHX-W1-mNH" secondAttribute="trailing" id="w4f-pU-GsJ"/>
                                         </constraints>
                                     </view>
